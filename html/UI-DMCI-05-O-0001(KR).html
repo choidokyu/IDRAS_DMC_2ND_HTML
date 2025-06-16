@@ -1,0 +1,1994 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-DMCI-05-O-0001_자산관리</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> 자산관리 - UI-DMCI-05-O-0001</h1>
+<div class='pull-right'><a href='UI-DMCI-05-O-0001(EN).html'>EN</a> | <a href='UI-DMCI-05-O-0001(KR).html'>KR</a> | <a href='UI-DMCI-05-O-0001(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div><div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--목록 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_목록').toggle();" id='목록'><span class='glyphicon glyphicon-chevron-right'></span> 목록</h2>
+      </div>
+
+      <div id='자산관리_목록' class='panel-body'><!--목록 화면메인그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_2' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >TIN</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='목록___TIN_1' value='172-206-670'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >자산 번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='목록___자산_번호_1' value=''  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >자산 상태</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+      <select class='form-control ' id='목록___자산_상태' >
+            <option >All
+</option>
+            <option >00│자산 요청
+</option>
+            <option >10│자산등록
+</option>
+            <option >20│담보등록
+</option>
+            <option >21│담보해제
+</option>
+            <option >30│압류/압수
+</option>
+            <option >31│압류해제
+</option>
+            <option >40│평가의뢰
+</option>
+            <option >41│평가완료
+</option>
+            <option >50│매각진행
+</option>
+            <option >51│매각완료
+</option>
+            <option >60│낙찰자인도</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+      <th width='15%' ></th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_2').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='초기화' ><span class='glyphicon glyphicon-refresh'></span> 초기화</button>
+        <button class='btn btn-info' type='button' value='신규' onclick='onloadImage("../images-DOC/UI-DMCI-05-O-0001_Registration_of_assets.png","1100","620")'>신규</button>
+        <button class='btn btn-default' type='button' value='조회' ><span class='glyphicon glyphicon-search'></span> 조회</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='목록____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--목록 화면메인그룹 종료-->
+
+    </div><!--목록 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--상세 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_상세').toggle();" id='상세'><span class='glyphicon glyphicon-chevron-right'></span> 상세</h2>
+      </div>
+
+      <div id='자산관리_상세' class='panel-body'><!--상세 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_상세_Taxpayer_Information').toggle();" id='Taxpayer_Information'><span class='glyphicon glyphicon-menu-hamburger'></span> Taxpayer Information</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_상세_Taxpayer_Information' class='panel-body'><!--Taxpayer Information 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_10' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >TIN</th>
+        <td width='35%' style='text-align: left;' class=''>
+172-206-670        </td>
+      <th width='15%' >납세자 이름</th>
+        <td width='35%' style='text-align: left;' class=''>
+JEDIDA ATIENO OUMA        </td>
+    </tr>
+    <tr>
+      <th width='15%' >상호명</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >세무 관할 지역</th>
+        <td width='35%' style='text-align: left;' class=''>
+MARA        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Email</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >전화번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+0747681462        </td>
+    </tr>
+    <tr>
+      <th width='15%' >우편 주소</th>
+        <td style='text-align: left;' colspan='3' class=''>
+P.O Box 0, undefined        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >실제 주소</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Rorya Tai Sota        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_10').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='상세_Taxpayer_Information___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Taxpayer Information 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_상세_자산_목록').toggle();" id='자산_목록'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 목록</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_상세_자산_목록' class='panel-body'><!--자산 목록 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_19' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>자산 번호</th>
+      <th class='text-center'>자산 분류</th>
+      <th class='text-center'>자산 유형</th>
+      <th class='text-center'>자산 이름</th>
+      <th class='text-center'>Status</th>
+      <th class='text-center'>등록 날짜</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+ASET202500000102691        </td>
+        <td class=''>
+10│토지/건물에 대한 권리
+        </td>
+        <td class=''>
+10│토지
+        </td>
+        <td class=''>
+earth        </td>
+        <td class=''>
+00│자산 요청
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102701        </td>
+        <td class=''>
+10│토지/건물에 대한 권리
+        </td>
+        <td class=''>
+11│건물(토지 포함)
+        </td>
+        <td class=''>
+building        </td>
+        <td class=''>
+10│자산등록
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000101921        </td>
+        <td class=''>
+20│부패하기 쉬운 상품
+        </td>
+        <td class=''>
+20│가공된 부패성 물품
+        </td>
+        <td class=''>
+Fresh Fresh        </td>
+        <td class=''>
+20│담보등록
+        </td>
+        <td class=''>
+12/05/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET20250000010216E        </td>
+        <td class=''>
+20│부패하기 쉬운 상품
+        </td>
+        <td class=''>
+21│비가공 부패성 물품
+        </td>
+        <td class=''>
+Unfresh Unfresh        </td>
+        <td class=''>
+21│담보해제
+        </td>
+        <td class=''>
+22/05/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000001131        </td>
+        <td class=''>
+30│기타 유형자산
+        </td>
+        <td class=''>
+30│차량
+        </td>
+        <td class=''>
+super car        </td>
+        <td class=''>
+30│압류/압수
+        </td>
+        <td class=''>
+21/03/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102901        </td>
+        <td class=''>
+30│기타 유형자산
+        </td>
+        <td class=''>
+31│선박
+        </td>
+        <td class=''>
+asetNm 31-2        </td>
+        <td class=''>
+31│압류해제
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102661        </td>
+        <td class=''>
+30│기타 유형자산
+        </td>
+        <td class=''>
+32│전자/기계류
+        </td>
+        <td class=''>
+test machine        </td>
+        <td class=''>
+40│평가의뢰
+        </td>
+        <td class=''>
+02/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000001891        </td>
+        <td class=''>
+30│기타 유형자산
+        </td>
+        <td class=''>
+33│기타 비부패성 물품
+        </td>
+        <td class=''>
+qty        </td>
+        <td class=''>
+41│평가완료
+        </td>
+        <td class=''>
+30/04/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102871        </td>
+        <td class=''>
+40│무형자산
+        </td>
+        <td class=''>
+40│주식/지분
+        </td>
+        <td class=''>
+asetNm 40        </td>
+        <td class=''>
+50│매각진행
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102851        </td>
+        <td class=''>
+40│무형자산
+        </td>
+        <td class=''>
+41│채권
+        </td>
+        <td class=''>
+asetNm 41        </td>
+        <td class=''>
+51│매각완료
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102881        </td>
+        <td class=''>
+40│무형자산        </td>
+        <td class=''>
+42│기타 무형 자산        </td>
+        <td class=''>
+setNm 42        </td>
+        <td class=''>
+60│낙찰자인도        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+    </tbody>
+  </table>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='상세_자산_목록___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 목록 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--상세 화면메인그룹 종료-->
+
+    </div><!--상세 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--10 토지 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_10_토지').toggle();" id='10_토지'><span class='glyphicon glyphicon-chevron-right'></span> 10 토지</h2>
+      </div>
+
+      <div id='자산관리_10_토지' class='panel-body'><!--10 토지 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_10_토지_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_10_토지_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_26' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >자산 분류</th>
+        <td width='35%' style='text-align: left;' class=''>
+Interest in Land/Buildings        </td>
+      <th width='15%' >자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Land        </td>
+    </tr>
+    <tr>
+      <th width='15%' >자산 이름</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Land        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >등록 기관</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Ministry of Land (TANLIS)        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_26').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_30' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >블록 번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+blckNo1        </td>
+      <th width='15%' >필지 번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+plotNo1        </td>
+    </tr>
+    <tr>
+      <th width='15%' >증서 번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+crteNo1        </td>
+      <th width='15%' >권리 번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+titleNo1        </td>
+    </tr>
+    <tr>
+      <th width='15%' >소재지 주소</th>
+        <td style='text-align: left;' colspan='3' class=''>
+asetLoctAddr1        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >소유자 이름</th>
+        <td style='text-align: left;' colspan='3' class=''>
+owrNm1        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_30').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_36' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >설명</th>
+        <td style='text-align: left;' colspan='3' class=''>
+asetDesc1        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >기타 담보 등록 여부</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='10_토지_자산_세부_정보__기타_담보_등록_여부_14' id='10_토지_자산_세부_정보__기타_담보_등록_여부_14_Whether_the_charged_has_been_registered_by_another_authority_15' type='checkbox'  value='Whether the charged has been registered by another authority' >
+        <label class='label-for-select ' for='10_토지_자산_세부_정보__기타_담보_등록_여부_14_Whether_the_charged_has_been_registered_by_another_authority_15'>Whether the charged has been registered by another authority</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >첨부파일</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='10_토지_자산_세부_정보__첨부파일_1' value='test.jpg (39.6 kB)' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_36').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='10_토지_자산_세부_정보___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--10 토지 화면메인그룹 종료-->
+
+    </div><!--10 토지 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--11 건물 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_11_건물').toggle();" id='11_건물'><span class='glyphicon glyphicon-chevron-right'></span> 11 건물</h2>
+      </div>
+
+      <div id='자산관리_11_건물' class='panel-body'><!--11 건물 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_11_건물_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_11_건물_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_40' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >자산 분류</th>
+        <td width='35%' style='text-align: left;' class=''>
+Interest in Land/Buildings        </td>
+      <th width='15%' >자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Building (with land)        </td>
+    </tr>
+    <tr>
+      <th width='15%' >자산 이름</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Building        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >등록 기관</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Ministry of Land (TANLIS)        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_40').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_44' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >블록 번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+blckNo2        </td>
+      <th width='15%' >필지 번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+plotNo2        </td>
+    </tr>
+    <tr>
+      <th width='15%' >건물 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Storey        </td>
+      <th width='15%' >층수</th>
+        <td width='35%' style='text-align: left;' class=''>
+1        </td>
+    </tr>
+    <tr>
+      <th width='15%' >용도 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Commercial        </td>
+      <th width='15%' >소유 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Condominium        </td>
+    </tr>
+    <tr>
+      <th width='15%' >건물 상태 유형</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Under construction        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_44').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_51' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >설명</th>
+        <td style='text-align: left;' colspan='3' class=''>
+asetDesc2        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >기타 담보 등록 여부</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='11_건물_자산_세부_정보__기타_담보_등록_여부_16' id='11_건물_자산_세부_정보__기타_담보_등록_여부_16_Whether_the_charged_has_been_registered_by_another_authority_17' type='checkbox'  value='Whether the charged has been registered by another authority' >
+        <label class='label-for-select ' for='11_건물_자산_세부_정보__기타_담보_등록_여부_16_Whether_the_charged_has_been_registered_by_another_authority_17'>Whether the charged has been registered by another authority</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >첨부파일</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='11_건물_자산_세부_정보__첨부파일_1' value='test.jpg (39.6 kB)' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_51').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='11_건물_자산_세부_정보___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--11 건물 화면메인그룹 종료-->
+
+    </div><!--11 건물 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--20 가공된 부패성 물품 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_20_가공된_부패성_물품').toggle();" id='20_가공된_부패성_물품'><span class='glyphicon glyphicon-chevron-right'></span> 20 가공된 부패성 물품</h2>
+      </div>
+
+      <div id='자산관리_20_가공된_부패성_물품' class='panel-body'><!--20 가공된 부패성 물품 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_20_가공된_부패성_물품_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_20_가공된_부패성_물품_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_55' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >자산 분류</th>
+        <td width='35%' style='text-align: left;' class=''>
+Perishable Goods        </td>
+      <th width='15%' >자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Processed Perishable Goods        </td>
+    </tr>
+    <tr>
+      <th width='15%' >자산 이름</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Processed Perishable Goods        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_55').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_58' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >측정 단위명</th>
+        <td width='35%' style='text-align: left;' class=''>
+Liter        </td>
+      <th width='15%' >자산 수량</th>
+        <td width='35%' style='text-align: left;' class=''>
+9        </td>
+    </tr>
+    <tr>
+      <th width='15%' >기대 수명(일)</th>
+        <td width='35%' style='text-align: left;' class=''>
+0        </td>
+      <th width='15%' >단가</th>
+        <td width='35%' style='text-align: left;' class=''>
+9        </td>
+    </tr>
+    <tr>
+      <th width='15%' >총 금액</th>
+        <td width='35%' style='text-align: left;' class=''>
+81        </td>
+      <th width='15%' >제조일</th>
+        <td width='35%' style='text-align: left;' class=''>
+12/05/2025        </td>
+    </tr>
+    <tr>
+      <th width='15%' >유효기간</th>
+        <td style='text-align: left;' colspan='3' class=''>
+21/05/2025        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_58').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_65' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >설명</th>
+        <td style='text-align: left;' colspan='3' class=''>
+ETC        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >기타 담보 등록 여부</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='20_가공된_부패성_물품_자산_세부_정보__기타_담보_등록_여부_18' id='20_가공된_부패성_물품_자산_세부_정보__기타_담보_등록_여부_18_Whether_the_charged_has_been_registered_by_another_authority_19' type='checkbox'  value='Whether the charged has been registered by another authority' >
+        <label class='label-for-select ' for='20_가공된_부패성_물품_자산_세부_정보__기타_담보_등록_여부_18_Whether_the_charged_has_been_registered_by_another_authority_19'>Whether the charged has been registered by another authority</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >첨부파일</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='20_가공된_부패성_물품_자산_세부_정보__첨부파일_1' value='test.jpg (39.6 kB)' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_65').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='20_가공된_부패성_물품_자산_세부_정보___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--20 가공된 부패성 물품 화면메인그룹 종료-->
+
+    </div><!--20 가공된 부패성 물품 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--21 비가공 부패성 물품 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_21_비가공_부패성_물품').toggle();" id='21_비가공_부패성_물품'><span class='glyphicon glyphicon-chevron-right'></span> 21 비가공 부패성 물품</h2>
+      </div>
+
+      <div id='자산관리_21_비가공_부패성_물품' class='panel-body'><!--21 비가공 부패성 물품 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_21_비가공_부패성_물품_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_21_비가공_부패성_물품_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_69' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >자산 분류</th>
+        <td width='35%' style='text-align: left;' class=''>
+Perishable Goods        </td>
+      <th width='15%' >자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Unprocessed Perishable Goods        </td>
+    </tr>
+    <tr>
+      <th width='15%' >자산 이름</th>
+        <td style='text-align: left;' colspan='3' class=''>
+탄시스 – 등록테스트        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_69').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_72' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >측정 단위명</th>
+        <td width='35%' style='text-align: left;' class=''>
+Kilogram        </td>
+      <th width='15%' >자산 수량</th>
+        <td width='35%' style='text-align: left;' class=''>
+88        </td>
+    </tr>
+    <tr>
+      <th width='15%' >기대 수명(일)</th>
+        <td width='35%' style='text-align: left;' class=''>
+15        </td>
+      <th width='15%' >단가</th>
+        <td width='35%' style='text-align: left;' class=''>
+1,000        </td>
+    </tr>
+    <tr>
+      <th width='15%' >총 금액</th>
+        <td width='35%' style='text-align: left;' class=''>
+88,000        </td>
+      <th width='15%' >제조일</th>
+        <td width='35%' style='text-align: left;' class=''>
+12/05/2025        </td>
+    </tr>
+    <tr>
+      <th width='15%' >유효기간</th>
+        <td style='text-align: left;' colspan='3' class=''>
+28/05/2025        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_72').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_79' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >설명</th>
+        <td style='text-align: left;' colspan='3' class=''>
+TANCIS        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >기타 담보 등록 여부</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='21_비가공_부패성_물품_자산_세부_정보__기타_담보_등록_여부_20' id='21_비가공_부패성_물품_자산_세부_정보__기타_담보_등록_여부_20_Whether_the_charged_has_been_registered_by_another_authority_21' type='checkbox'  value='Whether the charged has been registered by another authority' >
+        <label class='label-for-select ' for='21_비가공_부패성_물품_자산_세부_정보__기타_담보_등록_여부_20_Whether_the_charged_has_been_registered_by_another_authority_21'>Whether the charged has been registered by another authority</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >첨부파일</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='21_비가공_부패성_물품_자산_세부_정보__첨부파일_1' value='test.jpg (39.6 kB)' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_79').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='21_비가공_부패성_물품_자산_세부_정보___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--21 비가공 부패성 물품 화면메인그룹 종료-->
+
+    </div><!--21 비가공 부패성 물품 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--30 차량 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_30_차량').toggle();" id='30_차량'><span class='glyphicon glyphicon-chevron-right'></span> 30 차량</h2>
+      </div>
+
+      <div id='자산관리_30_차량' class='panel-body'><!--30 차량 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_30_차량_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_30_차량_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_83' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >자산 분류</th>
+        <td width='35%' style='text-align: left;' class=''>
+OtherTangible Assets        </td>
+      <th width='15%' >자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Motor vehicle        </td>
+    </tr>
+    <tr>
+      <th width='15%' >자산 이름</th>
+        <td style='text-align: left;' colspan='3' class=''>
+super car        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_83').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_86' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >등록 기관</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Ministry of Land (TANLIS)        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >위치</th>
+        <td style='text-align: left;' colspan='3' class=''>
+ORG0000060        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >제조사 명</th>
+        <td width='35%' style='text-align: left;' class=''>
+Hyundai        </td>
+      <th width='15%' >모델명</th>
+        <td width='35%' style='text-align: left;' class=''>
+Gr        </td>
+    </tr>
+    <tr>
+      <th width='15%' >모델 번호 코드</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >차대 번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+123432a        </td>
+    </tr>
+    <tr>
+      <th width='15%' >공차 중량</th>
+        <td width='35%' style='text-align: left;' class=''>
+1,000        </td>
+      <th width='15%' >총 중량</th>
+        <td width='35%' style='text-align: left;' class=''>
+1,000        </td>
+    </tr>
+    <tr>
+      <th width='15%' >엔진 출력(KW)</th>
+        <td width='35%' style='text-align: left;' class=''>
+4        </td>
+      <th width='15%' >제조 연도</th>
+        <td width='35%' style='text-align: left;' class=''>
+2019        </td>
+    </tr>
+    <tr>
+      <th width='15%' >차체 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Coupe (closed top)        </td>
+      <th width='15%' >색상</th>
+        <td width='35%' style='text-align: left;' class=''>
+Brown/Black/White        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_86').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_98' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >설명</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >기타 담보 등록 여부</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='30_차량_자산_세부_정보__기타_담보_등록_여부_22' id='30_차량_자산_세부_정보__기타_담보_등록_여부_22_Whether_the_charged_has_been_registered_by_another_authority_23' type='checkbox'  value='Whether the charged has been registered by another authority' >
+        <label class='label-for-select ' for='30_차량_자산_세부_정보__기타_담보_등록_여부_22_Whether_the_charged_has_been_registered_by_another_authority_23'>Whether the charged has been registered by another authority</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >첨부파일</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='30_차량_자산_세부_정보__첨부파일_1' value='test.jpg (39.6 kB)' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_98').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='30_차량_자산_세부_정보___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--30 차량 화면메인그룹 종료-->
+
+    </div><!--30 차량 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--31 선박 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_31_선박').toggle();" id='31_선박'><span class='glyphicon glyphicon-chevron-right'></span> 31 선박</h2>
+      </div>
+
+      <div id='자산관리_31_선박' class='panel-body'><!--31 선박 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_31_선박_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_31_선박_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_102' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >자산 분류</th>
+        <td width='35%' style='text-align: left;' class=''>
+OtherTangible Assets        </td>
+      <th width='15%' >자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Marine Vessels        </td>
+    </tr>
+    <tr>
+      <th width='15%' >자산 이름</th>
+        <td style='text-align: left;' colspan='3' class=''>
+asetNm 31-2        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_102').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_105' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >등록 기관</th>
+        <td style='text-align: left;' colspan='3' class=''>
+TASAC        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >모델명</th>
+        <td width='35%' style='text-align: left;' class=''>
+mdlNm 31-2        </td>
+      <th width='15%' >측정 단위명</th>
+        <td width='35%' style='text-align: left;' class=''>
+mnfyCoNm 31-2        </td>
+    </tr>
+    <tr>
+      <th width='15%' >제조 연도</th>
+        <td width='35%' style='text-align: left;' class=''>
+2024        </td>
+      <th width='15%' >용량</th>
+        <td width='35%' style='text-align: left;' class=''>
+50        </td>
+    </tr>
+    <tr>
+      <th width='15%' >색상</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Bluish/Silver        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_105').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_111' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >설명</th>
+        <td style='text-align: left;' colspan='3' class=''>
+asetDesc 31-2        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >기타 담보 등록 여부</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='31_선박_자산_세부_정보__기타_담보_등록_여부_24' id='31_선박_자산_세부_정보__기타_담보_등록_여부_24_Whether_the_charged_has_been_registered_by_another_authority_25' type='checkbox'  value='Whether the charged has been registered by another authority' >
+        <label class='label-for-select ' for='31_선박_자산_세부_정보__기타_담보_등록_여부_24_Whether_the_charged_has_been_registered_by_another_authority_25'>Whether the charged has been registered by another authority</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >첨부파일</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='31_선박_자산_세부_정보__첨부파일_1' value='test.jpg (39.6 kB)' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_111').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='31_선박_자산_세부_정보___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--31 선박 화면메인그룹 종료-->
+
+    </div><!--31 선박 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--32 전자/기계류 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_32_전자_기계류').toggle();" id='32_전자_기계류'><span class='glyphicon glyphicon-chevron-right'></span> 32 전자/기계류</h2>
+      </div>
+
+      <div id='자산관리_32_전자_기계류' class='panel-body'><!--32 전자/기계류 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_32_전자_기계류_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_32_전자_기계류_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_115' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >자산 분류</th>
+        <td width='35%' style='text-align: left;' class=''>
+OtherTangible Assets        </td>
+      <th width='15%' >자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Electronics/Machines        </td>
+    </tr>
+    <tr>
+      <th width='15%' >자산 이름</th>
+        <td style='text-align: left;' colspan='3' class=''>
+test machine        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_115').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_118' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >등록 기관</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Ministry of Land (TANLIS)        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >위치</th>
+        <td style='text-align: left;' colspan='3' class=''>
+ORG0000453        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >브랜드명</th>
+        <td width='35%' style='text-align: left;' class=''>
+No brand        </td>
+      <th width='15%' >모델명</th>
+        <td width='35%' style='text-align: left;' class=''>
+model a        </td>
+    </tr>
+    <tr>
+      <th width='15%' >제품 일련번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+aa1234        </td>
+      <th width='15%' >상태 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Semi function        </td>
+    </tr>
+    <tr>
+      <th width='15%' >사양 내용</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_118').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_125' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >설명</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >기타 담보 등록 여부</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='32_전자_기계류_자산_세부_정보__기타_담보_등록_여부_26' id='32_전자_기계류_자산_세부_정보__기타_담보_등록_여부_26_Whether_the_charged_has_been_registered_by_another_authority_27' type='checkbox'  value='Whether the charged has been registered by another authority' >
+        <label class='label-for-select ' for='32_전자_기계류_자산_세부_정보__기타_담보_등록_여부_26_Whether_the_charged_has_been_registered_by_another_authority_27'>Whether the charged has been registered by another authority</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >첨부파일</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='32_전자_기계류_자산_세부_정보__첨부파일_1' value='test.jpg (39.6 kB)' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_125').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='32_전자_기계류_자산_세부_정보___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--32 전자/기계류 화면메인그룹 종료-->
+
+    </div><!--32 전자/기계류 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--33 기타 비부패성 물품 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_33_기타_비부패성_물품').toggle();" id='33_기타_비부패성_물품'><span class='glyphicon glyphicon-chevron-right'></span> 33 기타 비부패성 물품</h2>
+      </div>
+
+      <div id='자산관리_33_기타_비부패성_물품' class='panel-body'><!--33 기타 비부패성 물품 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_33_기타_비부패성_물품_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_33_기타_비부패성_물품_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_129' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >자산 분류</th>
+        <td width='35%' style='text-align: left;' class=''>
+OtherTangible Assets        </td>
+      <th width='15%' >자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Other non-Perishable Goods        </td>
+    </tr>
+    <tr>
+      <th width='15%' >자산 이름</th>
+        <td style='text-align: left;' colspan='3' class=''>
+qty        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_129').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_132' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >등록 기관</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Ministry of Land (TANLIS)        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >위치</th>
+        <td style='text-align: left;' colspan='3' class=''>
+ORG0000060        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >제품명</th>
+        <td width='35%' style='text-align: left;' class=''>
+bottle        </td>
+      <th width='15%' >자산 수량</th>
+        <td width='35%' style='text-align: left;' class=''>
+1,000        </td>
+    </tr>
+    <tr>
+      <th width='15%' >측정 단위명</th>
+        <td width='35%' style='text-align: left;' class=''>
+60        </td>
+      <th width='15%' >원산지 국가</th>
+        <td style='text-align: left;' colspan='3' class=''>
+kor        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_132').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_138' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >설명</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >기타 담보 등록 여부</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='33_기타_비부패성_물품_자산_세부_정보__기타_담보_등록_여부_28' id='33_기타_비부패성_물품_자산_세부_정보__기타_담보_등록_여부_28_Whether_the_charged_has_been_registered_by_another_authority_29' type='checkbox'  value='Whether the charged has been registered by another authority' >
+        <label class='label-for-select ' for='33_기타_비부패성_물품_자산_세부_정보__기타_담보_등록_여부_28_Whether_the_charged_has_been_registered_by_another_authority_29'>Whether the charged has been registered by another authority</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >첨부파일</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='33_기타_비부패성_물품_자산_세부_정보__첨부파일_1' value='test.jpg (39.6 kB)' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_138').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='33_기타_비부패성_물품_자산_세부_정보___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--33 기타 비부패성 물품 화면메인그룹 종료-->
+
+    </div><!--33 기타 비부패성 물품 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--40 주식/지분 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_40_주식_지분').toggle();" id='40_주식_지분'><span class='glyphicon glyphicon-chevron-right'></span> 40 주식/지분</h2>
+      </div>
+
+      <div id='자산관리_40_주식_지분' class='panel-body'><!--40 주식/지분 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_40_주식_지분_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_40_주식_지분_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_142' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >자산 분류</th>
+        <td width='35%' style='text-align: left;' class=''>
+Intagible asset        </td>
+      <th width='15%' >자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Shares/Units        </td>
+    </tr>
+    <tr>
+      <th width='15%' >자산 이름</th>
+        <td style='text-align: left;' colspan='3' class=''>
+asetNm 40        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_142').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_145' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >등록 기관</th>
+        <td style='text-align: left;' colspan='3' class=''>
+UTT        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >회사 이름</th>
+        <td width='35%' style='text-align: left;' class=''>
+coNm1        </td>
+      <th width='15%' >주식 수량</th>
+        <td width='35%' style='text-align: left;' class=''>
+7,000        </td>
+    </tr>
+    <tr>
+      <th width='15%' >단가</th>
+        <td width='35%' style='text-align: left;' class=''>
+3,000        </td>
+      <th width='15%' >액면가</th>
+        <td style='text-align: left;' colspan='3' class=''>
+400        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_145').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_150' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >설명</th>
+        <td style='text-align: left;' colspan='3' class=''>
+asetDesc 40        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >기타 담보 등록 여부</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='40_주식_지분_자산_세부_정보__기타_담보_등록_여부_30' id='40_주식_지분_자산_세부_정보__기타_담보_등록_여부_30_Whether_the_charged_has_been_registered_by_another_authority_31' type='checkbox'  value='Whether the charged has been registered by another authority' >
+        <label class='label-for-select ' for='40_주식_지분_자산_세부_정보__기타_담보_등록_여부_30_Whether_the_charged_has_been_registered_by_another_authority_31'>Whether the charged has been registered by another authority</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >첨부파일</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='40_주식_지분_자산_세부_정보__첨부파일_1' value='test.jpg (39.6 kB)' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_150').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='40_주식_지분_자산_세부_정보___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--40 주식/지분 화면메인그룹 종료-->
+
+    </div><!--40 주식/지분 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--41 채권 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_41_채권').toggle();" id='41_채권'><span class='glyphicon glyphicon-chevron-right'></span> 41 채권</h2>
+      </div>
+
+      <div id='자산관리_41_채권' class='panel-body'><!--41 채권 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_41_채권_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_41_채권_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_154' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >자산 분류</th>
+        <td width='35%' style='text-align: left;' class=''>
+Intagible asset        </td>
+      <th width='15%' >자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Bonds        </td>
+    </tr>
+    <tr>
+      <th width='15%' >자산 이름</th>
+        <td style='text-align: left;' colspan='3' class=''>
+asetNm 41        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_154').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_157' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >등록 기관</th>
+        <td style='text-align: left;' colspan='3' class=''>
+BOT        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >채권 수량</th>
+        <td width='35%' style='text-align: left;' class=''>
+4        </td>
+      <th width='15%' >이표율</th>
+        <td width='35%' style='text-align: left;' class=''>
+1,000        </td>
+    </tr>
+    <tr>
+      <th width='15%' >액면가</th>
+        <td width='35%' style='text-align: left;' class=''>
+400        </td>
+      <th width='15%' >회사 이름</th>
+        <td width='35%' style='text-align: left;' class=''>
+coNm2        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Due Date</th>
+        <td style='text-align: left;' colspan='3' class=''>
+26/05/2025        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_157').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_163' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >설명</th>
+        <td style='text-align: left;' colspan='3' class=''>
+asetDesc 41        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >기타 담보 등록 여부</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='41_채권_자산_세부_정보__기타_담보_등록_여부_32' id='41_채권_자산_세부_정보__기타_담보_등록_여부_32_Whether_the_charged_has_been_registered_by_another_authority_33' type='checkbox'  value='Whether the charged has been registered by another authority' >
+        <label class='label-for-select ' for='41_채권_자산_세부_정보__기타_담보_등록_여부_32_Whether_the_charged_has_been_registered_by_another_authority_33'>Whether the charged has been registered by another authority</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >첨부파일</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='41_채권_자산_세부_정보__첨부파일_1' value='test.jpg (39.6 kB)' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_163').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='41_채권_자산_세부_정보___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--41 채권 화면메인그룹 종료-->
+
+    </div><!--41 채권 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--42 기타 무형 자산 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_42_기타_무형_자산').toggle();" id='42_기타_무형_자산'><span class='glyphicon glyphicon-chevron-right'></span> 42 기타 무형 자산</h2>
+      </div>
+
+      <div id='자산관리_42_기타_무형_자산' class='panel-body'><!--42 기타 무형 자산 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_42_기타_무형_자산_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_42_기타_무형_자산_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0001_TABLE_167' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >자산 분류</th>
+        <td width='35%' style='text-align: left;' class=''>
+Intagible asset        </td>
+      <th width='15%' >자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Other Intangible Assets        </td>
+    </tr>
+    <tr>
+      <th width='15%' >자산 이름</th>
+        <td style='text-align: left;' colspan='3' class=''>
+asetNm 42        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_167').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_170' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >등록 기관</th>
+        <td style='text-align: left;' colspan='3' class=''>
+UTT        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >무형 자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Bitcoin        </td>
+      <th width='15%' >명목 금액</th>
+        <td width='35%' style='text-align: left;' class=''>
+10        </td>
+    </tr>
+    <tr>
+      <th width='15%' >만기일</th>
+        <td width='35%' style='text-align: left;' class=''>
+25/05/2025        </td>
+      <th width='15%' >이표율</th>
+        <td width='35%' style='text-align: left;' class=''>
+10        </td>
+    </tr>
+    <tr>
+      <th width='15%' >회사 이름</th>
+        <td style='text-align: left;' colspan='3' class=''>
+coNm3        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_170').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0001_TABLE_176' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >설명</th>
+        <td style='text-align: left;' colspan='3' class=''>
+asetDesc 42        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >기타 담보 등록 여부</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='42_기타_무형_자산_자산_세부_정보__기타_담보_등록_여부_34' id='42_기타_무형_자산_자산_세부_정보__기타_담보_등록_여부_34_Whether_the_charged_has_been_registered_by_another_authority_35' type='checkbox'  value='Whether the charged has been registered by another authority' >
+        <label class='label-for-select ' for='42_기타_무형_자산_자산_세부_정보__기타_담보_등록_여부_34_Whether_the_charged_has_been_registered_by_another_authority_35'>Whether the charged has been registered by another authority</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >첨부파일</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='42_기타_무형_자산_자산_세부_정보__첨부파일_1' value='test.jpg (39.6 kB)' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0001_TABLE_176').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='42_기타_무형_자산_자산_세부_정보___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--42 기타 무형 자산 화면메인그룹 종료-->
+
+    </div><!--42 기타 무형 자산 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           

@@ -1,0 +1,1871 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-DMCI-05-O-0403_Asset Publishing</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> Asset Publishing - UI-DMCI-05-O-0403</h1>
+<div class='pull-right'><a href='UI-DMCI-05-O-0403(EN).html'>EN</a> | <a href='UI-DMCI-05-O-0403(KR).html'>KR</a> | <a href='UI-DMCI-05-O-0403(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div>  <table id='UI-DMCI-05-O-0403_TABLE_886' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Processing date</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group form-inline form-group-sm'>                              
+      <div class=' input-group'>                                                                
+          <div class='input-group date' id='___Processing_date_div_1'>                         
+                  <input type='text' class='form-control '  id='___Processing_date' value='02/06/2025' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+                ~                                                                         
+          <div class='input-group date' id='___Processing_date_div_2'>                         
+                  <input type='text' class='form-control '  id='___Processing_date' value='06/06/2025' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+      </div>
+    </div>
+  </div>
+    <script type='text/javascript'>
+      $(function () { $('#___Processing_date_div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+      $(function () { $('#___Processing_date_div_2').datetimepicker({format: 'DD/MM/YYYY'}); });
+    </script>
+
+        </td>
+      <th width='15%' >Processing Status</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+      <select class='form-control ' id='___Processing_Status' >
+            <option >All
+</option>
+            <option >OO5│Officer Registration
+</option>
+            <option >RO2│Officer Submit
+</option>
+            <option >RO3│Officer Re-Submit
+</option>
+            <option >RR1│Reviewer Assignment
+</option>
+            <option >RR2│Reviewer Submit
+</option>
+            <option >RR4│Reviewer Send back
+</option>
+            <option >RR3│Reviewer Re-Submit
+</option>
+            <option >RA0│Approver Assignment
+</option>
+            <option >RA5│Approver Approve
+</option>
+            <option >RA3│Approver Send back
+</option>
+            <option >RA4│Approver Reject</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Taxpayer TIN</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Taxpayer_TIN_1' value='172-206-670'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Region</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+      <select class='form-control ' id='___Region' >
+            <option >All</option>
+            <option >ARUSHA</option>
+            <option selected>DODOMA</option>
+            <option >GEITA</option>
+            <option >ILALA</option>
+            <option >IRINGA</option>
+            <option >KAGERA</option>
+            <option >KAHAMA</option>
+            <option >KARIAKOO</option>
+            <option >KATAVI</option>
+            <option >KIGOMA</option>
+            <option >KILIMANJARO</option>
+            <option >KINONDONI</option>
+            <option >LARGE TAXPAYERS DEPARTMENT</option>
+            <option >LINDI</option>
+            <option >MANYARA</option>
+            <option >MARA</option>
+            <option >MBEYA</option>
+            <option >MEDIUM TAXPAYERS DIVISION</option>
+            <option >MOROGORO</option>
+            <option >MTWARA</option>
+            <option >MWANZA</option>
+            <option >NJOMBE</option>
+            <option >PEMBA</option>
+            <option >PWANI</option>
+            <option >RUKWA</option>
+            <option >RUVUMA</option>
+            <option >SHINYANGA</option>
+            <option >SIMIYU</option>
+            <option >SINGIDA</option>
+            <option >SONGWE</option>
+            <option >TABORA</option>
+            <option >TANGA</option>
+            <option >TEGETA</option>
+            <option >TEMEKE</option>
+            <option >ZANZIBAR</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Application No</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Application_No_1' value='2506-DMC-APA-DOD-172206670-011'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' ></th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0403_TABLE_886').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='Reset' ><span class='glyphicon glyphicon-refresh'></span> Reset</button>
+        <button class='btn btn-info' type='button' value='New' onclick="window.open('UI-DMCI-05-O-0402-1-SUB-POPUP(EN).html', 'a', 'width=1300, height=700, left=100, top=100')">New</button>
+        <button class='btn btn-default' type='button' value='Search' ><span class='glyphicon glyphicon-search'></span> Search</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-DMCI-05-O-0403_TABLE_896' class='table table-bordered table-hover'>
+    <colgroup>
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>Number</th>
+      <th class='text-center'>Application No</th>
+      <th class='text-center'>Region</th>
+      <th class='text-center'>Taxpayer TIN</th>
+      <th class='text-center'>Taxpayer Name</th>
+      <th class='text-center'>Processing date</th>
+      <th class='text-center'>Processing Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+1        </td>
+        <td class=''>
+2506-DMC-APA-DOD-172206670-011        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+11/06/2025
+        </td>
+        <td class=''>
+OO5│Officer Registration
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+2        </td>
+        <td class=''>
+
+2506-DMC-APA-DOD-172206670-010        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+10/06/2025
+        </td>
+        <td class=''>
+RO2│Officer Submit
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+3        </td>
+        <td class=''>
+
+2506-DMC-APA-DOD-172206670-009        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+09/06/2025
+        </td>
+        <td class=''>
+RO3│Officer Re-Submit
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+4        </td>
+        <td class=''>
+
+2506-DMC-APA-DOD-172206670-008        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+08/06/2025
+        </td>
+        <td class=''>
+RR1│Reviewer Assignment
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+5        </td>
+        <td class=''>
+
+2506-DMC-APA-DOD-172206670-007        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+07/06/2025
+        </td>
+        <td class=''>
+RR2│Reviewer Submit
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+6        </td>
+        <td class=''>
+
+2506-DMC-APA-DOD-172206670-006        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+06/06/2025
+        </td>
+        <td class=''>
+RR4│Reviewer Send back
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+7        </td>
+        <td class=''>
+
+2506-DMC-APA-DOD-172206670-005        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+05/06/2025
+        </td>
+        <td class=''>
+RR3│Reviewer Re-Submit
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+8        </td>
+        <td class=''>
+
+2506-DMC-APA-DOD-172206670-004        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+04/06/2025
+        </td>
+        <td class=''>
+RA0│Approver Assignment
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+9        </td>
+        <td class=''>
+
+2506-DMC-APA-DOD-172206670-003        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+03/06/2025
+        </td>
+        <td class=''>
+RA5│Approver Approve
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+10        </td>
+        <td class=''>
+
+2506-DMC-APA-DOD-172206670-002        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+02/06/2025
+        </td>
+        <td class=''>
+RA3│Approver Send back
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+11        </td>
+        <td class=''>
+
+2506-DMC-APA-DOD-172206670-001        </td>
+        <td class=''>
+DOD│DODOMA        </td>
+        <td class=''>
+172-206-670        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA        </td>
+        <td class=''>
+01/06/2025        </td>
+        <td class=''>
+RA4│Approver Reject        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class='text-center'> 
+    <ul class='pagination pagination-sm'> 
+      <li class='disabled'><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-left'></span></a></li>          
+      <li><a href='javascript://return false;'>1</a></li>          
+      <li><a href='javascript://return false;'>2</a></li>          
+      <li><a href='javascript://return false;'>3</a></li>          
+      <li><a href='javascript://return false;'>4</a></li>          
+      <li><a href='javascript://return false;'>5</a></li>          
+      <li><a href='javascript://return false;'>6</a></li>          
+      <li><a href='javascript://return false;'>7</a></li>          
+      <li><a href='javascript://return false;'>8</a></li>          
+      <li><a href='javascript://return false;'>9</a></li>          
+      <li><a href='javascript://return false;'>10</a></li>         
+      <li><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-right'></span></a></li>          
+    </ul>                                 
+  </div>                                  
+
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--New 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Publishing_New').toggle();" id='New'><span class='glyphicon glyphicon-chevron-right'></span> New</h2>
+      </div>
+
+      <div id='Asset_Publishing_New' class='panel-body'><!--New 화면메인그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0403_TABLE_904' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Application No</th>
+        <td width='35%' style='text-align: left;' class=''>
+25-DMC-APA-DOD-172206670-011        </td>
+      <th width='15%' >Region</th>
+        <td width='35%' style='text-align: left;' class=''>
+DOD | DODOMA        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Processing date</th>
+        <td width='35%' style='text-align: left;' class=''>
+11/06/2025        </td>
+      <th width='15%' >Processing Status</th>
+        <td width='35%' style='text-align: left;' class=''>
+OO5│Officer Registration        </td>
+    </tr>
+    <tr>
+      <th width='15%' ></th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >Notification Number for Intention to Sell the Charged Asset</th>
+        <td width='35%' style='text-align: left;' class=''>
+25-DMC-NSA-DOD-172206670-011        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0403_TABLE_904').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Publishing_New_Taxpayer_Information').toggle();" id='Taxpayer_Information'><span class='glyphicon glyphicon-menu-hamburger'></span> Taxpayer Information</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Publishing_New_Taxpayer_Information' class='panel-body'><!--Taxpayer Information 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0403_TABLE_911' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >TIN</th>
+        <td width='35%' style='text-align: left;' class=''>
+172-206-670        </td>
+      <th width='15%' >Taxpayer Name</th>
+        <td width='35%' style='text-align: left;' class=''>
+JEDIDA ATIENO OUMA        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Trading Name</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >Tax Region</th>
+        <td width='35%' style='text-align: left;' class=''>
+DOD | DODOMA        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Email</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >Phone Number</th>
+        <td width='35%' style='text-align: left;' class=''>
+0747681462        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Postal Address</th>
+        <td style='text-align: left;' colspan='3' class=''>
+P.O Box 0, undefined        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Physical Address</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Rorya Tai Sota        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0403_TABLE_911').rowspan(0);
+});
+</script>
+      </div><!--Taxpayer Information 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+  <ul class='nav nav-tabs'>
+    <li class='active'><a data-toggle='tab' href='#New__IDRAS'>IDRAS</a></li>
+    <li><a data-toggle='tab' href='#New__TANCIS'>TANCIS</a></li>
+  </ul>
+
+  <div class='tab-content'><!--탭그룹 시작-->
+
+    <div id='New__IDRAS' class='tab-pane fade in active'><!--New__IDRAS 탭 시작-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New__IDRAS_List_of_Assets_1'><span class='glyphicon glyphicon-th-list'></span> List of Assets</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-DMCI-05-O-0403_TABLE_921' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Asset Category</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+      <select class='form-control ' id='New__IDRAS_Asset_Category' >
+            <option >10│Interest in Land/Buildings
+</option>
+            <option >20│Perishable Goods
+</option>
+            <option >30│Other Tangible Assets
+</option>
+            <option >40│Intagible asset</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+      <th width='15%' >Asset Type</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+      <select class='form-control ' id='New__IDRAS_Asset_Type' >
+            <option >10│Land
+</option>
+            <option >11│Building (with land)
+</option>
+            <option >20│Processed Perishable Goods
+</option>
+            <option >21│Unprocessed Perishable Goods
+</option>
+            <option >30│Motor vehicle
+</option>
+            <option >31│Marine Vessels
+</option>
+            <option >32│Electronics/Machines
+</option>
+            <option >33│Other non- Perishable Goods
+</option>
+            <option >40│Shares/Units
+</option>
+            <option >41│Bonds
+</option>
+            <option >42│Other Intangible Assets</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0403_TABLE_921').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='Reset' ><span class='glyphicon glyphicon-refresh'></span> Reset</button>
+        <button class='btn btn-default' type='button' value='Search' ><span class='glyphicon glyphicon-search'></span> Search</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-DMCI-05-O-0403_TABLE_925' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>Asset No.</th>
+      <th class='text-center'>Asset Category</th>
+      <th class='text-center'>Asset Type</th>
+      <th class='text-center'>Asset Name</th>
+      <th class='text-center'>Valuation Amount (TZS)</th>
+      <th class='text-center'>Link Item No<span class='mandatory'> *</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+        <input name='New__IDRAS_0_524' id='New__IDRAS_0_524__525' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__IDRAS_0_524__525'></label>
+        </td>
+        <td class=''>
+ASET202500000102691        </td>
+        <td class=''>
+10│Interest in Land/Buildings
+        </td>
+        <td class=''>
+10│Land
+        </td>
+        <td class=''>
+earth        </td>
+        <td class=''>
+10,1000
+        </td>
+        <td class=''>
+LNK001001        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__IDRAS_0_526' id='New__IDRAS_0_526__527' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__IDRAS_0_526__527'></label>
+        </td>
+        <td class=''>
+ASET202500000102701        </td>
+        <td class=''>
+10│Interest in Land/Buildings
+        </td>
+        <td class=''>
+11│Building (with land)
+        </td>
+        <td class=''>
+building        </td>
+        <td class=''>
+11,1000
+        </td>
+        <td class=''>
+LNK001002        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__IDRAS_0_528' id='New__IDRAS_0_528__529' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__IDRAS_0_528__529'></label>
+        </td>
+        <td class=''>
+ASET202500000101921        </td>
+        <td class=''>
+20│Perishable Goods
+        </td>
+        <td class=''>
+20│Processed Perishable Goods
+        </td>
+        <td class=''>
+Fresh Fresh        </td>
+        <td class=''>
+20,1000
+        </td>
+        <td class=''>
+LNK001003        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__IDRAS_0_530' id='New__IDRAS_0_530__531' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__IDRAS_0_530__531'></label>
+        </td>
+        <td class=''>
+ASET20250000010216E        </td>
+        <td class=''>
+20│Perishable Goods
+        </td>
+        <td class=''>
+21│Unprocessed Perishable Goods
+        </td>
+        <td class=''>
+Unfresh Unfresh        </td>
+        <td class=''>
+21,1000
+        </td>
+        <td class=''>
+LNK001004        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__IDRAS_0_532' id='New__IDRAS_0_532__533' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__IDRAS_0_532__533'></label>
+        </td>
+        <td class=''>
+ASET202500000001131        </td>
+        <td class=''>
+30│Other Tangible Assets
+        </td>
+        <td class=''>
+30│Motor vehicle
+        </td>
+        <td class=''>
+super car        </td>
+        <td class=''>
+30,1000
+        </td>
+        <td class=''>
+LNK001005        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__IDRAS_0_534' id='New__IDRAS_0_534__535' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__IDRAS_0_534__535'></label>
+        </td>
+        <td class=''>
+ASET202500000102901        </td>
+        <td class=''>
+30│Other Tangible Assets
+        </td>
+        <td class=''>
+31│Marine Vessels
+        </td>
+        <td class=''>
+asetNm 31-2        </td>
+        <td class=''>
+31,1000
+        </td>
+        <td class=''>
+LNK002001        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__IDRAS_0_536' id='New__IDRAS_0_536__537' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__IDRAS_0_536__537'></label>
+        </td>
+        <td class=''>
+ASET202500000102661        </td>
+        <td class=''>
+30│Other Tangible Assets
+        </td>
+        <td class=''>
+32│Electronics/Machines
+        </td>
+        <td class=''>
+test machine        </td>
+        <td class=''>
+32,1000
+        </td>
+        <td class=''>
+LNK002002        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__IDRAS_0_538' id='New__IDRAS_0_538__539' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__IDRAS_0_538__539'></label>
+        </td>
+        <td class=''>
+ASET202500000001891        </td>
+        <td class=''>
+30│Other Tangible Assets
+        </td>
+        <td class=''>
+33│Other non- Perishable Goods
+        </td>
+        <td class=''>
+qty        </td>
+        <td class=''>
+33,1000
+        </td>
+        <td class=''>
+LNK002003        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__IDRAS_0_540' id='New__IDRAS_0_540__541' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__IDRAS_0_540__541'></label>
+        </td>
+        <td class=''>
+ASET202500000102871        </td>
+        <td class=''>
+40│Intagible asset
+        </td>
+        <td class=''>
+40│Shares/Units
+        </td>
+        <td class=''>
+asetNm 40        </td>
+        <td class=''>
+40,1000
+        </td>
+        <td class=''>
+LNK002004        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__IDRAS_0_542' id='New__IDRAS_0_542__543' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__IDRAS_0_542__543'></label>
+        </td>
+        <td class=''>
+ASET202500000102851        </td>
+        <td class=''>
+40│Intagible asset
+        </td>
+        <td class=''>
+41│Bonds
+        </td>
+        <td class=''>
+asetNm 41        </td>
+        <td class=''>
+41,1000
+        </td>
+        <td class=''>
+LNK002005        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__IDRAS_0_544' id='New__IDRAS_0_544__545' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__IDRAS_0_544__545'></label>
+        </td>
+        <td class=''>
+ASET202500000102881        </td>
+        <td class=''>
+40│Intagible asset        </td>
+        <td class=''>
+42│Other Intangible Assets        </td>
+        <td class=''>
+setNm 42        </td>
+        <td class=''>
+42,1000        </td>
+        <td class=''>
+LNK002006        </td>
+      </tr>
+    </tbody>
+  </table>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New__IDRAS__1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New__IDRAS_Detail_of_Assets__Land__1'><span class='glyphicon glyphicon-th-list'></span> Detail of Assets (Land)</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-DMCI-05-O-0403_TABLE_934' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Asset Category</th>
+        <td width='35%' style='text-align: left;' class=''>
+Interest in Land/Buildings        </td>
+      <th width='15%' >Asset Type</th>
+        <td width='35%' style='text-align: left;' class=''>
+Land        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Asset Name</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Land        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Registration Authority</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Ministry of Land (TANLIS)        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0403_TABLE_934').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0403_TABLE_938' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Block No</th>
+        <td width='35%' style='text-align: left;' class=''>
+blckNo1        </td>
+      <th width='15%' >Plot No</th>
+        <td width='35%' style='text-align: left;' class=''>
+plotNo1        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Certificate No</th>
+        <td width='35%' style='text-align: left;' class=''>
+crteNo1        </td>
+      <th width='15%' >Title No</th>
+        <td width='35%' style='text-align: left;' class=''>
+titleNo1        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Location Address</th>
+        <td style='text-align: left;' colspan='3' class=''>
+asetLoctAddr1        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Owner Name</th>
+        <td style='text-align: left;' colspan='3' class=''>
+owrNm1        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0403_TABLE_938').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0403_TABLE_944' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Description</th>
+        <td style='text-align: left;' colspan='3' class=''>
+asetDesc1        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Other Charged</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='New__IDRAS_Other_Charged_546' id='New__IDRAS_Other_Charged_546_Whether_the_charged_has_been_registered_by_another_authority_547' type='checkbox'  value='Whether the charged has been registered by another authority' >
+        <label class='label-for-select ' for='New__IDRAS_Other_Charged_546_Whether_the_charged_has_been_registered_by_another_authority_547'>Whether the charged has been registered by another authority</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Attachments</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='New__IDRAS_Attachments_1' value='test.jpg (39.6 kB)' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0403_TABLE_944').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New__IDRAS__1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New__IDRAS__1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+    </div><!--IDRAS 탭 종료-->
+
+    <div id='New__TANCIS' class='tab-pane fade'><!--New__TANCIS 탭 시작-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New__TANCIS_Asset_List_1'><span class='glyphicon glyphicon-th-list'></span> Asset List</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-DMCI-05-O-0403_TABLE_950' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Declaration No</th>
+        <td width='35%' style='text-align: left;' class=''>
+000007955-2025-A-0000031        </td>
+      <th width='15%' >Asset Ref. No.</th>
+        <td width='35%' style='text-align: left;' class=''>
+25ARNTDOO6B        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0403_TABLE_950').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New__TANCIS__1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New__TANCIS_Asset_Application_Registration_Detail_1'><span class='glyphicon glyphicon-th-list'></span> Asset Application Registration Detail</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-DMCI-05-O-0403_TABLE_954' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col width='LINK%' >
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>Link No</th>
+      <th class='text-center'>Inventory No</th>
+      <th class='text-center'>Asset Code</th>
+      <th class='text-center'>Asset Physical Location</th>
+      <th class='text-center'>Asset Value(Tsh)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+        <input name='New__TANCIS_0_548' id='New__TANCIS_0_548__549' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__TANCIS_0_548__549'></label>
+        </td>
+        <td class=''>
+LNK0001        </td>
+        <td class=''>
+25ARNTDOO6B-0001        </td>
+        <td class=''>
+<a href='javascript://return false;'>TDOO001325</a>        </td>
+        <td class=''>
+KARIAKOO TAX REGION OFFICE        </td>
+        <td class=''>
+9,250,000        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__TANCIS_0_550' id='New__TANCIS_0_550__551' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__TANCIS_0_550__551'></label>
+        </td>
+        <td class=''>
+LNK0002        </td>
+        <td class=''>
+25ARNTDOO6B-0002        </td>
+        <td class=''>
+<a href='javascript://return false;'>TDOO001326</a>        </td>
+        <td class=''>
+KARIAKOO TAX REGION OFFICE        </td>
+        <td class=''>
+2,000,000        </td>
+      </tr>
+    </tbody>
+  </table>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New__TANCIS_General_Information_1'><span class='glyphicon glyphicon-th-list'></span> General Information</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-DMCI-05-O-0403_TABLE_961' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Link No</th>
+        <td style='text-align: left;' colspan='3' class=''>
+LNK001        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Asset Code</th>
+        <td width='35%' style='text-align: left;' class=''>
+TDOO001325        </td>
+      <th width='15%' >Inventory No</th>
+        <td width='35%' style='text-align: left;' class=''>
+25ARNTDOO6B        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Approval Date<span class='mandatory'> *</span></th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group  form-group-sm'>                              
+      <div class=' input-group'>                                                                
+          <div class='input-group date' id='New__TANCIS_Approval_Date_div_1'>                         
+                  <input type='text' class='form-control '  id='New__TANCIS_Approval_Date' value='11/06/2025' disabled/>                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+      </div>
+    </div>
+  </div>
+    <script type='text/javascript'>
+      $(function () { $('#New__TANCIS_Approval_Date_div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+    </script>
+
+        </td>
+      <th width='15%' >Deposit Place<span class='mandatory'> *</span></th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+      <select class='form-control ' id='New__TANCIS_Deposit_Place' disabled>
+            <option selected>[WVTDOO001] WVTDOO001, KARIAKOO TAX REGION OFFICE</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Reason for Deposit<span class='mandatory'> *</span></th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='New__TANCIS_Reason_for_Deposit_1' value='REASON FOR DEPOSIT'  disabled>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0403_TABLE_961').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New__TANCIS__1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New__TANCIS_Asset_Description_1'><span class='glyphicon glyphicon-th-list'></span> Asset Description</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-DMCI-05-O-0403_TABLE_969' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Description of Assets<span class='mandatory'> *</span></th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='New__TANCIS_Description_of_Assets_1' value='DESCRIPTION OF ASSETS'  disabled>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Quantity<span class='mandatory'> *</span></th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group form-inline form-group-sm '>                              
+        <div class='input-group col-sm-7' id=''>                         
+        <input class='form-control ' type='text' id='New__TANCIS_Quantity_1' value='1'  disabled>
+        </div>
+        <div class='input-group col-sm-4' id='New__TANCIS_Quantity_2'><!--텍스트 옆 SELECT 시작-->                         
+  <div>
+      <select class='form-control ' id='New__TANCIS_Quantity' disabled style="max-width:100px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;">
+            <option >Select
+</option>
+            <option >[PK] Package(S)
+</option>
+            <option >[AL] Animal(Live)
+</option>
+            <option >[BA] Barrel
+</option>
+            <option >[BE] Bundle
+</option>
+            <option >[BG] Bag
+</option>
+            <option >[BL] Bale
+</option>
+            <option >[BR] Bar
+</option>
+            <option >[BX] Box
+</option>
+            <option >[BZ] Bars-In A Bundle/Bunch Or Truss
+</option>
+            <option >[CJ] Coffin
+</option>
+            <option >[CL] Coil
+</option>
+            <option >[CN] Carton
+</option>
+            <option >[CO] Hill
+</option>
+            <option >[CS] Case
+</option>
+            <option >[CT] Crate
+</option>
+            <option >[CY] Cylinder
+</option>
+            <option >[DR] Drum
+</option>
+            <option >[EN] Envelope
+</option>
+            <option >[FP] Filmpack
+</option>
+            <option >[GB] Gas Bottle
+</option>
+            <option >[IN] Ingot
+</option>
+            <option >[LG] Log
+</option>
+            <option >[NE] Unpacked Or Unpackaged
+</option>
+            <option >[PA] Packet
+</option>
+            <option >[PC] Parcel
+</option>
+            <option >[PG] Plate
+</option>
+            <option >[PI] Pipe
+</option>
+            <option >[PL] Pail
+</option>
+            <option >[PN] Plank
+</option>
+            <option >[PS] Pieces
+</option>
+            <option >[PT] Pallets
+</option>
+            <option >[PU] Tray
+</option>
+            <option >[PX] Pipes-In A Bundle/Bunch Or Truss
+</option>
+            <option >[PY] Plates-In A Bundle/Bunch Or Truss
+</option>
+            <option >[PZ] Planks-In A Bundle/Bunch Or Truss
+</option>
+            <option >[RD] Rod
+</option>
+            <option >[RL] Reel
+</option>
+            <option >[RZ] Rods-In A Bundle/Bunch Or Truss
+</option>
+            <option >[IN] Sack
+</option>
+            <option >[ST] Sheet
+</option>
+            <option >[SU] Suitcase
+</option>
+            <option >[SZ] Sheets (Bulk)
+</option>
+            <option >[TN] News
+</option>
+            <option >[TU] Tube
+</option>
+            <option >[TZ] Tubes-In A Bundle/Bunch Or Truss
+</option>
+            <option >[VE] Bulk-Element
+</option>
+            <option >[VG] Bulk-Gas
+</option>
+            <option >[VL] Bulk-Liquids
+</option>
+            <option >[VR] Bulk-Solids</option>
+      </select>
+    </div>
+  </div>
+
+        </div><!--텍스트 옆 SELECT 종료-->                         
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Net Weight</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group form-inline form-group-sm '>                              
+        <div class='input-group col-sm-7' id=''>                         
+        <input class='form-control ' type='text' id='New__TANCIS_Net_Weight_1' value=''  disabled>
+        </div>
+        <div class='input-group col-sm-4' id='New__TANCIS_Net_Weight_2'><!--텍스트 옆 SELECT 시작-->                         
+  <div>
+      <select class='form-control ' id='New__TANCIS_Net_Weight' disabled style="max-width:100px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;">
+            <option >Select</option>
+            <option >[KG] Kilogram</option>
+            <option >[LTR] Liter (1 Dm3)</option>
+            <option >[N/A] Not Applicable</option>
+      </select>
+    </div>
+  </div>
+
+        </div><!--텍스트 옆 SELECT 종료-->                         
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Asset Value<span class='mandatory'> *</span></th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group form-inline form-group-sm '>                              
+        <div class='input-group col-sm-7' id=''>                         
+        <input class='form-control ' type='text' id='New__TANCIS_Asset_Value_1' value='9,250,000'  disabled>
+        </div>
+        <div class='input-group col-sm-4' id='New__TANCIS_Asset_Value_2'><!--텍스트 옆 SELECT 시작-->                         
+  <div>
+      <select class='form-control ' id='New__TANCIS_Asset_Value' disabled style="max-width:100px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;">
+            <option >TSH</option>
+      </select>
+    </div>
+  </div>
+
+        </div><!--텍스트 옆 SELECT 종료-->                         
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0403_TABLE_969').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New__TANCIS__1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New__TANCIS_Item_1'><span class='glyphicon glyphicon-th-list'></span> Item</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-DMCI-05-O-0403_TABLE_975' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col width='SELECT%' >
+      <col width='SELECT%' >
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>Item No<span class='mandatory'> *</span></th>
+      <th class='text-center'>Type<span class='mandatory'> *</span></th>
+      <th class='text-center'>Property Id/Chassis No<span class='mandatory'> *</span></th>
+      <th class='text-center'>Item Description</th>
+      <th class='text-center'>Quantity<span class='mandatory'> *</span></th>
+      <th class='text-center'>Weight</th>
+      <th class='text-center'>Item Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+        <input name='New__TANCIS_0_612' id='New__TANCIS_0_612__613' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__TANCIS_0_612__613'></label>
+        </td>
+        <td class=''>
+LNK001001        </td>
+        <td class=''>
+O│Other        </td>
+        <td class=''>
+ASET202500000102691        </td>
+        <td class=''>
+earth        </td>
+        <td class=''>
+1        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+10,1000
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__TANCIS_0_614' id='New__TANCIS_0_614__615' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__TANCIS_0_614__615'></label>
+        </td>
+        <td class=''>
+LNK001002        </td>
+        <td class=''>
+O│Other        </td>
+        <td class=''>
+
+ASET202500000102701        </td>
+        <td class=''>
+building        </td>
+        <td class=''>
+1        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+11,1000
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__TANCIS_0_616' id='New__TANCIS_0_616__617' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__TANCIS_0_616__617'></label>
+        </td>
+        <td class=''>
+LNK001003        </td>
+        <td class=''>
+O│Other        </td>
+        <td class=''>
+
+ASET202500000101921        </td>
+        <td class=''>
+Fresh Fresh        </td>
+        <td class=''>
+1        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+20,1000
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__TANCIS_0_618' id='New__TANCIS_0_618__619' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__TANCIS_0_618__619'></label>
+        </td>
+        <td class=''>
+LNK001004        </td>
+        <td class=''>
+O│Other        </td>
+        <td class=''>
+
+ASET20250000010216E        </td>
+        <td class=''>
+Unfresh Unfresh        </td>
+        <td class=''>
+1        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+21,1000
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New__TANCIS_0_620' id='New__TANCIS_0_620__621' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New__TANCIS_0_620__621'></label>
+        </td>
+        <td class=''>
+LNK001005        </td>
+        <td class=''>
+V│Vehicle        </td>
+        <td class=''>
+
+ASET202500000001131        </td>
+        <td class=''>
+super car        </td>
+        <td class=''>
+1        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+30,1000        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table id='UI-DMCI-05-O-0403_TABLE_983' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Item No<span class='mandatory'> *</span></th>
+        <td width='35%' style='text-align: left;' class=''>
+LNK001005        </td>
+      <th width='15%' >Type<span class='mandatory'> *</span></th>
+        <td width='35%' style='text-align: left;' class=''>
+V│Vehicle        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Property Id/Chassis No<span class='mandatory'> *</span></th>
+        <td width='35%' style='text-align: left;' class=''>
+ASET202500000001131        </td>
+      <th width='15%' >Item Description</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='New__TANCIS_Item_Description_1' value='super car'  disabled>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Quantity<span class='mandatory'> *</span></th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group form-inline form-group-sm '>                              
+        <div class='input-group col-sm-7' id=''>                         
+        <input class='form-control ' type='text' id='New__TANCIS_Quantity_1' value='1'  disabled>
+        </div>
+        <div class='input-group col-sm-4' id='New__TANCIS_Quantity_2'><!--텍스트 옆 SELECT 시작-->                         
+  <div>
+      <select class='form-control ' id='New__TANCIS_Quantity' disabled style="max-width:100px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;">
+            <option >Select
+</option>
+            <option >[PK] Package(S)
+</option>
+            <option >[AL] Animal(Live)
+</option>
+            <option >[BA] Barrel
+</option>
+            <option >[BE] Bundle
+</option>
+            <option >[BG] Bag
+</option>
+            <option >[BL] Bale
+</option>
+            <option >[BR] Bar
+</option>
+            <option >[BX] Box
+</option>
+            <option >[BZ] Bars-In A Bundle/Bunch Or Truss
+</option>
+            <option >[CJ] Coffin
+</option>
+            <option >[CL] Coil
+</option>
+            <option >[CN] Carton
+</option>
+            <option >[CO] Hill
+</option>
+            <option >[CS] Case
+</option>
+            <option >[CT] Crate
+</option>
+            <option >[CY] Cylinder
+</option>
+            <option >[DR] Drum
+</option>
+            <option >[EN] Envelope
+</option>
+            <option >[FP] Filmpack
+</option>
+            <option >[GB] Gas Bottle
+</option>
+            <option >[IN] Ingot
+</option>
+            <option >[LG] Log
+</option>
+            <option >[NE] Unpacked Or Unpackaged
+</option>
+            <option >[PA] Packet
+</option>
+            <option >[PC] Parcel
+</option>
+            <option >[PG] Plate
+</option>
+            <option >[PI] Pipe
+</option>
+            <option >[PL] Pail
+</option>
+            <option >[PN] Plank
+</option>
+            <option >[PS] Pieces
+</option>
+            <option >[PT] Pallets
+</option>
+            <option >[PU] Tray
+</option>
+            <option >[PX] Pipes-In A Bundle/Bunch Or Truss
+</option>
+            <option >[PY] Plates-In A Bundle/Bunch Or Truss
+</option>
+            <option >[PZ] Planks-In A Bundle/Bunch Or Truss
+</option>
+            <option >[RD] Rod
+</option>
+            <option >[RL] Reel
+</option>
+            <option >[RZ] Rods-In A Bundle/Bunch Or Truss
+</option>
+            <option >[IN] Sack
+</option>
+            <option >[ST] Sheet
+</option>
+            <option >[SU] Suitcase
+</option>
+            <option >[SZ] Sheets (Bulk)
+</option>
+            <option >[TN] News
+</option>
+            <option >[TU] Tube
+</option>
+            <option >[TZ] Tubes-In A Bundle/Bunch Or Truss
+</option>
+            <option >[VE] Bulk-Element
+</option>
+            <option >[VG] Bulk-Gas
+</option>
+            <option >[VL] Bulk-Liquids
+</option>
+            <option >[VR] Bulk-Solids</option>
+      </select>
+    </div>
+  </div>
+
+        </div><!--텍스트 옆 SELECT 종료-->                         
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Weight</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group form-inline form-group-sm '>                              
+        <div class='input-group col-sm-7' id=''>                         
+        <input class='form-control ' type='text' id='New__TANCIS_Weight_1' value=''  disabled>
+        </div>
+        <div class='input-group col-sm-4' id='New__TANCIS_Weight_2'><!--텍스트 옆 SELECT 시작-->                         
+  <div>
+      <select class='form-control ' id='New__TANCIS_Weight' disabled style="max-width:100px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;">
+            <option >Select</option>
+            <option >[KG] Kilogram</option>
+            <option >[LTR] Liter (1 Dm3)</option>
+            <option >[N/A] Not Applicable</option>
+      </select>
+    </div>
+  </div>
+
+        </div><!--텍스트 옆 SELECT 종료-->                         
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Item Value</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='New__TANCIS_Item_Value_1' value='30,1000'  disabled>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Veh Y/N</th>
+        <td width='35%' style='text-align: left;' class=''>
+        <button class='btn btn-info' type='button' value='Veh Y/N' onclick="window.open('UI-DMCI-05-O-0402-2-SUB-POPUP(EN).html', 'a', 'width=1300, height=700, left=100, top=100')">Veh Y/N</button>
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0403_TABLE_983').rowspan(0);
+});
+</script>
+    </div><!--TANCIS 탭 종료-->
+
+  </div><!--탭그룹 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Publishing_New_Requirement').toggle();" id='Requirement'><span class='glyphicon glyphicon-menu-hamburger'></span> Requirement</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Publishing_New_Requirement' class='panel-body'><!--Requirement 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0403_TABLE_992' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Remark</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+<textarea class='form-control ' rows='4' id='New_Requirement__Remark_1' >Remark</textarea>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Attachments</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='New_Requirement__Attachments_1' value='test.jpg (39.6 kB)' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0403_TABLE_992').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New_Requirement___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-info' type='button' value='Save' >Save</button>
+        <button class='btn btn-danger' type='button' value='Delete' >Delete</button>
+        <button class='btn btn-success' type='button' value='Request approval' >Request approval</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+      </div><!--Requirement 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--New 화면메인그룹 종료-->
+
+    </div><!--New 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           

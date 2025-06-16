@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>COM-UI-DMCI-05-O-0402-LEFT_공개 경매를 위한 자산 목록(LEFT)</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#공개_경매를_위한_자산_목록_LEFT___자산_목록').toggle();" id='자산_목록'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 목록</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='공개_경매를_위한_자산_목록_LEFT___자산_목록' class='panel-body'><!--자산 목록 화면서브그룹 시작-->
+
+  <table id='COM-UI-DMCI-05-O-0402-LEFT_TABLE_715' class='table table-bordered table-hover'>
+      <th width='15%' >자산 분류</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group form-group-sm '>
+      <select class='form-control ' id='_자산_목록__자산_분류' >
+            <option >10│토지/건물에 대한 권리
+</option>
+            <option >20│부패하기 쉬운 상품
+</option>
+            <option >30│기타 유형자산
+</option>
+            <option >40│무형자산</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+      <th width='15%' >자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group form-group-sm '>
+      <select class='form-control ' id='_자산_목록__자산_유형' >
+            <option >10│토지
+</option>
+            <option >11│건물(토지 포함)
+</option>
+            <option >20│가공된 부패성 물품
+</option>
+            <option >21│비가공 부패성 물품
+</option>
+            <option >30│차량
+</option>
+            <option >31│선박
+</option>
+            <option >32│전자/기계류
+</option>
+            <option >33│기타 비부패성 물품
+</option>
+            <option >40│주식/지분
+</option>
+            <option >41│채권
+</option>
+            <option >42│기타 무형 자산</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#COM-UI-DMCI-05-O-0402-LEFT_TABLE_715').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='초기화' ><span class='glyphicon glyphicon-refresh'></span> 초기화</button>
+        <button class='btn btn-default' type='button' value='조회' ><span class='glyphicon glyphicon-search'></span> 조회</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='COM-UI-DMCI-05-O-0402-LEFT_TABLE_719' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>자산 번호</th>
+      <th class='text-center'>자산 분류</th>
+      <th class='text-center'>자산 유형</th>
+      <th class='text-center'>자산 이름</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+        <input name='_자산_목록__0_209' id='_자산_목록__0_209__210' type='checkbox'  value='' >
+        <label class='label-for-select ' for='_자산_목록__0_209__210'></label>
+        </td>
+        <td class=''>
+ASET202500000102691        </td>
+        <td class=''>
+10│토지/건물에 대한 권리
+        </td>
+        <td class=''>
+10│토지
+        </td>
+        <td class=''>
+earth        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_자산_목록__0_211' id='_자산_목록__0_211__212' type='checkbox'  value='' >
+        <label class='label-for-select ' for='_자산_목록__0_211__212'></label>
+        </td>
+        <td class=''>
+ASET202500000102701        </td>
+        <td class=''>
+10│토지/건물에 대한 권리
+        </td>
+        <td class=''>
+11│건물(토지 포함)
+        </td>
+        <td class=''>
+building        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_자산_목록__0_213' id='_자산_목록__0_213__214' type='checkbox'  value='' >
+        <label class='label-for-select ' for='_자산_목록__0_213__214'></label>
+        </td>
+        <td class=''>
+ASET202500000101921        </td>
+        <td class=''>
+20│부패하기 쉬운 상품
+        </td>
+        <td class=''>
+20│가공된 부패성 물품
+        </td>
+        <td class=''>
+Fresh Fresh        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_자산_목록__0_215' id='_자산_목록__0_215__216' type='checkbox'  value='' >
+        <label class='label-for-select ' for='_자산_목록__0_215__216'></label>
+        </td>
+        <td class=''>
+ASET20250000010216E        </td>
+        <td class=''>
+20│부패하기 쉬운 상품
+        </td>
+        <td class=''>
+21│비가공 부패성 물품
+        </td>
+        <td class=''>
+Unfresh Unfresh        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_자산_목록__0_217' id='_자산_목록__0_217__218' type='checkbox'  value='' >
+        <label class='label-for-select ' for='_자산_목록__0_217__218'></label>
+        </td>
+        <td class=''>
+ASET202500000001131        </td>
+        <td class=''>
+30│기타 유형자산
+        </td>
+        <td class=''>
+30│차량
+        </td>
+        <td class=''>
+super car        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_자산_목록__0_219' id='_자산_목록__0_219__220' type='checkbox'  value='' >
+        <label class='label-for-select ' for='_자산_목록__0_219__220'></label>
+        </td>
+        <td class=''>
+ASET202500000102901        </td>
+        <td class=''>
+30│기타 유형자산
+        </td>
+        <td class=''>
+31│선박
+        </td>
+        <td class=''>
+asetNm 31-2        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_자산_목록__0_221' id='_자산_목록__0_221__222' type='checkbox'  value='' >
+        <label class='label-for-select ' for='_자산_목록__0_221__222'></label>
+        </td>
+        <td class=''>
+ASET202500000102661        </td>
+        <td class=''>
+30│기타 유형자산
+        </td>
+        <td class=''>
+32│전자/기계류
+        </td>
+        <td class=''>
+test machine        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_자산_목록__0_223' id='_자산_목록__0_223__224' type='checkbox'  value='' >
+        <label class='label-for-select ' for='_자산_목록__0_223__224'></label>
+        </td>
+        <td class=''>
+ASET202500000001891        </td>
+        <td class=''>
+30│기타 유형자산
+        </td>
+        <td class=''>
+33│기타 비부패성 물품
+        </td>
+        <td class=''>
+qty        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_자산_목록__0_225' id='_자산_목록__0_225__226' type='checkbox'  value='' >
+        <label class='label-for-select ' for='_자산_목록__0_225__226'></label>
+        </td>
+        <td class=''>
+ASET202500000102871        </td>
+        <td class=''>
+40│무형자산
+        </td>
+        <td class=''>
+40│주식/지분
+        </td>
+        <td class=''>
+asetNm 40        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_자산_목록__0_227' id='_자산_목록__0_227__228' type='checkbox'  value='' >
+        <label class='label-for-select ' for='_자산_목록__0_227__228'></label>
+        </td>
+        <td class=''>
+ASET202500000102851        </td>
+        <td class=''>
+40│무형자산
+        </td>
+        <td class=''>
+41│채권
+        </td>
+        <td class=''>
+asetNm 41        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_자산_목록__0_229' id='_자산_목록__0_229__230' type='checkbox'  value='' >
+        <label class='label-for-select ' for='_자산_목록__0_229__230'></label>
+        </td>
+        <td class=''>
+ASET202500000102881        </td>
+        <td class=''>
+40│무형자산        </td>
+        <td class=''>
+42│기타 무형 자산        </td>
+        <td class=''>
+setNm 42        </td>
+      </tr>
+    </tbody>
+  </table>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='_자산_목록___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 목록 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#공개_경매를_위한_자산_목록_LEFT___자산_세부_정보__Land_').toggle();" id='자산_세부_정보__Land_'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보 (Land)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='공개_경매를_위한_자산_목록_LEFT___자산_세부_정보__Land_' class='panel-body'><!--자산 세부 정보 (Land) 화면서브그룹 시작-->
+
+  <table id='COM-UI-DMCI-05-O-0402-LEFT_TABLE_725' class='table table-bordered table-hover'>
+      <th width='15%' >자산 분류</th>
+        <td width='35%' style='text-align: left;' class=''>
+Interest in Land/Buildings        </td>
+    </tr>
+      <th width='15%' >자산 유형</th>
+        <td width='35%' style='text-align: left;' class=''>
+Land        </td>
+    </tr>
+      <th width='15%' >자산 이름</th>
+        <td width='35%' style='text-align: left;' class=''>
+Land        </td>
+    </tr>
+      <th width='15%' >등록 기관</th>
+        <td width='35%' style='text-align: left;' class=''>
+Ministry of Land (TANLIS)        </td>
+    </tr>
+      <th width='15%' >블록 번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+blckNo1        </td>
+    </tr>
+      <th width='15%' >필지 번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+plotNo1        </td>
+    </tr>
+      <th width='15%' >증서 번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+crteNo1        </td>
+    </tr>
+      <th width='15%' >권리 번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+titleNo1        </td>
+    </tr>
+      <th width='15%' >소재지 주소</th>
+        <td width='35%' style='text-align: left;' class=''>
+asetLoctAddr1        </td>
+    </tr>
+      <th width='15%' >소유자 이름</th>
+        <td width='35%' style='text-align: left;' class=''>
+owrNm1        </td>
+    </tr>
+      <th width='15%' >설명</th>
+        <td width='35%' style='text-align: left;' class=''>
+asetDesc1        </td>
+    </tr>
+      <th width='15%' >기타 담보 등록 여부</th>
+        <td width='35%' style='text-align: left;' class=''>
+        <input name='_자산_세부_정보__Land___기타_담보_등록_여부_231' id='_자산_세부_정보__Land___기타_담보_등록_여부_231_피고인이_다른_기관에_등록되었는지_여부_232' type='checkbox'  value='피고인이 다른 기관에 등록되었는지 여부' >
+        <label class='label-for-select ' for='_자산_세부_정보__Land___기타_담보_등록_여부_231_피고인이_다른_기관에_등록되었는지_여부_232'>피고인이 다른 기관에 등록되었는지 여부</label>
+        </td>
+    </tr>
+      <th width='15%' >첨부파일</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#COM-UI-DMCI-05-O-0402-LEFT_TABLE_725').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='_자산_세부_정보__Land____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 (Land) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           

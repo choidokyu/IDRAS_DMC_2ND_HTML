@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-DMCI-05-O-0402-1-SUB-POPUP_Search Assets with Sale Intention Notice(매각의향 통지가 발행된 자산 조회)</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> Search Assets with Sale Intention Notice(매각의향 통지가 발행된 자산 조회) - UI-DMCI-05-O-0402-1-SUB-POPUP</h1>
+<div class='pull-right'><a href='UI-DMCI-05-O-0402-1-SUB-POPUP(EN).html'>EN</a> | <a href='UI-DMCI-05-O-0402-1-SUB-POPUP(KR).html'>KR</a> | <a href='UI-DMCI-05-O-0402-1-SUB-POPUP(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div>  <table id='UI-DMCI-05-O-0402-1-SUB-POPUP_TABLE_699' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Processing date<br>(처리 일자)</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group form-inline form-group-sm'>                              
+      <div class=' input-group'>                                                                
+          <div class='input-group date' id='___Processing_date<br>_처리_일자__div_1'>                         
+                  <input type='text' class='form-control '  id='___Processing_date<br>_처리_일자_' value='02/06/2025' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+                ~                                                                         
+          <div class='input-group date' id='___Processing_date<br>_처리_일자__div_2'>                         
+                  <input type='text' class='form-control '  id='___Processing_date<br>_처리_일자_' value='06/06/2025' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+      </div>
+    </div>
+  </div>
+    <script type='text/javascript'>
+      $(function () { $('#___Processing_date<br>_처리_일자__div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+      $(function () { $('#___Processing_date<br>_처리_일자__div_2').datetimepicker({format: 'DD/MM/YYYY'}); });
+    </script>
+
+        </td>
+      <th width='15%' >Region<br>(지역)</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group form-group-sm '>
+      <select class='form-control ' id='___Region<br>_지역_' >
+            <option >All</option>
+            <option >ARUSHA</option>
+            <option selected>DODOMA</option>
+            <option >GEITA</option>
+            <option >ILALA</option>
+            <option >IRINGA</option>
+            <option >KAGERA</option>
+            <option >KAHAMA</option>
+            <option >KARIAKOO</option>
+            <option >KATAVI</option>
+            <option >KIGOMA</option>
+            <option >KILIMANJARO</option>
+            <option >KINONDONI</option>
+            <option >LARGE TAXPAYERS DEPARTMENT</option>
+            <option >LINDI</option>
+            <option >MANYARA</option>
+            <option >MARA</option>
+            <option >MBEYA</option>
+            <option >MEDIUM TAXPAYERS DIVISION</option>
+            <option >MOROGORO</option>
+            <option >MTWARA</option>
+            <option >MWANZA</option>
+            <option >NJOMBE</option>
+            <option >PEMBA</option>
+            <option >PWANI</option>
+            <option >RUKWA</option>
+            <option >RUVUMA</option>
+            <option >SHINYANGA</option>
+            <option >SIMIYU</option>
+            <option >SINGIDA</option>
+            <option >SONGWE</option>
+            <option >TABORA</option>
+            <option >TANGA</option>
+            <option >TEGETA</option>
+            <option >TEMEKE</option>
+            <option >ZANZIBAR</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >TIN<br>(TIN)</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___TIN<br>_TIN__1' value='172-206-670'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Application No<br>(신청 번호)</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Application_No<br>_신청_번호__1' value='25-DMC-NSA-DOD-172206670'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0402-1-SUB-POPUP_TABLE_699').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='Reset<br>(초기화)' ><span class='glyphicon glyphicon-refresh'></span> Reset<br>(초기화)</button>
+        <button class='btn btn-default' type='button' value='Search<br>(조회)' ><span class='glyphicon glyphicon-search'></span> Search<br>(조회)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-DMCI-05-O-0402-1-SUB-POPUP_TABLE_706' class='table table-bordered table-hover'>
+    <colgroup>
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>Number<br>(번호)</th>
+      <th class='text-center'>Application No<br>(신청 번호)</th>
+      <th class='text-center'>Region<br>(지역)</th>
+      <th class='text-center'>Taxpayer TIN<br>(납세자 식별번호)</th>
+      <th class='text-center'>Taxpayer Name<br>(납세자 이름)</th>
+      <th class='text-center'>Processing date<br>(처리 일자)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+1        </td>
+        <td class=''>
+25-DMC-NSA-DOD-172206670-005        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+11/06/2025
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+2        </td>
+        <td class=''>
+
+25-DMC-NSA-DOD-172206670-004        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+10/06/2025
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+3        </td>
+        <td class=''>
+
+25-DMC-NSA-DOD-172206670-003        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+09/06/2025
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+4        </td>
+        <td class=''>
+
+25-DMC-NSA-DOD-172206670-002        </td>
+        <td class=''>
+DOD│DODOMA
+        </td>
+        <td class=''>
+172-206-670
+        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA
+        </td>
+        <td class=''>
+08/06/2025
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+5        </td>
+        <td class=''>
+
+25-DMC-NSA-DOD-172206670-001        </td>
+        <td class=''>
+DOD│DODOMA        </td>
+        <td class=''>
+172-206-670        </td>
+        <td class=''>
+JEDIDA ATIENO OUMA        </td>
+        <td class=''>
+07/06/2025        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class='text-center'> 
+    <ul class='pagination pagination-sm'> 
+      <li class='disabled'><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-left'></span></a></li>          
+      <li><a href='javascript://return false;'>1</a></li>          
+      <li><a href='javascript://return false;'>2</a></li>          
+      <li><a href='javascript://return false;'>3</a></li>          
+      <li><a href='javascript://return false;'>4</a></li>          
+      <li><a href='javascript://return false;'>5</a></li>          
+      <li><a href='javascript://return false;'>6</a></li>          
+      <li><a href='javascript://return false;'>7</a></li>          
+      <li><a href='javascript://return false;'>8</a></li>          
+      <li><a href='javascript://return false;'>9</a></li>          
+      <li><a href='javascript://return false;'>10</a></li>         
+      <li><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-right'></span></a></li>          
+    </ul>                                 
+  </div>                                  
+
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default' type='button' value='Cancel<br>(취소)' >Cancel<br>(취소)</button>
+        <button class='btn btn-default' type='button' value='Select<br>(선택하다)' >Select<br>(선택하다)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           
