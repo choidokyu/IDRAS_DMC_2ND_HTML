@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-ASSET-40-SUB-POPUP_ASSET 40 POPUP</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> ASSET 40 POPUP - UI-ASSET-40-SUB-POPUP</h1>
+<div class='pull-right'><a href='UI-ASSET-40-SUB-POPUP(EN).html'>EN</a> | <a href='UI-ASSET-40-SUB-POPUP(KR).html'>KR</a> | <a href='UI-ASSET-40-SUB-POPUP(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div><div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--40 | Shares/Units 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#ASSET_40_POPUP_40_|_Shares_Units').toggle();" id='40_|_Shares_Units'><span class='glyphicon glyphicon-chevron-right'></span> 40 | Shares/Units</h2>
+      </div>
+
+      <div id='ASSET_40_POPUP_40_|_Shares_Units' class='panel-body'><!--40 | Shares/Units 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#ASSET_40_POPUP_40_|_Shares_Units_Detail_of_Assets').toggle();" id='Detail_of_Assets'><span class='glyphicon glyphicon-menu-hamburger'></span> Detail of Assets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='ASSET_40_POPUP_40_|_Shares_Units_Detail_of_Assets' class='panel-body'><!--Detail of Assets 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-40(EN).html' id='COMUIASSET40' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET40 = document.getElementById('COMUIASSET40');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-40(EN).html' == message.name) {            
+          iframe_COMUIASSET40.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Detail of Assets 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--40 | Shares/Units 화면메인그룹 종료-->
+
+    </div><!--40 | Shares/Units 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           
