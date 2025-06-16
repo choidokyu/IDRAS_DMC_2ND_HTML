@@ -24,22 +24,22 @@
 <div class='pull-right'><a href='UI-DMCI-03-O-0008(EN).html'>EN</a> | <a href='UI-DMCI-03-O-0008(KR).html'>KR</a> | <a href='UI-DMCI-03-O-0008(EK).html'>EK</a></div>  </div>
 </div><!--화면명 Row 종료-->
 
-<div class='fixedTitleBlock'></div>  <table id='UI-DMCI-03-O-0008_TABLE_16' class='table table-bordered table-hover'>
+<div class='fixedTitleBlock'></div>  <table id='UI-DMCI-03-O-0008_TABLE_2' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >Date of request</th>
+      <th width='15%' >신청 일자</th>
         <td width='35%' style='text-align: left;' class=''>
   <div>
     <div class='form-group form-inline form-group-sm'>                              
       <div class=' input-group'>                                                                
-          <div class='input-group date' id='___Date_of_request_div_1'>                         
-                  <input type='text' class='form-control '  id='___Date_of_request' value='2025-06-02' />                
+          <div class='input-group date' id='___신청_일자_div_1'>                         
+                  <input type='text' class='form-control '  id='___신청_일자' value='2025-06-02' />                
                   <span class='input-group-addon'>                                          
                       <span class='glyphicon glyphicon-calendar'></span>                    
                   </span>                                                                   
           </div>                                                                            
                 ~                                                                         
-          <div class='input-group date' id='___Date_of_request_div_2'>                         
-                  <input type='text' class='form-control '  id='___Date_of_request' value='2025-06-06' />                
+          <div class='input-group date' id='___신청_일자_div_2'>                         
+                  <input type='text' class='form-control '  id='___신청_일자' value='2025-06-06' />                
                   <span class='input-group-addon'>                                          
                       <span class='glyphicon glyphicon-calendar'></span>                    
                   </span>                                                                   
@@ -48,16 +48,15 @@
     </div>
   </div>
     <script type='text/javascript'>
-      $(function () { $('#___Date_of_request_div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
-      $(function () { $('#___Date_of_request_div_2').datetimepicker({format: 'DD/MM/YYYY'}); });
+      $(function () { $('#___신청_일자_div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+      $(function () { $('#___신청_일자_div_2').datetimepicker({format: 'DD/MM/YYYY'}); });
     </script>
 
         </td>
-      <th width='15%' >Processing Status</th>
+      <th width='15%' >처리 상태</th>
         <td width='35%' style='text-align: left;' class=''>
   <div>
-    <div class='form-group form-group-sm '>
-      <select class='form-control ' id='___Processing_Status' >
+      <select class='form-control ' id='___처리_상태' >
             <option ></option>
       </select>
     </div>
@@ -66,22 +65,22 @@
         </td>
     </tr>
     <tr>
-      <th width='15%' >Taxpayer TIN</th>
+      <th width='15%' >납세자 식별번호</th>
         <td width='35%' style='text-align: left;' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-        <input class='form-control ' type='text' id='___Taxpayer_TIN_1' value='123-456-789'  >
+        <input class='form-control ' type='text' id='___납세자_식별번호_1' value='123-456-789'  >
         </div>
       </div><!--항목내의 텍스트 종료-->
     </div><!--항목내의 폼그룹 종료--> 
   </div><!--한개의 항목 종료-->
 
         </td>
-      <th width='15%' >Third Party TIN</th>
+      <th width='15%' >제3자 TIN</th>
         <td width='35%' style='text-align: left;' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-        <input class='form-control ' type='text' id='___Third_Party_TIN_1' value=''  >
+        <input class='form-control ' type='text' id='___제3자_TIN_1' value=''  >
         </div>
       </div><!--항목내의 텍스트 종료-->
     </div><!--항목내의 폼그룹 종료--> 
@@ -92,7 +91,7 @@
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_16').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_2').rowspan(0);
 });
 </script>
     <div class='row'><!--버튼그룹 Row 시작-->
@@ -104,7 +103,7 @@ $(window).load(function(){
     </div><!--버튼그룹 Row 종료-->
 
     <hr>
-  <table id='UI-DMCI-03-O-0008_TABLE_23' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_9' class='table table-bordered table-hover'>
     <colgroup>
       <col>
       <col>
@@ -118,15 +117,15 @@ $(window).load(function(){
     </colgroup>
     <thead>
       <tr>
-      <th class='text-center'>Application No</th>
-      <th class='text-center'>Taxpayer TIN</th>
-      <th class='text-center'>Taxpayer Name</th>
-      <th class='text-center'>Outstanding Liability</th>
-      <th class='text-center'>Third Party TIN</th>
-      <th class='text-center'>Third Party Name</th>
-      <th class='text-center'>Third Party Type</th>
-      <th class='text-center'>Date of request</th>
-      <th class='text-center'>Processing Status</th>
+      <th class='text-center'>신청 번호</th>
+      <th class='text-center'>납세자 식별번호</th>
+      <th class='text-center'>납세자 이름</th>
+      <th class='text-center'>미지급 책임</th>
+      <th class='text-center'>제3자 TIN</th>
+      <th class='text-center'>제3자 성명</th>
+      <th class='text-center'>제3자 유형</th>
+      <th class='text-center'>신청 일자</th>
+      <th class='text-center'>처리 상태</th>
       </tr>
     </thead>
     <tbody>
@@ -220,40 +219,40 @@ Saved         </td>
 
 <div class='main-group row'><!--화면메인그룹 Row 시작-->
   <div class='col-sm-12'>
-    <div class='panel panel-default'><!--New 패널 시작-->
+    <div class='panel panel-default'><!--신규 패널 시작-->
       <div class='panel-heading clearfix'>
-      <h2 onclick="$('#제3자_책임_New').toggle();" id='New'><span class='glyphicon glyphicon-chevron-right'></span> New</h2>
+      <h2 onclick="$('#제3자_책임_신규').toggle();" id='신규'><span class='glyphicon glyphicon-chevron-right'></span> 신규</h2>
       </div>
 
-      <div id='제3자_책임_New' class='panel-body'><!--New 화면메인그룹 시작-->
+      <div id='제3자_책임_신규' class='panel-body'><!--신규 화면메인그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_33' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_19' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >Application No</th>
+      <th width='15%' >신청 번호</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
-      <th width='15%' >Region</th>
+      <th width='15%' >지역</th>
         <td width='35%' style='text-align: left;' class=''>
 [DOD]DODOMA        </td>
     </tr>
     <tr>
-      <th width='15%' >Processing Status</th>
+      <th width='15%' >처리 상태</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
-      <th width='15%' >Date of request</th>
+      <th width='15%' >신청 일자</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
     </tr>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_33').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_19').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='New____1'></label>
+      <label class='control-label label-line ' for='신규____1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
@@ -261,196 +260,195 @@ $(window).load(function(){
 <div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
   <div class='col-sm-12'>
-      <h3 onclick="$('#제3자_책임_New_Taxpayer_Information').toggle();" id='Taxpayer_Information'><span class='glyphicon glyphicon-menu-hamburger'></span> Taxpayer Information</h3>
+      <h3 onclick="$('#제3자_책임_신규_납세자_정보').toggle();" id='납세자_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 납세자 정보</h3>
   </div>
 
 </div>
 
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
-      <div id='제3자_책임_New_Taxpayer_Information' class='panel-body'><!--Taxpayer Information 화면서브그룹 시작-->
+      <div id='제3자_책임_신규_납세자_정보' class='panel-body'><!--납세자 정보 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_38' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_24' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >TIN<span class='mandatory'> *</span></th>
         <td width='35%' style='text-align: left;' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-        <input class='form-control ' type='text' id='New_Taxpayer_Information__TIN_1' value='100-113-295'  >
-        <a class='input-group-addon' onclick='onloadImage("../images-DOC/TIN_Information.png","900","1600")'><span class='glyphicon glyphicon-question-sign'></span> </a>
+        <input class='form-control ' type='text' id='신규_납세자_정보__TIN_1' value='100-113-295'  >
+        <a class='input-group-addon' onclick='onloadImage("../images-DOC/TIN_Information.png","900","1600")'><span class='glyphicon glyphicon-question-sign' onclick='onloadImage("../images-DOC/TIN_Information.png","900","1600")'></span></a>
         </div>
       </div><!--항목내의 텍스트 종료-->
     </div><!--항목내의 폼그룹 종료--> 
   </div><!--한개의 항목 종료-->
 
         </td>
-      <th width='15%' >Taxpayer Name</th>
+      <th width='15%' >납세자 이름</th>
         <td width='35%' style='text-align: left;' class=''>
 MOHAMMED YUSUFALI JIVANJEE        </td>
     </tr>
     <tr>
-      <th width='15%' >Business Type</th>
+      <th width='15%' >업종 유형</th>
         <td width='35%' style='text-align: left;' class=''>
 Sole Proprietor        </td>
-      <th width='15%' >Application Type</th>
+      <th width='15%' >신청 유형</th>
         <td width='35%' style='text-align: left;' class=''>
 TIN Application with NIN        </td>
     </tr>
     <tr>
-      <th width='15%' >Region</th>
+      <th width='15%' >지역</th>
         <td width='35%' style='text-align: left;' class=''>
 Dar Es Salaam        </td>
-      <th width='15%' >District</th>
+      <th width='15%' >구/군</th>
         <td width='35%' style='text-align: left;' class=''>
 Kinondoni        </td>
     </tr>
     <tr>
-      <th width='15%' >Ward</th>
+      <th width='15%' >동/리</th>
         <td width='35%' style='text-align: left;' class=''>
 Mikocheni        </td>
-      <th width='15%' >Street</th>
+      <th width='15%' >거리</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
     </tr>
     <tr>
-      <th width='15%' >Barabara Name</th>
+      <th width='15%' >도로명</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
-      <th width='15%' >House Number</th>
+      <th width='15%' >건물 번호</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
     </tr>
     <tr>
-      <th width='15%' >P.O Box</th>
+      <th width='15%' >사서함 번호</th>
         <td width='35%' style='text-align: left;' class=''>
 33        </td>
-      <th width='15%' >Post Code</th>
+      <th width='15%' >우편 번호</th>
         <td width='35%' style='text-align: left;' class=''>
 14112        </td>
     </tr>
     <tr>
-      <th width='15%' >Mobile</th>
+      <th width='15%' >휴대전화 번호</th>
         <td width='35%' style='text-align: left;' class=''>
 255784350146        </td>
-      <th width='15%' >Email</th>
+      <th width='15%' >이메일</th>
         <td width='35%' style='text-align: left;' class=''>
 test@zmzmzmzm.cj        </td>
     </tr>
     <tr>
-      <th width='15%' >Registration Date</th>
+      <th width='15%' >등록 날짜</th>
         <td width='35%' style='text-align: left;' class=''>
 01/07/1999        </td>
-      <th width='15%' >Commencement Date</th>
+      <th width='15%' >사업 개시일</th>
         <td width='35%' style='text-align: left;' class=''>
 01/01/2004        </td>
     </tr>
     <tr>
-      <th width='15%' >Accounting Period</th>
+      <th width='15%' >회계 기간</th>
         <td width='35%' style='text-align: left;' class=''>
 3112        </td>
-      <th width='15%' >Extension of Year of Income</th>
+      <th width='15%' >과세연도 연장</th>
         <td width='35%' style='text-align: left;' class=''>
 No        </td>
     </tr>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_38').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_24').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='New_Taxpayer_Information___1'></label>
+      <label class='control-label label-line ' for='신규_납세자_정보___1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
-      </div><!--Taxpayer Information 화면서브그룹 종료-->
+      </div><!--납세자 정보 화면서브그룹 종료-->
 
 </div><!--화면서브그룹 Row 종료-->
 
 <div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
   <div class='col-sm-12'>
-      <h3 onclick="$('#제3자_책임_New_Outstanding_Liability').toggle();" id='Outstanding_Liability'><span class='glyphicon glyphicon-menu-hamburger'></span> Outstanding Liability</h3>
+      <h3 onclick="$('#제3자_책임_신규_미납_세액').toggle();" id='미납_세액'><span class='glyphicon glyphicon-menu-hamburger'></span> 미납 세액</h3>
   </div>
 
 </div>
 
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
-      <div id='제3자_책임_New_Outstanding_Liability' class='panel-body'><!--Outstanding Liability 화면서브그룹 시작-->
+      <div id='제3자_책임_신규_미납_세액' class='panel-body'><!--미납 세액 화면서브그룹 시작-->
 
     <div class='row'><!--버튼그룹 Row 시작-->
       <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
-        <button class='btn btn-default' type='button' value='Outstanding Liability Info' onclick="window.open('UI-DMCI-03-O-0008-2-SUB-POPUP(KR).html', 'a', 'width=1200, height=700, left=100, top=100')"><span class='glyphicon glyphicon-search'></span> Outstanding Liability Info</button>
+        <button class='btn btn-default' type='button' value='미납 세액 정보' onclick="window.open('UI-DMCI-O-0001-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')"><span class='glyphicon glyphicon-search'></span> 미납 세액 정보</button>
       </div><!--버튼그룹 종료-->
     </div><!--버튼그룹 Row 종료-->
 
     <hr>
-  <table id='UI-DMCI-03-O-0008_TABLE_58' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_44' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >Debit Amount</th>
+      <th width='15%' >부과 금액</th>
         <td width='35%' style='text-align: left;' class=''>
 150847300        </td>
-      <th width='15%' >Payment</th>
+      <th width='15%' >납부</th>
         <td width='35%' style='text-align: left;' class=''>
 65827180        </td>
     </tr>
     <tr>
-      <th width='15%' >Discharge</th>
+      <th width='15%' >소멸</th>
         <td width='35%' style='text-align: left;' class=''>
 0        </td>
-      <th width='15%' >Balance</th>
+      <th width='15%' >잔액</th>
         <td width='35%' style='text-align: left;' class=''>
 85020120        </td>
     </tr>
     <tr>
-      <th width='15%' >Interest</th>
+      <th width='15%' >이자</th>
         <td width='35%' style='text-align: left;' class=''>
 4511227        </td>
-      <th width='15%' >Total</th>
+      <th width='15%' >합계</th>
         <td width='35%' style='text-align: left;' class=''>
 89531347        </td>
     </tr>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_58').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_44').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='New_Outstanding_Liability___1'></label>
+      <label class='control-label label-line ' for='신규_미납_세액___1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
-      </div><!--Outstanding Liability 화면서브그룹 종료-->
+      </div><!--미납 세액 화면서브그룹 종료-->
 
 </div><!--화면서브그룹 Row 종료-->
 
 <div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
   <div class='col-sm-12'>
-      <h3 onclick="$('#제3자_책임_New_Taxpayer_Relation').toggle();" id='Taxpayer_Relation'><span class='glyphicon glyphicon-menu-hamburger'></span> Taxpayer Relation</h3>
+      <h3 onclick="$('#제3자_책임_신규_납세자_관계').toggle();" id='납세자_관계'><span class='glyphicon glyphicon-menu-hamburger'></span> 납세자 관계</h3>
   </div>
 
 </div>
 
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
-      <div id='제3자_책임_New_Taxpayer_Relation' class='panel-body'><!--Taxpayer Relation 화면서브그룹 시작-->
+      <div id='제3자_책임_신규_납세자_관계' class='panel-body'><!--납세자 관계 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_65' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_51' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >Relation Type</th>
+      <th width='15%' >관계 유형</th>
         <td width='35%' style='text-align: left;' class=''>
   <div>
-    <div class='form-group form-group-sm '>
-      <select class='form-control ' id='New_Taxpayer_Relation__Relation_Type' >
+      <select class='form-control ' id='신규_납세자_관계__관계_유형' >
             <option >감사 / 회계사 </option>
             <option > 변호사 </option>
             <option > 대사 </option>
@@ -492,7 +490,7 @@ $(window).load(function(){
         <td width='35%' style='text-align: left;' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-        <input class='form-control ' type='text' id='New_Taxpayer_Relation__TIN_1' value=''  >
+        <input class='form-control ' type='text' id='신규_납세자_관계__TIN_1' value=''  >
         </div>
       </div><!--항목내의 텍스트 종료-->
     </div><!--항목내의 폼그룹 종료--> 
@@ -503,7 +501,7 @@ $(window).load(function(){
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_65').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_51').rowspan(0);
 });
 </script>
     <div class='row'><!--버튼그룹 Row 시작-->
@@ -514,7 +512,7 @@ $(window).load(function(){
     </div><!--버튼그룹 Row 종료-->
 
     <hr>
-  <table id='UI-DMCI-03-O-0008_TABLE_69' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_55' class='table table-bordered table-hover'>
     <colgroup>
       <col>
       <col>
@@ -528,18 +526,18 @@ $(window).load(function(){
       <tr>
       <th class='text-center'></th>
       <th class='text-center'>TIN</th>
-      <th class='text-center'>Taxpayer Name</th>
-      <th class='text-center'>Relation Type</th>
-      <th class='text-center'>Administrator Status</th>
-      <th class='text-center'>Active YN</th>
-      <th class='text-center'>Appointment</th>
+      <th class='text-center'>납세자 이름</th>
+      <th class='text-center'>관계 유형</th>
+      <th class='text-center'>관리자 상태</th>
+      <th class='text-center'>사용 여부</th>
+      <th class='text-center'>지정</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_36' id='New_Taxpayer_Relation__0_36__37' type='checkbox'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_36__37'></label>
+        <input name='신규_납세자_관계__0_36' id='신규_납세자_관계__0_36__37' type='checkbox'  value='' >
+        <label class='label-for-select ' for='신규_납세자_관계__0_36__37'></label>
         </td>
         <td class=''>
 172329098         </td>
@@ -556,8 +554,8 @@ Active         </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_38' id='New_Taxpayer_Relation__0_38__39' type='checkbox'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_38__39'></label>
+        <input name='신규_납세자_관계__0_38' id='신규_납세자_관계__0_38__39' type='checkbox'  value='' >
+        <label class='label-for-select ' for='신규_납세자_관계__0_38__39'></label>
         </td>
         <td class=''>
  166207622         </td>
@@ -574,8 +572,8 @@ Active         </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_40' id='New_Taxpayer_Relation__0_40__41' type='checkbox'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_40__41'></label>
+        <input name='신규_납세자_관계__0_40' id='신규_납세자_관계__0_40__41' type='checkbox'  value='' >
+        <label class='label-for-select ' for='신규_납세자_관계__0_40__41'></label>
         </td>
         <td class=''>
  104703976         </td>
@@ -592,8 +590,8 @@ Active         </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_42' id='New_Taxpayer_Relation__0_42__43' type='checkbox'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_42__43'></label>
+        <input name='신규_납세자_관계__0_42' id='신규_납세자_관계__0_42__43' type='checkbox'  value='' >
+        <label class='label-for-select ' for='신규_납세자_관계__0_42__43'></label>
         </td>
         <td class=''>
  121167689         </td>
@@ -610,8 +608,8 @@ Active         </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_44' id='New_Taxpayer_Relation__0_44__45' type='checkbox'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_44__45'></label>
+        <input name='신규_납세자_관계__0_44' id='신규_납세자_관계__0_44__45' type='checkbox'  value='' >
+        <label class='label-for-select ' for='신규_납세자_관계__0_44__45'></label>
         </td>
         <td class=''>
  166148766        </td>
@@ -649,60 +647,60 @@ Active         </td>
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='New_Taxpayer_Relation___1'></label>
+      <label class='control-label label-line ' for='신규_납세자_관계___1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
-      </div><!--Taxpayer Relation 화면서브그룹 종료-->
+      </div><!--납세자 관계 화면서브그룹 종료-->
 
 </div><!--화면서브그룹 Row 종료-->
 
 <div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
   <div class='col-sm-12'>
-      <h3 onclick="$('#제3자_책임_New_Third_Party_Info').toggle();" id='Third_Party_Info'><span class='glyphicon glyphicon-menu-hamburger'></span> Third Party Info</h3>
+      <h3 onclick="$('#제3자_책임_신규_제3자_정보').toggle();" id='제3자_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 제3자 정보</h3>
   </div>
 
 </div>
 
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
-      <div id='제3자_책임_New_Third_Party_Info' class='panel-body'><!--Third Party Info 화면서브그룹 시작-->
+      <div id='제3자_책임_신규_제3자_정보' class='panel-body'><!--제3자 정보 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_77' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_63' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >TIN</th>
         <td width='35%' style='text-align: left;' class=''>
 172-329-098        </td>
-      <th width='15%' >Taxpayer Name</th>
+      <th width='15%' >납세자 성명</th>
         <td width='35%' style='text-align: left;' class=''>
 JUMA MKATE CHAIYO        </td>
     </tr>
     <tr>
-      <th width='15%' >Mobile</th>
+      <th width='15%' >휴대전화 번호</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
-      <th width='15%' >Email</th>
+      <th width='15%' >이메일</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
     </tr>
     <tr>
-      <th width='15%' >Business Type</th>
+      <th width='15%' >업종 유형</th>
         <td width='35%' style='text-align: left;' class=''>
 Sole Proprietor        </td>
-      <th width='15%' >Relation Type</th>
+      <th width='15%' >관계 유형</th>
         <td width='35%' style='text-align: left;' class=''>
 Employer        </td>
     </tr>
     <tr>
-      <th width='15%' >Relation Description</th>
+      <th width='15%' >관계 설명</th>
         <td style='text-align: left;' colspan='3' class=''>
         </td>
     </tr>
     </tr>
     <tr>
-      <th width='15%' >Administrator Status</th>
+      <th width='15%' >관리자 상태</th>
         <td style='text-align: left;' colspan='3' class=''>
 No        </td>
     </tr>
@@ -710,40 +708,40 @@ No        </td>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_77').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_63').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='New_Third_Party_Info___1'></label>
+      <label class='control-label label-line ' for='신규_제3자_정보___1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
-      </div><!--Third Party Info 화면서브그룹 종료-->
+      </div><!--제3자 정보 화면서브그룹 종료-->
 
 </div><!--화면서브그룹 Row 종료-->
 
 <div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
   <div class='col-sm-12'>
-      <h3 onclick="$('#제3자_책임_New_Requirement').toggle();" id='Requirement'><span class='glyphicon glyphicon-menu-hamburger'></span> Requirement</h3>
+      <h3 onclick="$('#제3자_책임_신규_요구사항').toggle();" id='요구사항'><span class='glyphicon glyphicon-menu-hamburger'></span> 요구사항</h3>
   </div>
 
 </div>
 
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
-      <div id='제3자_책임_New_Requirement' class='panel-body'><!--Requirement 화면서브그룹 시작-->
+      <div id='제3자_책임_신규_요구사항' class='panel-body'><!--요구사항 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_86' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_72' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >Remark</th>
+      <th width='15%' >비고</th>
         <td style='text-align: left;' colspan='3' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-<textarea class='form-control ' rows='4' id='New_Requirement__Remark_1' ></textarea>
+<textarea class='form-control ' rows='4' id='신규_요구사항__비고_1' ></textarea>
         </div>
       </div><!--항목내의 텍스트 종료-->
     </div><!--항목내의 폼그룹 종료--> 
@@ -757,7 +755,7 @@ $(window).load(function(){
         <td width='35%' style='text-align: left;' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-        <input class='form-control input-file ' type='text' id='New_Requirement__첨부파일_1' value='' readonly>
+        <input class='form-control input-file ' type='text' id='신규_요구사항__첨부파일_1' value='' readonly>
                         <label class='input-group-btn'>
                            <span class='btn btn-primary btn-sm'>
                                &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
@@ -772,18 +770,18 @@ $(window).load(function(){
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_86').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_72').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='New_Requirement___1'></label>
+      <label class='control-label label-line ' for='신규_요구사항___1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
-      </div><!--Requirement 화면서브그룹 종료-->
+      </div><!--요구사항 화면서브그룹 종료-->
 
 </div><!--화면서브그룹 Row 종료-->
 
@@ -796,9 +794,9 @@ $(window).load(function(){
     </div><!--버튼그룹 Row 종료-->
 
     <hr>
-      </div><!--New 화면메인그룹 종료-->
+      </div><!--신규 화면메인그룹 종료-->
 
-    </div><!--New 패널 종료-->
+    </div><!--신규 패널 종료-->
 
   </div>
 
@@ -814,40 +812,40 @@ $(window).load(function(){
 
 <div class='main-group row'><!--화면메인그룹 Row 시작-->
   <div class='col-sm-12'>
-    <div class='panel panel-default'><!--Details 패널 시작-->
+    <div class='panel panel-default'><!--상세정보 패널 시작-->
       <div class='panel-heading clearfix'>
-      <h2 onclick="$('#제3자_책임_Details').toggle();" id='Details'><span class='glyphicon glyphicon-chevron-right'></span> Details</h2>
+      <h2 onclick="$('#제3자_책임_상세정보').toggle();" id='상세정보'><span class='glyphicon glyphicon-chevron-right'></span> 상세정보</h2>
       </div>
 
-      <div id='제3자_책임_Details' class='panel-body'><!--Details 화면메인그룹 시작-->
+      <div id='제3자_책임_상세정보' class='panel-body'><!--상세정보 화면메인그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_93' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_79' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >Application No</th>
+      <th width='15%' >신청 번호</th>
         <td width='35%' style='text-align: left;' class=''>
 24-DOD-123456789-001        </td>
-      <th width='15%' >Region</th>
+      <th width='15%' >지역</th>
         <td width='35%' style='text-align: left;' class=''>
 [DOD]DODOMA        </td>
     </tr>
     <tr>
-      <th width='15%' >Processing Status</th>
+      <th width='15%' >처리 상태</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
-      <th width='15%' >Date of request</th>
+      <th width='15%' >신청 일자</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
     </tr>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_93').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_79').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='Details____1'></label>
+      <label class='control-label label-line ' for='상세정보____1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
@@ -855,213 +853,213 @@ $(window).load(function(){
 <div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
   <div class='col-sm-12'>
-      <h3 onclick="$('#제3자_책임_Details_Taxpayer_Information').toggle();" id='Taxpayer_Information'><span class='glyphicon glyphicon-menu-hamburger'></span> Taxpayer Information</h3>
+      <h3 onclick="$('#제3자_책임_상세정보_납세자_정보').toggle();" id='납세자_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 납세자 정보</h3>
   </div>
 
 </div>
 
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
-      <div id='제3자_책임_Details_Taxpayer_Information' class='panel-body'><!--Taxpayer Information 화면서브그룹 시작-->
+      <div id='제3자_책임_상세정보_납세자_정보' class='panel-body'><!--납세자 정보 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_98' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_84' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >TIN</th>
         <td width='35%' style='text-align: left;' class=''>
 100-113-295        </td>
-      <th width='15%' >Taxpayer Name</th>
+      <th width='15%' >납세자 이름</th>
         <td width='35%' style='text-align: left;' class=''>
 MOHAMMED YUSUFALI JIVANJEE        </td>
     </tr>
     <tr>
-      <th width='15%' >Business Type</th>
+      <th width='15%' >업종 유형</th>
         <td width='35%' style='text-align: left;' class=''>
 Sole Proprietor        </td>
-      <th width='15%' >Application Type</th>
+      <th width='15%' >신청 유형</th>
         <td width='35%' style='text-align: left;' class=''>
 TIN Application with NIN        </td>
     </tr>
     <tr>
-      <th width='15%' >Region</th>
+      <th width='15%' >지역</th>
         <td width='35%' style='text-align: left;' class=''>
 Dar Es Salaam        </td>
-      <th width='15%' >District</th>
+      <th width='15%' >구/군</th>
         <td width='35%' style='text-align: left;' class=''>
 Kinondoni        </td>
     </tr>
     <tr>
-      <th width='15%' >Ward</th>
+      <th width='15%' >동/리</th>
         <td width='35%' style='text-align: left;' class=''>
 Mikocheni        </td>
-      <th width='15%' >Street</th>
+      <th width='15%' >거리</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
     </tr>
     <tr>
-      <th width='15%' >Barabara Name</th>
+      <th width='15%' >도로명</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
-      <th width='15%' >House Number</th>
+      <th width='15%' >건물 번호</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
     </tr>
     <tr>
-      <th width='15%' >P.O Box</th>
+      <th width='15%' >사서함 번호</th>
         <td width='35%' style='text-align: left;' class=''>
 33        </td>
-      <th width='15%' >Post Code</th>
+      <th width='15%' >우편 번호</th>
         <td width='35%' style='text-align: left;' class=''>
 14112        </td>
     </tr>
     <tr>
-      <th width='15%' >Mobile</th>
+      <th width='15%' >휴대전화 번호</th>
         <td width='35%' style='text-align: left;' class=''>
 255784350146        </td>
-      <th width='15%' >Email</th>
+      <th width='15%' >이메일</th>
         <td width='35%' style='text-align: left;' class=''>
 test@zmzmzmzm.cj        </td>
     </tr>
     <tr>
-      <th width='15%' >Registration Date</th>
+      <th width='15%' >등록 날짜</th>
         <td width='35%' style='text-align: left;' class=''>
 01/07/1999        </td>
-      <th width='15%' >Commencement Date</th>
+      <th width='15%' >사업 개시일</th>
         <td width='35%' style='text-align: left;' class=''>
 01/01/2004        </td>
     </tr>
     <tr>
-      <th width='15%' >Accounting Period</th>
+      <th width='15%' >회계 기간</th>
         <td width='35%' style='text-align: left;' class=''>
 3112        </td>
-      <th width='15%' >Extension of Year of Income</th>
+      <th width='15%' >과세연도 연장</th>
         <td width='35%' style='text-align: left;' class=''>
 No        </td>
     </tr>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_98').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_84').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='Details_Taxpayer_Information___1'></label>
+      <label class='control-label label-line ' for='상세정보_납세자_정보___1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
-      </div><!--Taxpayer Information 화면서브그룹 종료-->
+      </div><!--납세자 정보 화면서브그룹 종료-->
 
 </div><!--화면서브그룹 Row 종료-->
 
 <div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
   <div class='col-sm-12'>
-      <h3 onclick="$('#제3자_책임_Details_Outstanding_Liability').toggle();" id='Outstanding_Liability'><span class='glyphicon glyphicon-menu-hamburger'></span> Outstanding Liability</h3>
+      <h3 onclick="$('#제3자_책임_상세정보_미납_세액').toggle();" id='미납_세액'><span class='glyphicon glyphicon-menu-hamburger'></span> 미납 세액</h3>
   </div>
 
 </div>
 
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
-      <div id='제3자_책임_Details_Outstanding_Liability' class='panel-body'><!--Outstanding Liability 화면서브그룹 시작-->
+      <div id='제3자_책임_상세정보_미납_세액' class='panel-body'><!--미납 세액 화면서브그룹 시작-->
 
     <div class='row'><!--버튼그룹 Row 시작-->
       <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
-        <button class='btn btn-default' type='button' value='Outstanding Liability Info' onclick="window.open('UI-DMCI-03-O-0008-2-SUB-POPUP(KR).html', 'a', 'width=1200, height=700, left=100, top=100')"><span class='glyphicon glyphicon-search'></span> Outstanding Liability Info</button>
+        <button class='btn btn-default' type='button' value='미납 세액 정보' onclick="window.open('UI-DMCI-03-O-0008-2-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')"><span class='glyphicon glyphicon-search'></span> 미납 세액 정보</button>
       </div><!--버튼그룹 종료-->
     </div><!--버튼그룹 Row 종료-->
 
     <hr>
-  <table id='UI-DMCI-03-O-0008_TABLE_118' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_104' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >Debit Amount</th>
+      <th width='15%' >부과 금액</th>
         <td width='35%' style='text-align: left;' class=''>
 150847300        </td>
-      <th width='15%' >Payment</th>
+      <th width='15%' >납부</th>
         <td width='35%' style='text-align: left;' class=''>
 65827180        </td>
     </tr>
     <tr>
-      <th width='15%' >Discharge</th>
+      <th width='15%' >소멸</th>
         <td width='35%' style='text-align: left;' class=''>
 0        </td>
-      <th width='15%' >Balance</th>
+      <th width='15%' >잔액</th>
         <td width='35%' style='text-align: left;' class=''>
 85020120        </td>
     </tr>
     <tr>
-      <th width='15%' >Interest</th>
+      <th width='15%' >이자</th>
         <td width='35%' style='text-align: left;' class=''>
 4511227        </td>
-      <th width='15%' >Total</th>
+      <th width='15%' >합계</th>
         <td width='35%' style='text-align: left;' class=''>
 89531347        </td>
     </tr>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_118').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_104').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='Details_Outstanding_Liability___1'></label>
+      <label class='control-label label-line ' for='상세정보_미납_세액___1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
-      </div><!--Outstanding Liability 화면서브그룹 종료-->
+      </div><!--미납 세액 화면서브그룹 종료-->
 
 </div><!--화면서브그룹 Row 종료-->
 
 <div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
   <div class='col-sm-12'>
-      <h3 onclick="$('#제3자_책임_Details_Third_Party_Info').toggle();" id='Third_Party_Info'><span class='glyphicon glyphicon-menu-hamburger'></span> Third Party Info</h3>
+      <h3 onclick="$('#제3자_책임_상세정보_제3자_정보').toggle();" id='제3자_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 제3자 정보</h3>
   </div>
 
 </div>
 
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
-      <div id='제3자_책임_Details_Third_Party_Info' class='panel-body'><!--Third Party Info 화면서브그룹 시작-->
+      <div id='제3자_책임_상세정보_제3자_정보' class='panel-body'><!--제3자 정보 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_125' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_111' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >TIN</th>
         <td width='35%' style='text-align: left;' class=''>
 172-329-098        </td>
-      <th width='15%' >Taxpayer Name</th>
+      <th width='15%' >납세자 성명</th>
         <td width='35%' style='text-align: left;' class=''>
 JUMA MKATE CHAIYO        </td>
     </tr>
     <tr>
-      <th width='15%' >Mobile</th>
+      <th width='15%' >휴대전화 번호</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
-      <th width='15%' >Email</th>
+      <th width='15%' >이메일</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
     </tr>
     <tr>
-      <th width='15%' >Business Type</th>
+      <th width='15%' >업종 유형</th>
         <td width='35%' style='text-align: left;' class=''>
 Sole Proprietor        </td>
-      <th width='15%' >Relation Type</th>
+      <th width='15%' >관계 유형</th>
         <td width='35%' style='text-align: left;' class=''>
 Employer        </td>
     </tr>
     <tr>
-      <th width='15%' >Relation Description</th>
+      <th width='15%' >관계 설명</th>
         <td style='text-align: left;' colspan='3' class=''>
         </td>
     </tr>
     </tr>
     <tr>
-      <th width='15%' >Administrator Status</th>
+      <th width='15%' >관리자 상태</th>
         <td style='text-align: left;' colspan='3' class=''>
 No        </td>
     </tr>
@@ -1069,40 +1067,40 @@ No        </td>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_125').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_111').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='Details_Third_Party_Info___1'></label>
+      <label class='control-label label-line ' for='상세정보_제3자_정보___1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
-      </div><!--Third Party Info 화면서브그룹 종료-->
+      </div><!--제3자 정보 화면서브그룹 종료-->
 
 </div><!--화면서브그룹 Row 종료-->
 
 <div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
   <div class='col-sm-12'>
-      <h3 onclick="$('#제3자_책임_Details_Requirement').toggle();" id='Requirement'><span class='glyphicon glyphicon-menu-hamburger'></span> Requirement</h3>
+      <h3 onclick="$('#제3자_책임_상세정보_요구사항').toggle();" id='요구사항'><span class='glyphicon glyphicon-menu-hamburger'></span> 요구사항</h3>
   </div>
 
 </div>
 
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
-      <div id='제3자_책임_Details_Requirement' class='panel-body'><!--Requirement 화면서브그룹 시작-->
+      <div id='제3자_책임_상세정보_요구사항' class='panel-body'><!--요구사항 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_134' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_120' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >Remark</th>
+      <th width='15%' >비고</th>
         <td style='text-align: left;' colspan='3' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-<textarea class='form-control ' rows='4' id='Details_Requirement__Remark_1' disabled>Remark</textarea>
+<textarea class='form-control ' rows='4' id='상세정보_요구사항__비고_1' disabled>Remark</textarea>
         </div>
       </div><!--항목내의 텍스트 종료-->
     </div><!--항목내의 폼그룹 종료--> 
@@ -1116,7 +1114,7 @@ $(window).load(function(){
         <td width='35%' style='text-align: left;' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-        <input class='form-control input-file ' type='text' id='Details_Requirement__첨부파일_1' value='' readonly>
+        <input class='form-control input-file ' type='text' id='상세정보_요구사항__첨부파일_1' value='' readonly>
                         <label class='input-group-btn'>
                            <span class='btn btn-primary btn-sm'>
                                &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
@@ -1131,32 +1129,32 @@ $(window).load(function(){
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_134').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_120').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='Details_Requirement___1'></label>
+      <label class='control-label label-line ' for='상세정보_요구사항___1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
-      </div><!--Requirement 화면서브그룹 종료-->
+      </div><!--요구사항 화면서브그룹 종료-->
 
 </div><!--화면서브그룹 Row 종료-->
 
     <div class='row'><!--버튼그룹 Row 시작-->
       <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
-        <button class='btn btn-default btn-left' type='button' value='A Notice to Receiver' onclick='onloadImage("../images-DOC/THIRD PART LIABILITY - A Notice to Receiver.jpg","1200","1600")'><span class='glyphicon glyphicon-refresh'></span> A Notice to Receiver</button>
-        <button class='btn btn-default btn-left' type='button' value='Manager Liability' onclick='onloadImage("../images-DOC/THIRD PART LIABILITY - Manager Liability.jpg","1200","1600")'><span class='glyphicon glyphicon-refresh'></span> Manager Liability</button>
+        <button class='btn btn-default btn-left' type='button' value='수령자에게 보내는 통지' onclick='onloadImage("../images-DOC/THIRD PART LIABILITY - A Notice to Receiver.jpg","1200","1600")'><span class='glyphicon glyphicon-refresh'></span> 수령자에게 보내는 통지</button>
+        <button class='btn btn-default btn-left' type='button' value='관리자 책임' onclick='onloadImage("../images-DOC/THIRD PART LIABILITY - Manager Liability.jpg","1200","1600")'><span class='glyphicon glyphicon-refresh'></span> 관리자 책임</button>
       </div><!--버튼그룹 종료-->
     </div><!--버튼그룹 Row 종료-->
 
     <hr>
-      </div><!--Details 화면메인그룹 종료-->
+      </div><!--상세정보 화면메인그룹 종료-->
 
-    </div><!--Details 패널 종료-->
+    </div><!--상세정보 패널 종료-->
 
   </div>
 
