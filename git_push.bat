@@ -1,4 +1,5 @@
 @echo off
+chcp 65001 >nul
 
 :: 변경된 파일을 모두 Git 스테이지에 추가
 git add .
