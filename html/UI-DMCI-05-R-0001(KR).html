@@ -1,0 +1,973 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-DMCI-05-R-0001_자산관리</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> 자산관리 - UI-DMCI-05-R-0001</h1>
+<div class='pull-right'><a href='UI-DMCI-05-R-0001(EN).html'>EN</a> | <a href='UI-DMCI-05-R-0001(KR).html'>KR</a> | <a href='UI-DMCI-05-R-0001(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div><div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--목록 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_목록').toggle();" id='목록'><span class='glyphicon glyphicon-chevron-right'></span> 목록</h2>
+      </div>
+
+      <div id='자산관리_목록' class='panel-body'><!--목록 화면메인그룹 시작-->
+
+  <table id='UI-DMCI-05-R-0001_TABLE_2' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >TIN</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='목록___TIN_1' value='172-206-670'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >자산 번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='목록___자산_번호_1' value=''  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >자산 상태</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+      <select class='form-control ' id='목록___자산_상태' >
+            <option >All
+</option>
+            <option >00│자산 요청
+</option>
+            <option >10│자산등록
+</option>
+            <option >20│담보등록
+</option>
+            <option >21│담보해제
+</option>
+            <option >30│압류/압수
+</option>
+            <option >31│압류해제
+</option>
+            <option >40│평가의뢰
+</option>
+            <option >41│평가완료
+</option>
+            <option >50│매각진행
+</option>
+            <option >51│매각완료
+</option>
+            <option >60│낙찰자인도</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+      <th width='15%' ></th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-R-0001_TABLE_2').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='초기화' ><span class='glyphicon glyphicon-refresh'></span> 초기화</button>
+        <button class='btn btn-info' type='button' value='신규' onclick='onloadImage("../images-DOC/UI-DMCI-05-O-0001_Registration_of_assets.png","1100","620")'>신규</button>
+        <button class='btn btn-default' type='button' value='조회' ><span class='glyphicon glyphicon-search'></span> 조회</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='목록____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--목록 화면메인그룹 종료-->
+
+    </div><!--목록 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--상세 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_상세').toggle();" id='상세'><span class='glyphicon glyphicon-chevron-right'></span> 상세</h2>
+      </div>
+
+      <div id='자산관리_상세' class='panel-body'><!--상세 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_상세_납세자_정보').toggle();" id='납세자_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 납세자 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_상세_납세자_정보' class='panel-body'><!--납세자 정보 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-R-0001_TABLE_10' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >TIN</th>
+        <td width='35%' style='text-align: left;' class=''>
+172-206-670        </td>
+      <th width='15%' >납세자 이름</th>
+        <td width='35%' style='text-align: left;' class=''>
+JEDIDA ATIENO OUMA        </td>
+    </tr>
+    <tr>
+      <th width='15%' >상호명</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >세무 관할 지역</th>
+        <td width='35%' style='text-align: left;' class=''>
+MARA        </td>
+    </tr>
+    <tr>
+      <th width='15%' >이메일</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >전화번호</th>
+        <td width='35%' style='text-align: left;' class=''>
+0747681462        </td>
+    </tr>
+    <tr>
+      <th width='15%' >우편 주소</th>
+        <td style='text-align: left;' colspan='3' class=''>
+P.O Box 0, undefined        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >실제 주소</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Rorya Tai Sota        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-R-0001_TABLE_10').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='상세_납세자_정보___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--납세자 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_상세_자산_목록').toggle();" id='자산_목록'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 목록</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_상세_자산_목록' class='panel-body'><!--자산 목록 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-R-0001_TABLE_19' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>자산 번호</th>
+      <th class='text-center'>자산 분류</th>
+      <th class='text-center'>자산 유형</th>
+      <th class='text-center'>자산 이름</th>
+      <th class='text-center'>Status</th>
+      <th class='text-center'>등록 날짜</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+ASET202500000102691        </td>
+        <td class=''>
+10│토지/건물에 대한 권리
+        </td>
+        <td class=''>
+10│토지
+        </td>
+        <td class=''>
+earth        </td>
+        <td class=''>
+00│자산 요청
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102701        </td>
+        <td class=''>
+10│토지/건물에 대한 권리
+        </td>
+        <td class=''>
+11│건물(토지 포함)
+        </td>
+        <td class=''>
+building        </td>
+        <td class=''>
+10│자산등록
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000101921        </td>
+        <td class=''>
+20│부패하기 쉬운 상품
+        </td>
+        <td class=''>
+20│가공된 부패성 물품
+        </td>
+        <td class=''>
+Fresh Fresh        </td>
+        <td class=''>
+20│담보등록
+        </td>
+        <td class=''>
+12/05/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET20250000010216E        </td>
+        <td class=''>
+20│부패하기 쉬운 상품
+        </td>
+        <td class=''>
+21│비가공 부패성 물품
+        </td>
+        <td class=''>
+Unfresh Unfresh        </td>
+        <td class=''>
+21│담보해제
+        </td>
+        <td class=''>
+22/05/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000001131        </td>
+        <td class=''>
+30│기타 유형자산
+        </td>
+        <td class=''>
+30│차량
+        </td>
+        <td class=''>
+super car        </td>
+        <td class=''>
+30│압류/압수
+        </td>
+        <td class=''>
+21/03/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102901        </td>
+        <td class=''>
+30│기타 유형자산
+        </td>
+        <td class=''>
+31│선박
+        </td>
+        <td class=''>
+asetNm 31-2        </td>
+        <td class=''>
+31│압류해제
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102661        </td>
+        <td class=''>
+30│기타 유형자산
+        </td>
+        <td class=''>
+32│전자/기계류
+        </td>
+        <td class=''>
+test machine        </td>
+        <td class=''>
+40│평가의뢰
+        </td>
+        <td class=''>
+02/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000001891        </td>
+        <td class=''>
+30│기타 유형자산
+        </td>
+        <td class=''>
+33│기타 비부패성 물품
+        </td>
+        <td class=''>
+qty        </td>
+        <td class=''>
+41│평가완료
+        </td>
+        <td class=''>
+30/04/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102871        </td>
+        <td class=''>
+40│무형자산
+        </td>
+        <td class=''>
+40│주식/지분
+        </td>
+        <td class=''>
+asetNm 40        </td>
+        <td class=''>
+50│매각진행
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102851        </td>
+        <td class=''>
+40│무형자산
+        </td>
+        <td class=''>
+41│채권
+        </td>
+        <td class=''>
+asetNm 41        </td>
+        <td class=''>
+51│매각완료
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102881        </td>
+        <td class=''>
+40│무형자산        </td>
+        <td class=''>
+42│기타 무형 자산        </td>
+        <td class=''>
+setNm 42        </td>
+        <td class=''>
+60│낙찰자인도        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+    </tbody>
+  </table>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='상세_자산_목록___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 목록 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--상세 화면메인그룹 종료-->
+
+    </div><!--상세 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--10 토지 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_10_토지').toggle();" id='10_토지'><span class='glyphicon glyphicon-chevron-right'></span> 10 토지</h2>
+      </div>
+
+      <div id='자산관리_10_토지' class='panel-body'><!--10 토지 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_10_토지_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_10_토지_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-10(KR).html' id='COMUIASSET10' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET10 = document.getElementById('COMUIASSET10');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-10(KR).html' == message.name) {            
+          iframe_COMUIASSET10.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--10 토지 화면메인그룹 종료-->
+
+    </div><!--10 토지 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--11 건물 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_11_건물').toggle();" id='11_건물'><span class='glyphicon glyphicon-chevron-right'></span> 11 건물</h2>
+      </div>
+
+      <div id='자산관리_11_건물' class='panel-body'><!--11 건물 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_11_건물_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_11_건물_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-11(KR).html' id='COMUIASSET11' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET11 = document.getElementById('COMUIASSET11');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-11(KR).html' == message.name) {            
+          iframe_COMUIASSET11.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--11 건물 화면메인그룹 종료-->
+
+    </div><!--11 건물 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--20 가공된 부패성 물품 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_20_가공된_부패성_물품').toggle();" id='20_가공된_부패성_물품'><span class='glyphicon glyphicon-chevron-right'></span> 20 가공된 부패성 물품</h2>
+      </div>
+
+      <div id='자산관리_20_가공된_부패성_물품' class='panel-body'><!--20 가공된 부패성 물품 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_20_가공된_부패성_물품_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_20_가공된_부패성_물품_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-20(KR).html' id='COMUIASSET20' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET20 = document.getElementById('COMUIASSET20');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-20(KR).html' == message.name) {            
+          iframe_COMUIASSET20.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--20 가공된 부패성 물품 화면메인그룹 종료-->
+
+    </div><!--20 가공된 부패성 물품 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--21 비가공 부패성 물품 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_21_비가공_부패성_물품').toggle();" id='21_비가공_부패성_물품'><span class='glyphicon glyphicon-chevron-right'></span> 21 비가공 부패성 물품</h2>
+      </div>
+
+      <div id='자산관리_21_비가공_부패성_물품' class='panel-body'><!--21 비가공 부패성 물품 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_21_비가공_부패성_물품_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_21_비가공_부패성_물품_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-21(KR).html' id='COMUIASSET21' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET21 = document.getElementById('COMUIASSET21');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-21(KR).html' == message.name) {            
+          iframe_COMUIASSET21.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--21 비가공 부패성 물품 화면메인그룹 종료-->
+
+    </div><!--21 비가공 부패성 물품 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--30 차량 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_30_차량').toggle();" id='30_차량'><span class='glyphicon glyphicon-chevron-right'></span> 30 차량</h2>
+      </div>
+
+      <div id='자산관리_30_차량' class='panel-body'><!--30 차량 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_30_차량_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_30_차량_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-30(KR).html' id='COMUIASSET30' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET30 = document.getElementById('COMUIASSET30');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-30(KR).html' == message.name) {            
+          iframe_COMUIASSET30.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--30 차량 화면메인그룹 종료-->
+
+    </div><!--30 차량 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--31 선박 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_31_선박').toggle();" id='31_선박'><span class='glyphicon glyphicon-chevron-right'></span> 31 선박</h2>
+      </div>
+
+      <div id='자산관리_31_선박' class='panel-body'><!--31 선박 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_31_선박_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_31_선박_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-31(KR).html' id='COMUIASSET31' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET31 = document.getElementById('COMUIASSET31');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-31(KR).html' == message.name) {            
+          iframe_COMUIASSET31.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--31 선박 화면메인그룹 종료-->
+
+    </div><!--31 선박 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--32 전자/기계류 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_32_전자_기계류').toggle();" id='32_전자_기계류'><span class='glyphicon glyphicon-chevron-right'></span> 32 전자/기계류</h2>
+      </div>
+
+      <div id='자산관리_32_전자_기계류' class='panel-body'><!--32 전자/기계류 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_32_전자_기계류_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_32_전자_기계류_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-32(KR).html' id='COMUIASSET32' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET32 = document.getElementById('COMUIASSET32');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-32(KR).html' == message.name) {            
+          iframe_COMUIASSET32.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--32 전자/기계류 화면메인그룹 종료-->
+
+    </div><!--32 전자/기계류 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--33 기타 비부패성 물품 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_33_기타_비부패성_물품').toggle();" id='33_기타_비부패성_물품'><span class='glyphicon glyphicon-chevron-right'></span> 33 기타 비부패성 물품</h2>
+      </div>
+
+      <div id='자산관리_33_기타_비부패성_물품' class='panel-body'><!--33 기타 비부패성 물품 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_33_기타_비부패성_물품_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_33_기타_비부패성_물품_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-33(KR).html' id='COMUIASSET33' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET33 = document.getElementById('COMUIASSET33');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-33(KR).html' == message.name) {            
+          iframe_COMUIASSET33.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--33 기타 비부패성 물품 화면메인그룹 종료-->
+
+    </div><!--33 기타 비부패성 물품 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--40 주식/지분 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_40_주식_지분').toggle();" id='40_주식_지분'><span class='glyphicon glyphicon-chevron-right'></span> 40 주식/지분</h2>
+      </div>
+
+      <div id='자산관리_40_주식_지분' class='panel-body'><!--40 주식/지분 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_40_주식_지분_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_40_주식_지분_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-40(KR).html' id='COMUIASSET40' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET40 = document.getElementById('COMUIASSET40');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-40(KR).html' == message.name) {            
+          iframe_COMUIASSET40.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--40 주식/지분 화면메인그룹 종료-->
+
+    </div><!--40 주식/지분 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--41 채권 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_41_채권').toggle();" id='41_채권'><span class='glyphicon glyphicon-chevron-right'></span> 41 채권</h2>
+      </div>
+
+      <div id='자산관리_41_채권' class='panel-body'><!--41 채권 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_41_채권_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_41_채권_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-41(KR).html' id='COMUIASSET41' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET41 = document.getElementById('COMUIASSET41');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-41(KR).html' == message.name) {            
+          iframe_COMUIASSET41.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--41 채권 화면메인그룹 종료-->
+
+    </div><!--41 채권 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--42 기타 무형 자산 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#자산관리_42_기타_무형_자산').toggle();" id='42_기타_무형_자산'><span class='glyphicon glyphicon-chevron-right'></span> 42 기타 무형 자산</h2>
+      </div>
+
+      <div id='자산관리_42_기타_무형_자산' class='panel-body'><!--42 기타 무형 자산 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#자산관리_42_기타_무형_자산_자산_세부_정보').toggle();" id='자산_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 자산 세부 정보</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='자산관리_42_기타_무형_자산_자산_세부_정보' class='panel-body'><!--자산 세부 정보 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-42(KR).html' id='COMUIASSET42' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET42 = document.getElementById('COMUIASSET42');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-42(KR).html' == message.name) {            
+          iframe_COMUIASSET42.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--자산 세부 정보 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--42 기타 무형 자산 화면메인그룹 종료-->
+
+    </div><!--42 기타 무형 자산 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           

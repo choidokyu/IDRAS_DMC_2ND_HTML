@@ -1,0 +1,971 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-DMCI-05-R-0001_Asset Management</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> Asset Management - UI-DMCI-05-R-0001</h1>
+<div class='pull-right'><a href='UI-DMCI-05-R-0001(EN).html'>EN</a> | <a href='UI-DMCI-05-R-0001(KR).html'>KR</a> | <a href='UI-DMCI-05-R-0001(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div><div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--list 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Management_list').toggle();" id='list'><span class='glyphicon glyphicon-chevron-right'></span> list</h2>
+      </div>
+
+      <div id='Asset_Management_list' class='panel-body'><!--list 화면메인그룹 시작-->
+
+  <table id='UI-DMCI-05-R-0001_TABLE_2' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >TIN</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='list___TIN_1' value='172-206-670'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Asset No.</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='list___Asset_No._1' value=''  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Asset Status</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+      <select class='form-control ' id='list___Asset_Status' >
+            <option >All
+</option>
+            <option >Asset registration
+</option>
+            <option >Collateral registration
+</option>
+            <option >Collateral release
+</option>
+            <option >Distrained/Restrained
+</option>
+            <option >Release of seizure
+</option>
+            <option >Appraisal request
+</option>
+            <option >Appraisal completion
+</option>
+            <option >Sale in progress
+</option>
+            <option >Sale completed
+</option>
+            <option >Release after auction</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+      <th width='15%' ></th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-R-0001_TABLE_2').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='Reset' ><span class='glyphicon glyphicon-refresh'></span> Reset</button>
+        <button class='btn btn-info' type='button' value='New' onclick='onloadImage("../images-DOC/UI-DMCI-05-O-0001_Registration_of_assets.png","1100","620")'>New</button>
+        <button class='btn btn-default' type='button' value='Search' ><span class='glyphicon glyphicon-search'></span> Search</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='list____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--list 화면메인그룹 종료-->
+
+    </div><!--list 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--detail 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Management_detail').toggle();" id='detail'><span class='glyphicon glyphicon-chevron-right'></span> detail</h2>
+      </div>
+
+      <div id='Asset_Management_detail' class='panel-body'><!--detail 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Management_detail_Taxpayer_Information').toggle();" id='Taxpayer_Information'><span class='glyphicon glyphicon-menu-hamburger'></span> Taxpayer Information</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Management_detail_Taxpayer_Information' class='panel-body'><!--Taxpayer Information 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-R-0001_TABLE_10' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >TIN</th>
+        <td width='35%' style='text-align: left;' class=''>
+172-206-670        </td>
+      <th width='15%' >Taxpayer Name</th>
+        <td width='35%' style='text-align: left;' class=''>
+JEDIDA ATIENO OUMA        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Trading Name</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >Tax Region</th>
+        <td width='35%' style='text-align: left;' class=''>
+MARA        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Email</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >Phone Number</th>
+        <td width='35%' style='text-align: left;' class=''>
+0747681462        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Postal Address</th>
+        <td style='text-align: left;' colspan='3' class=''>
+P.O Box 0, undefined        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Physical Address</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Rorya Tai Sota        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-R-0001_TABLE_10').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='detail_Taxpayer_Information___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Taxpayer Information 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Management_detail_List_of_Assets').toggle();" id='List_of_Assets'><span class='glyphicon glyphicon-menu-hamburger'></span> List of Assets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Management_detail_List_of_Assets' class='panel-body'><!--List of Assets 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-R-0001_TABLE_19' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>Asset No.</th>
+      <th class='text-center'>Asset Category</th>
+      <th class='text-center'>Asset Type</th>
+      <th class='text-center'>Asset Name</th>
+      <th class='text-center'>Status</th>
+      <th class='text-center'>Registration Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+ASET202500000102691        </td>
+        <td class=''>
+10│Interest in Land/Buildings
+        </td>
+        <td class=''>
+10│Land
+        </td>
+        <td class=''>
+earth        </td>
+        <td class=''>
+00│Asset Request
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102701        </td>
+        <td class=''>
+10│Interest in Land/Buildings
+        </td>
+        <td class=''>
+11│Building (with land)
+        </td>
+        <td class=''>
+building        </td>
+        <td class=''>
+10│Asset registration
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000101921        </td>
+        <td class=''>
+20│Perishable Goods
+        </td>
+        <td class=''>
+20│Processed Perishable Goods
+        </td>
+        <td class=''>
+Fresh Fresh        </td>
+        <td class=''>
+20│Collateral registration
+        </td>
+        <td class=''>
+12/05/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET20250000010216E        </td>
+        <td class=''>
+20│Perishable Goods
+        </td>
+        <td class=''>
+21│Unprocessed Perishable Goods
+        </td>
+        <td class=''>
+Unfresh Unfresh        </td>
+        <td class=''>
+21│Collateral release
+        </td>
+        <td class=''>
+22/05/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000001131        </td>
+        <td class=''>
+30│Other Tangible Assets
+        </td>
+        <td class=''>
+30│Motor vehicle
+        </td>
+        <td class=''>
+super car        </td>
+        <td class=''>
+30│Distrained/Restrained
+        </td>
+        <td class=''>
+21/03/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102901        </td>
+        <td class=''>
+30│Other Tangible Assets
+        </td>
+        <td class=''>
+31│Marine Vessels
+        </td>
+        <td class=''>
+asetNm 31-2        </td>
+        <td class=''>
+31│Release of seizure
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102661        </td>
+        <td class=''>
+30│Other Tangible Assets
+        </td>
+        <td class=''>
+32│Electronics/Machines
+        </td>
+        <td class=''>
+test machine        </td>
+        <td class=''>
+40│Appraisal request
+        </td>
+        <td class=''>
+02/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000001891        </td>
+        <td class=''>
+30│Other Tangible Assets
+        </td>
+        <td class=''>
+33│Other non- Perishable Goods
+        </td>
+        <td class=''>
+qty        </td>
+        <td class=''>
+41│Appraisal completion
+        </td>
+        <td class=''>
+30/04/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102871        </td>
+        <td class=''>
+40│Intagible asset
+        </td>
+        <td class=''>
+40│Shares/Units
+        </td>
+        <td class=''>
+asetNm 40        </td>
+        <td class=''>
+50│Sale in progress
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102851        </td>
+        <td class=''>
+40│Intagible asset
+        </td>
+        <td class=''>
+41│Bonds
+        </td>
+        <td class=''>
+asetNm 41        </td>
+        <td class=''>
+51│Sale completed
+        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+ASET202500000102881        </td>
+        <td class=''>
+40│Intagible asset        </td>
+        <td class=''>
+42│Other Intangible Assets        </td>
+        <td class=''>
+setNm 42        </td>
+        <td class=''>
+60│Release after auction        </td>
+        <td class=''>
+05/06/2025        </td>
+      </tr>
+    </tbody>
+  </table>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='detail_List_of_Assets___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--List of Assets 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--detail 화면메인그룹 종료-->
+
+    </div><!--detail 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--10 land 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Management_10_land').toggle();" id='10_land'><span class='glyphicon glyphicon-chevron-right'></span> 10 land</h2>
+      </div>
+
+      <div id='Asset_Management_10_land' class='panel-body'><!--10 land 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Management_10_land_Detail_of_Assets').toggle();" id='Detail_of_Assets'><span class='glyphicon glyphicon-menu-hamburger'></span> Detail of Assets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Management_10_land_Detail_of_Assets' class='panel-body'><!--Detail of Assets 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-10(EN).html' id='COMUIASSET10' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET10 = document.getElementById('COMUIASSET10');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-10(EN).html' == message.name) {            
+          iframe_COMUIASSET10.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Detail of Assets 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--10 land 화면메인그룹 종료-->
+
+    </div><!--10 land 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--11 Building 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Management_11_Building').toggle();" id='11_Building'><span class='glyphicon glyphicon-chevron-right'></span> 11 Building</h2>
+      </div>
+
+      <div id='Asset_Management_11_Building' class='panel-body'><!--11 Building 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Management_11_Building_Detail_of_Assets').toggle();" id='Detail_of_Assets'><span class='glyphicon glyphicon-menu-hamburger'></span> Detail of Assets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Management_11_Building_Detail_of_Assets' class='panel-body'><!--Detail of Assets 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-11(EN).html' id='COMUIASSET11' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET11 = document.getElementById('COMUIASSET11');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-11(EN).html' == message.name) {            
+          iframe_COMUIASSET11.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Detail of Assets 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--11 Building 화면메인그룹 종료-->
+
+    </div><!--11 Building 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--20 Processed Perishable Goods 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Management_20_Processed_Perishable_Goods').toggle();" id='20_Processed_Perishable_Goods'><span class='glyphicon glyphicon-chevron-right'></span> 20 Processed Perishable Goods</h2>
+      </div>
+
+      <div id='Asset_Management_20_Processed_Perishable_Goods' class='panel-body'><!--20 Processed Perishable Goods 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Management_20_Processed_Perishable_Goods_Detail_of_Assets').toggle();" id='Detail_of_Assets'><span class='glyphicon glyphicon-menu-hamburger'></span> Detail of Assets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Management_20_Processed_Perishable_Goods_Detail_of_Assets' class='panel-body'><!--Detail of Assets 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-20(EN).html' id='COMUIASSET20' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET20 = document.getElementById('COMUIASSET20');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-20(EN).html' == message.name) {            
+          iframe_COMUIASSET20.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Detail of Assets 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--20 Processed Perishable Goods 화면메인그룹 종료-->
+
+    </div><!--20 Processed Perishable Goods 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--21 Unprocessed Perishable Goods 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Management_21_Unprocessed_Perishable_Goods').toggle();" id='21_Unprocessed_Perishable_Goods'><span class='glyphicon glyphicon-chevron-right'></span> 21 Unprocessed Perishable Goods</h2>
+      </div>
+
+      <div id='Asset_Management_21_Unprocessed_Perishable_Goods' class='panel-body'><!--21 Unprocessed Perishable Goods 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Management_21_Unprocessed_Perishable_Goods_Detail_of_Assets').toggle();" id='Detail_of_Assets'><span class='glyphicon glyphicon-menu-hamburger'></span> Detail of Assets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Management_21_Unprocessed_Perishable_Goods_Detail_of_Assets' class='panel-body'><!--Detail of Assets 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-21(EN).html' id='COMUIASSET21' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET21 = document.getElementById('COMUIASSET21');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-21(EN).html' == message.name) {            
+          iframe_COMUIASSET21.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Detail of Assets 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--21 Unprocessed Perishable Goods 화면메인그룹 종료-->
+
+    </div><!--21 Unprocessed Perishable Goods 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--30 Motor vehicle 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Management_30_Motor_vehicle').toggle();" id='30_Motor_vehicle'><span class='glyphicon glyphicon-chevron-right'></span> 30 Motor vehicle</h2>
+      </div>
+
+      <div id='Asset_Management_30_Motor_vehicle' class='panel-body'><!--30 Motor vehicle 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Management_30_Motor_vehicle_Detail_of_Assets').toggle();" id='Detail_of_Assets'><span class='glyphicon glyphicon-menu-hamburger'></span> Detail of Assets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Management_30_Motor_vehicle_Detail_of_Assets' class='panel-body'><!--Detail of Assets 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-30(EN).html' id='COMUIASSET30' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET30 = document.getElementById('COMUIASSET30');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-30(EN).html' == message.name) {            
+          iframe_COMUIASSET30.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Detail of Assets 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--30 Motor vehicle 화면메인그룹 종료-->
+
+    </div><!--30 Motor vehicle 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--31 Marine Vessels 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Management_31_Marine_Vessels').toggle();" id='31_Marine_Vessels'><span class='glyphicon glyphicon-chevron-right'></span> 31 Marine Vessels</h2>
+      </div>
+
+      <div id='Asset_Management_31_Marine_Vessels' class='panel-body'><!--31 Marine Vessels 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Management_31_Marine_Vessels_Detail_of_Assets').toggle();" id='Detail_of_Assets'><span class='glyphicon glyphicon-menu-hamburger'></span> Detail of Assets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Management_31_Marine_Vessels_Detail_of_Assets' class='panel-body'><!--Detail of Assets 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-31(EN).html' id='COMUIASSET31' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET31 = document.getElementById('COMUIASSET31');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-31(EN).html' == message.name) {            
+          iframe_COMUIASSET31.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Detail of Assets 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--31 Marine Vessels 화면메인그룹 종료-->
+
+    </div><!--31 Marine Vessels 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--32 | Electronics/Machines 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Management_32_|_Electronics_Machines').toggle();" id='32_|_Electronics_Machines'><span class='glyphicon glyphicon-chevron-right'></span> 32 | Electronics/Machines</h2>
+      </div>
+
+      <div id='Asset_Management_32_|_Electronics_Machines' class='panel-body'><!--32 | Electronics/Machines 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Management_32_|_Electronics_Machines_Detail_of_Assets').toggle();" id='Detail_of_Assets'><span class='glyphicon glyphicon-menu-hamburger'></span> Detail of Assets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Management_32_|_Electronics_Machines_Detail_of_Assets' class='panel-body'><!--Detail of Assets 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-32(EN).html' id='COMUIASSET32' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET32 = document.getElementById('COMUIASSET32');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-32(EN).html' == message.name) {            
+          iframe_COMUIASSET32.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Detail of Assets 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--32 | Electronics/Machines 화면메인그룹 종료-->
+
+    </div><!--32 | Electronics/Machines 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--33 | Other non- Perishable Goods 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Management_33_|_Other_non__Perishable_Goods').toggle();" id='33_|_Other_non__Perishable_Goods'><span class='glyphicon glyphicon-chevron-right'></span> 33 | Other non- Perishable Goods</h2>
+      </div>
+
+      <div id='Asset_Management_33_|_Other_non__Perishable_Goods' class='panel-body'><!--33 | Other non- Perishable Goods 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Management_33_|_Other_non__Perishable_Goods_Detail_of_Assets').toggle();" id='Detail_of_Assets'><span class='glyphicon glyphicon-menu-hamburger'></span> Detail of Assets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Management_33_|_Other_non__Perishable_Goods_Detail_of_Assets' class='panel-body'><!--Detail of Assets 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-33(EN).html' id='COMUIASSET33' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET33 = document.getElementById('COMUIASSET33');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-33(EN).html' == message.name) {            
+          iframe_COMUIASSET33.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Detail of Assets 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--33 | Other non- Perishable Goods 화면메인그룹 종료-->
+
+    </div><!--33 | Other non- Perishable Goods 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--40 | Shares/Units 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Management_40_|_Shares_Units').toggle();" id='40_|_Shares_Units'><span class='glyphicon glyphicon-chevron-right'></span> 40 | Shares/Units</h2>
+      </div>
+
+      <div id='Asset_Management_40_|_Shares_Units' class='panel-body'><!--40 | Shares/Units 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Management_40_|_Shares_Units_Detail_of_Assets').toggle();" id='Detail_of_Assets'><span class='glyphicon glyphicon-menu-hamburger'></span> Detail of Assets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Management_40_|_Shares_Units_Detail_of_Assets' class='panel-body'><!--Detail of Assets 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-40(EN).html' id='COMUIASSET40' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET40 = document.getElementById('COMUIASSET40');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-40(EN).html' == message.name) {            
+          iframe_COMUIASSET40.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Detail of Assets 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--40 | Shares/Units 화면메인그룹 종료-->
+
+    </div><!--40 | Shares/Units 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--41 | Bonds 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Management_41_|_Bonds').toggle();" id='41_|_Bonds'><span class='glyphicon glyphicon-chevron-right'></span> 41 | Bonds</h2>
+      </div>
+
+      <div id='Asset_Management_41_|_Bonds' class='panel-body'><!--41 | Bonds 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Management_41_|_Bonds_Detail_of_Assets').toggle();" id='Detail_of_Assets'><span class='glyphicon glyphicon-menu-hamburger'></span> Detail of Assets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Management_41_|_Bonds_Detail_of_Assets' class='panel-body'><!--Detail of Assets 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-41(EN).html' id='COMUIASSET41' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET41 = document.getElementById('COMUIASSET41');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-41(EN).html' == message.name) {            
+          iframe_COMUIASSET41.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Detail of Assets 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--41 | Bonds 화면메인그룹 종료-->
+
+    </div><!--41 | Bonds 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--42 | Other Intangible Assets 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Asset_Management_42_|_Other_Intangible_Assets').toggle();" id='42_|_Other_Intangible_Assets'><span class='glyphicon glyphicon-chevron-right'></span> 42 | Other Intangible Assets</h2>
+      </div>
+
+      <div id='Asset_Management_42_|_Other_Intangible_Assets' class='panel-body'><!--42 | Other Intangible Assets 화면메인그룹 시작-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Asset_Management_42_|_Other_Intangible_Assets_Detail_of_Assets').toggle();" id='Detail_of_Assets'><span class='glyphicon glyphicon-menu-hamburger'></span> Detail of Assets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Asset_Management_42_|_Other_Intangible_Assets_Detail_of_Assets' class='panel-body'><!--Detail of Assets 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASSET-42(EN).html' id='COMUIASSET42' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASSET42 = document.getElementById('COMUIASSET42');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASSET-42(EN).html' == message.name) {            
+          iframe_COMUIASSET42.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Detail of Assets 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--42 | Other Intangible Assets 화면메인그룹 종료-->
+
+    </div><!--42 | Other Intangible Assets 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           
