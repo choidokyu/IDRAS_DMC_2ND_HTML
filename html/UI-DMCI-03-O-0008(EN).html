@@ -97,7 +97,7 @@ $(window).load(function(){
     <div class='row'><!--버튼그룹 Row 시작-->
       <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
         <button class='btn btn-default btn-left' type='button' value='Reset' ><span class='glyphicon glyphicon-refresh'></span> Reset</button>
-        <button class='btn btn-info' type='button' value='New' onclick='onloadImage("../images-DOC/TIN_Information.png","900","1600")'>New</button>
+        <button class='btn btn-info' type='button' value='New' >New</button>
         <button class='btn btn-default' type='button' value='Search' ><span class='glyphicon glyphicon-search'></span> Search</button>
       </div><!--버튼그룹 종료-->
     </div><!--버튼그룹 Row 종료-->
@@ -119,7 +119,7 @@ $(window).load(function(){
       <tr>
       <th class='text-center'>Application No</th>
       <th class='text-center'>Taxpayer TIN</th>
-      <th class='text-center'>Taxpayer Name</th>
+      <th class='text-center'>Taxpayer's Name</th>
       <th class='text-center'>Outstanding Liability</th>
       <th class='text-center'>Third Party TIN</th>
       <th class='text-center'>Third Party Name</th>
@@ -273,8 +273,17 @@ $(window).load(function(){
     <tr>
       <th width='15%' >TIN<span class='mandatory'> *</span></th>
         <td width='35%' style='text-align: left;' class=''>
-100-113-295        </td>
-      <th width='15%' >Taxpayer Name</th>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='New_Taxpayer_Information__TIN_1' value='100-113-295'  >
+        <a class='input-group-addon' onclick='onloadImage("../images-DOC/TIN_Information.png","900","1600")'><span class='glyphicon glyphicon-question-sign' onclick='onloadImage("../images-DOC/TIN_Information.png","900","1600")'></span></a>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Taxpayer's Name</th>
         <td width='35%' style='text-align: left;' class=''>
 MOHAMMED YUSUFALI JIVANJEE        </td>
     </tr>
@@ -435,75 +444,6 @@ $(window).load(function(){
       <div id='Third_Party_Liability_New_Taxpayer_Relation' class='panel-body'><!--Taxpayer Relation 화면서브그룹 시작-->
 
   <table id='UI-DMCI-03-O-0008_TABLE_51' class='table table-bordered table-hover'>
-    <tr>
-      <th width='15%' >Relation Type</th>
-        <td width='35%' style='text-align: left;' class=''>
-  <div>
-      <select class='form-control ' id='New_Taxpayer_Relation__Relation_Type' >
-            <option >Auditor/Accountant </option>
-            <option > Advocate/Lawyer </option>
-            <option > Ambassador </option>
-            <option > Chief Accountant </option>
-            <option > Chief Executive Officer </option>
-            <option > Chairperson </option>
-            <option > Commissioner General </option>
-            <option > Secretary </option>
-            <option > Directors </option>
-            <option > Director General </option>
-            <option > Foreign Mission Employer </option>
-            <option > Employer </option>
-            <option > Executive Director </option>
-            <option > Employed By Foreign Mission </option>
-            <option > High Commissioner </option>
-            <option > Head of Mission </option>
-            <option > Informal Sector Leader </option>
-            <option > Informal Sector Member </option>
-            <option > Landlord </option>
-            <option > Managing Director </option>
-            <option > Member </option>
-            <option > Manager </option>
-            <option > Owner </option>
-            <option > Parent Entity TIN </option>
-            <option > Permanent Secretary </option>
-            <option > Previous TIN </option>
-            <option > Partner </option>
-            <option > Representative </option>
-            <option > Trustee </option>
-            <option > Tax Consultant </option>
-            <option > Shareholder </option>
-            <option > District Executive Officer</option>
-      </select>
-    </div>
-  </div>
-
-        </td>
-      <th width='15%' >TIN</th>
-        <td width='35%' style='text-align: left;' class=''>
-    <div class='form-group  form-group-sm '>                              
-        <div class='input-group col-sm-12' id=''>                         
-        <input class='form-control ' type='text' id='New_Taxpayer_Relation__TIN_1' value=''  >
-        </div>
-      </div><!--항목내의 텍스트 종료-->
-    </div><!--항목내의 폼그룹 종료--> 
-  </div><!--한개의 항목 종료-->
-
-        </td>
-    </tr>
-  </table>
-<script type="text/javascript">
-$(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_51').rowspan(0);
-});
-</script>
-    <div class='row'><!--버튼그룹 Row 시작-->
-      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
-        <button class='btn btn-default btn-left' type='button' value='Reset' ><span class='glyphicon glyphicon-refresh'></span> Reset</button>
-        <button class='btn btn-default' type='button' value='Search' ><span class='glyphicon glyphicon-search'></span> Search</button>
-      </div><!--버튼그룹 종료-->
-    </div><!--버튼그룹 Row 종료-->
-
-    <hr>
-  <table id='UI-DMCI-03-O-0008_TABLE_55' class='table table-bordered table-hover'>
     <colgroup>
       <col>
       <col>
@@ -514,70 +454,82 @@ $(window).load(function(){
       <tr>
       <th class='text-center'></th>
       <th class='text-center'>TIN</th>
-      <th class='text-center'>Taxpayer Name</th>
+      <th class='text-center'>Taxpayer's Name</th>
       <th class='text-center'>Relation Type</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_36' id='New_Taxpayer_Relation__0_36__37' type='radio'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_36__37'></label>
+        <input name='New_Taxpayer_Relation__0_3' id='New_Taxpayer_Relation__0_3__4' type='radio'  value='' >
+        <label class='label-for-select ' for='New_Taxpayer_Relation__0_3__4'></label>
         </td>
         <td class=''>
-172329098         </td>
+172329098
+        </td>
         <td class=''>
-JUMA MKATE CHAIYO         </td>
+JUMA MKATE CHAIYO
+        </td>
         <td class=''>
-Employer         </td>
+ACC│Auditor/Accountant(감사/회계사)
+        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_38' id='New_Taxpayer_Relation__0_38__39' type='radio'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_38__39'></label>
+        <input name='New_Taxpayer_Relation__0_5' id='New_Taxpayer_Relation__0_5__6' type='radio'  value='' >
+        <label class='label-for-select ' for='New_Taxpayer_Relation__0_5__6'></label>
         </td>
         <td class=''>
- 166207622         </td>
+166207622
+        </td>
         <td class=''>
- MOHAMEDY RAMADHANI MPONELA         </td>
+MOHAMEDY RAMADHANI MPONELA
+        </td>
         <td class=''>
- Employer         </td>
+ADV│Advocate/Lawyer(변호사/변호사)
+        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_40' id='New_Taxpayer_Relation__0_40__41' type='radio'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_40__41'></label>
+        <input name='New_Taxpayer_Relation__0_7' id='New_Taxpayer_Relation__0_7__8' type='radio'  value='' >
+        <label class='label-for-select ' for='New_Taxpayer_Relation__0_7__8'></label>
         </td>
         <td class=''>
- 104703976         </td>
+104703976
+        </td>
         <td class=''>
- MOHAMMED YUSUFALI JIVANJEE         </td>
+MOHAMMED YUSUFALI JIVANJEE
+        </td>
         <td class=''>
- DEA         </td>
+AMB│Ambassador(대사)
+        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_42' id='New_Taxpayer_Relation__0_42__43' type='radio'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_42__43'></label>
+        <input name='New_Taxpayer_Relation__0_9' id='New_Taxpayer_Relation__0_9__10' type='radio'  value='' >
+        <label class='label-for-select ' for='New_Taxpayer_Relation__0_9__10'></label>
         </td>
         <td class=''>
- 121167689         </td>
+121167689
+        </td>
         <td class=''>
- PINNACLE FINANCE COMPANY LIMITED         </td>
+PINNACLE FINANCE COMPANY LIMITED
+        </td>
         <td class=''>
- Auditor/Accountant         </td>
+CHA│Chief Accountant(최고회계사)
+        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_44' id='New_Taxpayer_Relation__0_44__45' type='radio'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_44__45'></label>
+        <input name='New_Taxpayer_Relation__0_11' id='New_Taxpayer_Relation__0_11__12' type='radio'  value='' >
+        <label class='label-for-select ' for='New_Taxpayer_Relation__0_11__12'></label>
         </td>
         <td class=''>
- 166148766        </td>
+166148766        </td>
         <td class=''>
- RAMADHANI BAKARI ABDALLAH        </td>
+RAMADHANI BAKARI ABDALLAH        </td>
         <td class=''>
- Employer        </td>
+CHE│Chief Executive Officer(최고경영자(CEO))        </td>
       </tr>
     </tbody>
   </table>
@@ -623,7 +575,7 @@ Employer         </td>
 
       <div id='Third_Party_Liability_New_Third_Party_Info' class='panel-body'><!--Third Party Info 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_60' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_56' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >TIN</th>
         <td width='35%' style='text-align: left;' class=''>
@@ -663,7 +615,7 @@ No        </td>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_60').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_56').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -690,7 +642,72 @@ $(window).load(function(){
 
       <div id='Third_Party_Liability_New_Requirement' class='panel-body'><!--Requirement 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_69' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_65' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Receiver & Manager Distinction</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='New_Requirement__Receiver___Manager_Distinction_13' id='New_Requirement__Receiver___Manager_Distinction_13_Receiver_14' type='radio'  value='Receiver' >
+        <label class='label-for-select ' for='New_Requirement__Receiver___Manager_Distinction_13_Receiver_14'>Receiver</label>
+        <input name='New_Requirement__Receiver___Manager_Distinction_13' id='New_Requirement__Receiver___Manager_Distinction_13_Manager_15' type='radio'  value='Manager' >
+        <label class='label-for-select ' for='New_Requirement__Receiver___Manager_Distinction_13_Manager_15'>Manager</label>
+
+<script type="text/javascript">                                
+$("input[name='New_Requirement__Receiver___Manager_Distinction_13']").change(function(){         
+  var test = $("input[name='New_Requirement__Receiver___Manager_Distinction_13']:checked").val();
+  var fvalue = $("input[name='New_Requirement__Receiver___Manager_Distinction_13']").eq(0).val();
+  if (test.indexOf(fvalue) != -1) {                                                        
+    $('#UIDMCI03O0008COMUIR').show();                                          
+    $('#UIDMCI03O0008COMUIM').hide();                                          
+  } else {                                                                                 
+    $('#UIDMCI03O0008COMUIR').hide();                                          
+    $('#UIDMCI03O0008COMUIM').show();                                          
+  }                  
+});                  
+$(window).load(function(){
+  $("input[name='New_Requirement__Receiver___Manager_Distinction_13']").eq(0).trigger('click');
+});                  
+</script>            
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-O-0008_TABLE_65').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./UI-DMCI-03-O-0008-COM-UI-R(EN).html' id='UIDMCI03O0008COMUIR' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_UIDMCI03O0008COMUIR = document.getElementById('UIDMCI03O0008COMUIR');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('UI-DMCI-03-O-0008-COM-UI-R(EN).html' == message.name) {            
+          iframe_UIDMCI03O0008COMUIR.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./UI-DMCI-03-O-0008-COM-UI-M(EN).html' id='UIDMCI03O0008COMUIM' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_UIDMCI03O0008COMUIM = document.getElementById('UIDMCI03O0008COMUIM');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('UI-DMCI-03-O-0008-COM-UI-M(EN).html' == message.name) {            
+          iframe_UIDMCI03O0008COMUIM.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-DMCI-03-O-0008_TABLE_68' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >Remarks</th>
         <td style='text-align: left;' colspan='3' class=''>
@@ -727,7 +744,7 @@ $(window).load(function(){
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_69').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_68').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -744,6 +761,8 @@ $(window).load(function(){
 
     <div class='row'><!--버튼그룹 Row 시작-->
       <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='A Notice to Receiver' onclick='onloadImage("../images-DOC/03/THIRD PART LIABILITY - A Notice to Receiver(EN).png","800","1200")'><span class='glyphicon glyphicon-refresh'></span> A Notice to Receiver</button>
+        <button class='btn btn-default btn-left' type='button' value='Manager Liability' onclick='onloadImage("../images-DOC/03/THIRD PART LIABILITY - Manager Liability(EN).png","800","1200")'><span class='glyphicon glyphicon-refresh'></span> Manager Liability</button>
         <button class='btn btn-info' type='button' value='Save' >Save</button>
         <button class='btn btn-danger' type='button' value='Delete' >Delete</button>
         <button class='btn btn-success' type='button' value='Submit' >Submit</button>

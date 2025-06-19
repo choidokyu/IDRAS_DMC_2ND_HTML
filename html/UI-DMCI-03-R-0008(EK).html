@@ -118,7 +118,7 @@ $(window).load(function(){
       <tr>
       <th class='text-center'>Application No<br>(신청 번호)</th>
       <th class='text-center'>Taxpayer TIN<br>(납세자 식별번호)</th>
-      <th class='text-center'>Taxpayer Name<br>(납세자 이름)</th>
+      <th class='text-center'>Taxpayer's Name<br>(납세자 이름)</th>
       <th class='text-center'>Outstanding Liability<br>(미지급 책임)</th>
       <th class='text-center'>Third Party TIN<br>(제3자 TIN)</th>
       <th class='text-center'>Third Party Name<br>(제3자 성명)</th>
@@ -273,7 +273,7 @@ $(window).load(function(){
       <th width='15%' >TIN<br>(TIN)</th>
         <td width='35%' style='text-align: left;' class=''>
 100-113-295        </td>
-      <th width='15%' >Taxpayer Name<br>(납세자 이름)</th>
+      <th width='15%' >Taxpayer's Name<br>(납세자 이름)</th>
         <td width='35%' style='text-align: left;' class=''>
 MOHAMMED YUSUFALI JIVANJEE        </td>
     </tr>
@@ -502,6 +502,71 @@ $(window).load(function(){
 
   <table id='UI-DMCI-03-R-0008_TABLE_59' class='table table-bordered table-hover'>
     <tr>
+      <th width='15%' >Receiver & Manager Distinction<br>(수신자 및 관리자 구분)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='Details_상세정보__Requirement_요구사항___Receiver___Manager_Distinction<br>_수신자_및_관리자_구분__3' id='Details_상세정보__Requirement_요구사항___Receiver___Manager_Distinction<br>_수신자_및_관리자_구분__3_Receiver_수신자__4' type='radio'  value='Receiver(수신자)' >
+        <label class='label-for-select ' for='Details_상세정보__Requirement_요구사항___Receiver___Manager_Distinction<br>_수신자_및_관리자_구분__3_Receiver_수신자__4'>Receiver(수신자)</label>
+        <input name='Details_상세정보__Requirement_요구사항___Receiver___Manager_Distinction<br>_수신자_및_관리자_구분__3' id='Details_상세정보__Requirement_요구사항___Receiver___Manager_Distinction<br>_수신자_및_관리자_구분__3_Manager_관리자__5' type='radio' checked value='Manager(관리자)' >
+        <label class='label-for-select ' for='Details_상세정보__Requirement_요구사항___Receiver___Manager_Distinction<br>_수신자_및_관리자_구분__3_Manager_관리자__5'>Manager(관리자)</label>
+
+<script type="text/javascript">                                
+$("input[name='Details_상세정보__Requirement_요구사항___Receiver___Manager_Distinction<br>_수신자_및_관리자_구분__3']").change(function(){         
+  var test = $("input[name='Details_상세정보__Requirement_요구사항___Receiver___Manager_Distinction<br>_수신자_및_관리자_구분__3']:checked").val();
+  var fvalue = $("input[name='Details_상세정보__Requirement_요구사항___Receiver___Manager_Distinction<br>_수신자_및_관리자_구분__3']").eq(0).val();
+  if (test.indexOf(fvalue) != -1) {                                                        
+    $('#UIDMCI03R0008COMUIR').show();                                          
+    $('#UIDMCI03R0008COMUIM').hide();                                          
+  } else {                                                                                 
+    $('#UIDMCI03R0008COMUIR').hide();                                          
+    $('#UIDMCI03R0008COMUIM').show();                                          
+  }                  
+});                  
+$(window).load(function(){
+  $("input[name='Details_상세정보__Requirement_요구사항___Receiver___Manager_Distinction<br>_수신자_및_관리자_구분__3']").eq(0).trigger('click');
+});                  
+</script>            
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-R-0008_TABLE_59').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./UI-DMCI-03-R-0008-COM-UI-R(EK).html' id='UIDMCI03R0008COMUIR' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_UIDMCI03R0008COMUIR = document.getElementById('UIDMCI03R0008COMUIR');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('UI-DMCI-03-R-0008-COM-UI-R(EK).html' == message.name) {            
+          iframe_UIDMCI03R0008COMUIR.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./UI-DMCI-03-R-0008-COM-UI-M(EK).html' id='UIDMCI03R0008COMUIM' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_UIDMCI03R0008COMUIM = document.getElementById('UIDMCI03R0008COMUIM');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('UI-DMCI-03-R-0008-COM-UI-M(EK).html' == message.name) {            
+          iframe_UIDMCI03R0008COMUIM.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-DMCI-03-R-0008_TABLE_62' class='table table-bordered table-hover'>
+    <tr>
       <th width='15%' >Remarks<br>(비고)</th>
         <td style='text-align: left;' colspan='3' class=''>
     <div class='form-group  form-group-sm '>                              
@@ -537,7 +602,7 @@ $(window).load(function(){
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-R-0008_TABLE_59').rowspan(0);
+  $('#UI-DMCI-03-R-0008_TABLE_62').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -554,8 +619,8 @@ $(window).load(function(){
 
     <div class='row'><!--버튼그룹 Row 시작-->
       <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
-        <button class='btn btn-default btn-left' type='button' value='A Notice to Receiver<br>(수령자에게 보내는 통지)' onclick='onloadImage("../images-DOC/03/THIRD PART LIABILITY - A Notice to Receiver(EN).jpg","1200","1600")'><span class='glyphicon glyphicon-refresh'></span> A Notice to Receiver<br>(수령자에게 보내는 통지)</button>
-        <button class='btn btn-default btn-left' type='button' value='Manager Liability<br>(관리자 책임)' onclick='onloadImage("../images-DOC/03/THIRD PART LIABILITY - Manager Liability(EN).jpg","1200","1600")'><span class='glyphicon glyphicon-refresh'></span> Manager Liability<br>(관리자 책임)</button>
+        <button class='btn btn-default btn-left' type='button' value='A Notice to Receiver<br>(수령자에게 보내는 통지)' onclick='onloadImage("../images-DOC/03/THIRD PART LIABILITY - A Notice to Receiver(EN).png","800","1200")'><span class='glyphicon glyphicon-refresh'></span> A Notice to Receiver<br>(수령자에게 보내는 통지)</button>
+        <button class='btn btn-default btn-left' type='button' value='Manager Liability<br>(관리자 책임)' onclick='onloadImage("../images-DOC/03/THIRD PART LIABILITY - Manager Liability(EN).png","800","1200")'><span class='glyphicon glyphicon-refresh'></span> Manager Liability<br>(관리자 책임)</button>
       </div><!--버튼그룹 종료-->
     </div><!--버튼그룹 Row 종료-->
 

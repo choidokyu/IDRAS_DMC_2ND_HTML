@@ -502,6 +502,71 @@ $(window).load(function(){
 
   <table id='UI-DMCI-03-R-0008_TABLE_59' class='table table-bordered table-hover'>
     <tr>
+      <th width='15%' >수신자 및 관리자 구분</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='상세정보_요구사항__수신자_및_관리자_구분_3' id='상세정보_요구사항__수신자_및_관리자_구분_3_수신자_4' type='radio'  value='수신자' >
+        <label class='label-for-select ' for='상세정보_요구사항__수신자_및_관리자_구분_3_수신자_4'>수신자</label>
+        <input name='상세정보_요구사항__수신자_및_관리자_구분_3' id='상세정보_요구사항__수신자_및_관리자_구분_3_관리자_5' type='radio' checked value='관리자' >
+        <label class='label-for-select ' for='상세정보_요구사항__수신자_및_관리자_구분_3_관리자_5'>관리자</label>
+
+<script type="text/javascript">                                
+$("input[name='상세정보_요구사항__수신자_및_관리자_구분_3']").change(function(){         
+  var test = $("input[name='상세정보_요구사항__수신자_및_관리자_구분_3']:checked").val();
+  var fvalue = $("input[name='상세정보_요구사항__수신자_및_관리자_구분_3']").eq(0).val();
+  if (test.indexOf(fvalue) != -1) {                                                        
+    $('#UIDMCI03R0008COMUIR').show();                                          
+    $('#UIDMCI03R0008COMUIM').hide();                                          
+  } else {                                                                                 
+    $('#UIDMCI03R0008COMUIR').hide();                                          
+    $('#UIDMCI03R0008COMUIM').show();                                          
+  }                  
+});                  
+$(window).load(function(){
+  $("input[name='상세정보_요구사항__수신자_및_관리자_구분_3']").eq(0).trigger('click');
+});                  
+</script>            
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-R-0008_TABLE_59').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./UI-DMCI-03-R-0008-COM-UI-R(KR).html' id='UIDMCI03R0008COMUIR' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_UIDMCI03R0008COMUIR = document.getElementById('UIDMCI03R0008COMUIR');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('UI-DMCI-03-R-0008-COM-UI-R(KR).html' == message.name) {            
+          iframe_UIDMCI03R0008COMUIR.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./UI-DMCI-03-R-0008-COM-UI-M(KR).html' id='UIDMCI03R0008COMUIM' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_UIDMCI03R0008COMUIM = document.getElementById('UIDMCI03R0008COMUIM');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('UI-DMCI-03-R-0008-COM-UI-M(KR).html' == message.name) {            
+          iframe_UIDMCI03R0008COMUIM.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-DMCI-03-R-0008_TABLE_62' class='table table-bordered table-hover'>
+    <tr>
       <th width='15%' >비고</th>
         <td style='text-align: left;' colspan='3' class=''>
     <div class='form-group  form-group-sm '>                              
@@ -537,7 +602,7 @@ $(window).load(function(){
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-R-0008_TABLE_59').rowspan(0);
+  $('#UI-DMCI-03-R-0008_TABLE_62').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
