@@ -1,0 +1,578 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-DMCI-03-O-1103_List of Write off(상각 목록)</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> List of Write off(상각 목록) - UI-DMCI-03-O-1103</h1>
+<div class='pull-right'><a href='UI-DMCI-03-O-1103(EN).html'>EN</a> | <a href='UI-DMCI-03-O-1103(KR).html'>KR</a> | <a href='UI-DMCI-03-O-1103(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div>  <table id='UI-DMCI-03-O-1103_TABLE_149' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Submission Date<br>(제출 일자)</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group form-inline form-group-sm'>                              
+      <div class=' input-group'>                                                                
+          <div class='input-group date' id='___Submission_Date<br>_제출_일자__div_1'>                         
+                  <input type='text' class='form-control '  id='___Submission_Date<br>_제출_일자_' value='' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+                ~                                                                         
+          <div class='input-group date' id='___Submission_Date<br>_제출_일자__div_2'>                         
+                  <input type='text' class='form-control '  id='___Submission_Date<br>_제출_일자_' value='' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+      </div>
+    </div>
+  </div>
+    <script type='text/javascript'>
+      $(function () { $('#___Submission_Date<br>_제출_일자__div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+      $(function () { $('#___Submission_Date<br>_제출_일자__div_2').datetimepicker({format: 'DD/MM/YYYY'}); });
+    </script>
+
+        </td>
+      <th width='15%' >Processing Status<br>(처리 상태)</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+      <select class='form-control ' id='___Processing_Status<br>_처리_상태_' >
+            <option ></option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >TIN<br>(TIN)</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___TIN<br>_TIN__1' value=''  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Taxpayer Name  <br>(납세자 성명)</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Taxpayer_Name__<br>_납세자_성명__1' value=''  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-O-1103_TABLE_149').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='Reset<br>(초기화)' ><span class='glyphicon glyphicon-refresh'></span> Reset<br>(초기화)</button>
+        <button class='btn btn-default' type='button' value='Search<br>(조회)' ><span class='glyphicon glyphicon-search'></span> Search<br>(조회)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-DMCI-03-O-1103_TABLE_155' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>Application No<br>(신청 번호)</th>
+      <th class='text-center'>TIN<br>(TIN)</th>
+      <th class='text-center'>Taxpayer Name  <br>(납세자 성명)</th>
+      <th class='text-center'>Principal Tax Liability<br>(원금 세금 채무)</th>
+      <th class='text-center'>Write Off Amount<br>(상각 금액)</th>
+      <th class='text-center'>Application Status<br>(신청 상태)</th>
+      <th class='text-center'>Submission Date<br>(제출 일자)</th>
+      <th class='text-center'>Action<br>(작업)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+TRA100100        </td>
+        <td class=''>
+100-100-100        </td>
+        <td class=''>
+ABC CO. LTD        </td>
+        <td class=''>
+6,000.00        </td>
+        <td class=''>
+2,000.00        </td>
+        <td class=''>
+Submitted        </td>
+        <td class=''>
+01.08.2024        </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='Action<br>(작업)' >Action<br>(작업)</button>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+TRA200100        </td>
+        <td class=''>
+100-200-300        </td>
+        <td class=''>
+EMMY JUMA PAUL        </td>
+        <td class=''>
+2,000.00        </td>
+        <td class=''>
+500.00        </td>
+        <td class=''>
+Submitted        </td>
+        <td class=''>
+02.08.2024        </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='Action<br>(작업)' >Action<br>(작업)</button>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+TRA300400        </td>
+        <td class=''>
+100-300-400        </td>
+        <td class=''>
+XYZ CO. LTD        </td>
+        <td class=''>
+3,000.00        </td>
+        <td class=''>
+1,000.00        </td>
+        <td class=''>
+Re-Submitted        </td>
+        <td class=''>
+11.09.2024        </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='Action<br>(작업)' >Action<br>(작업)</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class='text-center'> 
+    <ul class='pagination pagination-sm'> 
+      <li class='disabled'><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-left'></span></a></li>          
+      <li><a href='javascript://return false;'>1</a></li>          
+      <li><a href='javascript://return false;'>2</a></li>          
+      <li><a href='javascript://return false;'>3</a></li>          
+      <li><a href='javascript://return false;'>4</a></li>          
+      <li><a href='javascript://return false;'>5</a></li>          
+      <li><a href='javascript://return false;'>6</a></li>          
+      <li><a href='javascript://return false;'>7</a></li>          
+      <li><a href='javascript://return false;'>8</a></li>          
+      <li><a href='javascript://return false;'>9</a></li>          
+      <li><a href='javascript://return false;'>10</a></li>         
+      <li><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-right'></span></a></li>          
+    </ul>                                 
+  </div>                                  
+
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#List_of_Write_off_상각_목록___Taxpayer_Information_납세자_정보_').toggle();" id='Taxpayer_Information_납세자_정보_'><span class='glyphicon glyphicon-menu-hamburger'></span> Taxpayer Information(납세자 정보)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='List_of_Write_off_상각_목록___Taxpayer_Information_납세자_정보_' class='panel-body'><!--Taxpayer Information(납세자 정보) 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-03-O-1103_TABLE_164' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >TIN<br>(TIN)</th>
+        <td width='35%' style='text-align: left;' class=''>
+137-742-969        </td>
+      <th width='15%' >Taxpayer Name  <br>(납세자 성명)</th>
+        <td width='35%' style='text-align: left;' class=''>
+THE PUBLIC SERVICE SOCIAL SECURITY FUND        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Application No<br>(신청 번호)</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >Application Date<br>(신청 일자)</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Reason for Write Off<br>(상각 사유)</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >Application Status<br>(신청 상태)</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-O-1103_TABLE_164').rowspan(0);
+});
+</script>
+      </div><!--Taxpayer Information(납세자 정보) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#List_of_Write_off_상각_목록___Tax_Recovery_Information_세금_징수_정보_').toggle();" id='Tax_Recovery_Information_세금_징수_정보_'><span class='glyphicon glyphicon-menu-hamburger'></span> Tax Recovery Information(세금 징수 정보)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='List_of_Write_off_상각_목록___Tax_Recovery_Information_세금_징수_정보_' class='panel-body'><!--Tax Recovery Information(세금 징수 정보) 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-03-O-1103_TABLE_171' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Demand Date<br>(독촉장 발송일)</th>
+        <td width='35%' style='text-align: left;' class=''>
+2025-01-06 12:13:41        </td>
+      <th width='15%' >Agreement Default Date<br>(약정 위반일)</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Agency Notice Date<br>(기관통지 발송일)</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >Reminder Date<br>(안내문 발송일)</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Charge Over Assets Date<br>(자산압류일)</th>
+        <td width='35%' style='text-align: left;' class=''>
+2025-05-30  3:51:47 PM        </td>
+      <th width='15%' >Departure Prohibition Date<br>(출국금지일)</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Distress Notice Date<br>(강제집행 통지일)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Auction Date<br>(공매일)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-O-1103_TABLE_171').rowspan(0);
+});
+</script>
+      </div><!--Tax Recovery Information(세금 징수 정보) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#List_of_Write_off_상각_목록___List_of_Outstanding_Tax_Liabilities_미납_세액_목록_').toggle();" id='List_of_Outstanding_Tax_Liabilities_미납_세액_목록_'><span class='glyphicon glyphicon-menu-hamburger'></span> List of Outstanding Tax Liabilities(미납 세액 목록)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='List_of_Write_off_상각_목록___List_of_Outstanding_Tax_Liabilities_미납_세액_목록_' class='panel-body'><!--List of Outstanding Tax Liabilities(미납 세액 목록) 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-03-O-1103_TABLE_180' class='table table-bordered table-hover'>
+    <colgroup>
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>Tax Type<br>(세목)</th>
+      <th class='text-center'>Debit No<br>(차변 번호)</th>
+      <th class='text-center'>Year<br>(연도)</th>
+      <th class='text-center'>Period<br>(과세 기간)</th>
+      <th class='text-center'>Case Type<br>(사건 유형)</th>
+      <th class='text-center'>Due Date<br>(납부 기한)</th>
+      <th class='text-center'>Principal Balance<br>(원금 잔액)</th>
+      <th class='text-center'>Write Off Amount<br>(상각 금액)</th>
+      <th class='text-center'>Action<br>(작업)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+Value Added Tax        </td>
+        <td class=''>
+557788        </td>
+        <td class=''>
+2010        </td>
+        <td class=''>
+1        </td>
+        <td class=''>
+Regular        </td>
+        <td class=''>
+31-07-2011        </td>
+        <td class=''>
+1,000.00        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='Action<br>(작업)' >Action<br>(작업)</button>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+SDL        </td>
+        <td class=''>
+559944        </td>
+        <td class=''>
+2023        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+Audit        </td>
+        <td class=''>
+28-02-2024        </td>
+        <td class=''>
+2,000.00        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='Action<br>(작업)' >Action<br>(작업)</button>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+Corporate Tax        </td>
+        <td class=''>
+550022        </td>
+        <td class=''>
+2021        </td>
+        <td class=''>
+4        </td>
+        <td class=''>
+Final Original        </td>
+        <td class=''>
+30-06-2022        </td>
+        <td class=''>
+3,000.00        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='Action<br>(작업)' >Action<br>(작업)</button>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+Total        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+6,000.00        </td>
+        <td class=''>
+0.00        </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='Action<br>(작업)' >Action<br>(작업)</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+      </div><!--List of Outstanding Tax Liabilities(미납 세액 목록) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#List_of_Write_off_상각_목록___Attachments_첨부파일_').toggle();" id='Attachments_첨부파일_'><span class='glyphicon glyphicon-menu-hamburger'></span> Attachments(첨부파일)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='List_of_Write_off_상각_목록___Attachments_첨부파일_' class='panel-body'><!--Attachments(첨부파일) 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-03-O-1103_TABLE_190' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Attachments<br>(첨부파일)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='_Attachments_첨부파일___Attachments<br>_첨부파일__1' value='' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-O-1103_TABLE_190').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='_Attachments_첨부파일____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Attachments(첨부파일) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#List_of_Write_off_상각_목록___Tax_Officer_s_Comments_Recommendations_세무담당자_의견_권고사항_').toggle();" id='Tax_Officer_s_Comments_Recommendations_세무담당자_의견_권고사항_'><span class='glyphicon glyphicon-menu-hamburger'></span> Tax Officer's Comments/Recommendations(세무담당자 의견/권고사항)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='List_of_Write_off_상각_목록___Tax_Officer_s_Comments_Recommendations_세무담당자_의견_권고사항_' class='panel-body'><!--Tax Officer's Comments/Recommendations(세무담당자 의견/권고사항) 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-03-O-1103_TABLE_192' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Tax Officer's Comments/Recommendations<br>(세무담당자 의견/권고사항)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+<textarea class='form-control ' rows='4' id='_Tax_Officer_s_Comments_Recommendations_세무담당자_의견_권고사항___Tax_Officer_s_Comments_Recommendations<br>_세무담당자_의견_권고사항__1' ></textarea>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-O-1103_TABLE_192').rowspan(0);
+});
+</script>
+      </div><!--Tax Officer's Comments/Recommendations(세무담당자 의견/권고사항) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-info' type='button' value='Save<br>(저장)' >Save<br>(저장)</button>
+        <button class='btn btn-danger' type='button' value='Delete<br>(삭제)' >Delete<br>(삭제)</button>
+        <button class='btn btn-success' type='button' value='Submit<br>(제출하다)' >Submit<br>(제출하다)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           

@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-DMCI-03-O-1401_Write back of tax(상각 세금 취소)</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> Write back of tax(상각 세금 취소) - UI-DMCI-03-O-1401</h1>
+<div class='pull-right'><a href='UI-DMCI-03-O-1401(EN).html'>EN</a> | <a href='UI-DMCI-03-O-1401(KR).html'>KR</a> | <a href='UI-DMCI-03-O-1401(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div>  <table id='UI-DMCI-03-O-1401_TABLE_434' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Application Date<br>(신청 일자)</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group form-inline form-group-sm'>                              
+      <div class=' input-group'>                                                                
+          <div class='input-group date' id='___Application_Date<br>_신청_일자__div_1'>                         
+                  <input type='text' class='form-control '  id='___Application_Date<br>_신청_일자_' value='2025-06-02' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+                ~                                                                         
+          <div class='input-group date' id='___Application_Date<br>_신청_일자__div_2'>                         
+                  <input type='text' class='form-control '  id='___Application_Date<br>_신청_일자_' value='2025-06-06' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+      </div>
+    </div>
+  </div>
+    <script type='text/javascript'>
+      $(function () { $('#___Application_Date<br>_신청_일자__div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+      $(function () { $('#___Application_Date<br>_신청_일자__div_2').datetimepicker({format: 'DD/MM/YYYY'}); });
+    </script>
+
+        </td>
+      <th width='15%' >Processing Status<br>(처리 상태)</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+      <select class='form-control ' id='___Processing_Status<br>_처리_상태_' >
+            <option ></option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Taxpayer TIN<br>(납세자 식별번호)</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Taxpayer_TIN<br>_납세자_식별번호__1' value='123-456-789'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Third Party TIN<br>(제3자 TIN)</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Third_Party_TIN<br>_제3자_TIN__1' value=''  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-O-1401_TABLE_434').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='Reset<br>(초기화)' ><span class='glyphicon glyphicon-refresh'></span> Reset<br>(초기화)</button>
+        <button class='btn btn-info' type='button' value='New<br>(신규)' >New<br>(신규)</button>
+        <button class='btn btn-default' type='button' value='Search<br>(조회)' ><span class='glyphicon glyphicon-search'></span> Search<br>(조회)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-DMCI-03-O-1401_TABLE_441' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>Application No<br>(신청 번호)</th>
+      <th class='text-center'>Taxpayer TIN<br>(납세자 식별번호)</th>
+      <th class='text-center'>Taxpayer's Name<br>(납세자 이름)</th>
+      <th class='text-center'>Outstanding Liability<br>(미납 세액)</th>
+      <th class='text-center'>Third Party TIN<br>(제3자 TIN)</th>
+      <th class='text-center'>Third Party Name<br>(제3자 성명)</th>
+      <th class='text-center'>Third Party Type<br>(제3자 유형)</th>
+      <th class='text-center'>Application Date<br>(신청 일자)</th>
+      <th class='text-center'>Processing Status<br>(처리 상태)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+24-DMC-TPL-DOD-123456789-003        </td>
+        <td class=''>
+123-456-789         </td>
+        <td class=''>
+Mr. Choi         </td>
+        <td class=''>
+4,200,000 TZS         </td>
+        <td class=''>
+987-654-321         </td>
+        <td class=''>
+Mr. Park         </td>
+        <td class=''>
+Manager         </td>
+        <td class=''>
+2025-05-27         </td>
+        <td class=''>
+Saved         </td>
+      </tr>
+      <tr>
+        <td class=''>
+24-DMC-TPL-DOD-123456789-002        </td>
+        <td class=''>
+ 223-456-789         </td>
+        <td class=''>
+ Ms. Kim         </td>
+        <td class=''>
+ 1,850,000 TZS         </td>
+        <td class=''>
+ 889-654-321         </td>
+        <td class=''>
+ Mr. Lee         </td>
+        <td class=''>
+ Receiver         </td>
+        <td class=''>
+ 2025-05-26         </td>
+        <td class=''>
+ Submitted         </td>
+      </tr>
+      <tr>
+        <td class=''>
+24-DMC-TPL-DOD-123456789-001        </td>
+        <td class=''>
+ 323-456-789        </td>
+        <td class=''>
+ Mr. John        </td>
+        <td class=''>
+ 3,000,000 TZS        </td>
+        <td class=''>
+ 777-654-321        </td>
+        <td class=''>
+ Ms. Grace        </td>
+        <td class=''>
+ Agent        </td>
+        <td class=''>
+ 2025-05-25        </td>
+        <td class=''>
+ Approved        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class='text-center'> 
+    <ul class='pagination pagination-sm'> 
+      <li class='disabled'><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-left'></span></a></li>          
+      <li><a href='javascript://return false;'>1</a></li>          
+      <li><a href='javascript://return false;'>2</a></li>          
+      <li><a href='javascript://return false;'>3</a></li>          
+      <li><a href='javascript://return false;'>4</a></li>          
+      <li><a href='javascript://return false;'>5</a></li>          
+      <li><a href='javascript://return false;'>6</a></li>          
+      <li><a href='javascript://return false;'>7</a></li>          
+      <li><a href='javascript://return false;'>8</a></li>          
+      <li><a href='javascript://return false;'>9</a></li>          
+      <li><a href='javascript://return false;'>10</a></li>         
+      <li><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-right'></span></a></li>          
+    </ul>                                 
+  </div>                                  
+
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--New(신규) 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Write_back_of_tax_상각_세금_취소__New_신규_').toggle();" id='New_신규_'><span class='glyphicon glyphicon-chevron-right'></span> New(신규)</h2>
+      </div>
+
+      <div id='Write_back_of_tax_상각_세금_취소__New_신규_' class='panel-body'><!--New(신규) 화면메인그룹 시작-->
+
+  <table id='UI-DMCI-03-O-1401_TABLE_451' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Application No<br>(신청 번호)</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >Region<br>(지역)</th>
+        <td width='35%' style='text-align: left;' class=''>
+[DOD]DODOMA        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Processing Status<br>(처리 상태)</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >Application Date<br>(신청 일자)</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-O-1401_TABLE_451').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New_신규_____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Write_back_of_tax_상각_세금_취소__New_신규__Taxpayer_Information_납세자_정보_').toggle();" id='Taxpayer_Information_납세자_정보_'><span class='glyphicon glyphicon-menu-hamburger'></span> Taxpayer Information(납세자 정보)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Write_back_of_tax_상각_세금_취소__New_신규__Taxpayer_Information_납세자_정보_' class='panel-body'><!--Taxpayer Information(납세자 정보) 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-03-O-1401_TABLE_456' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >TIN<br>(TIN)<span class='mandatory'> *</span></th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='New_신규__Taxpayer_Information_납세자_정보___TIN<br>_TIN__1' value='100-113-295'  >
+        <a class='input-group-addon' onclick='onloadImage("../images-DOC/TIN_Information.png","900","1600")'><span class='glyphicon glyphicon-question-sign' onclick='onloadImage("../images-DOC/TIN_Information.png","900","1600")'></span></a>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Taxpayer's Name<br>(납세자 이름)</th>
+        <td width='35%' style='text-align: left;' class=''>
+MOHAMMED YUSUFALI JIVANJEE        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Trading Name<br>(상호명)</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >Tax Region<br>(세무 관할 지역)</th>
+        <td width='35%' style='text-align: left;' class=''>
+MARA        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Email<br>(이메일)</th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+      <th width='15%' >Phone Number<br>(전화번호)</th>
+        <td width='35%' style='text-align: left;' class=''>
+0747681462        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Postal Address<br>(우편 주소)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+P.O Box 0, undefined        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Physical Address<br>(실제 주소)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Rorya Tai Sota        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-O-1401_TABLE_456').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New_신규__Taxpayer_Information_납세자_정보____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Taxpayer Information(납세자 정보) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Write_back_of_tax_상각_세금_취소__New_신규__Outstanding_Liability_미납_세액_').toggle();" id='Outstanding_Liability_미납_세액_'><span class='glyphicon glyphicon-menu-hamburger'></span> Outstanding Liability(미납 세액)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Write_back_of_tax_상각_세금_취소__New_신규__Outstanding_Liability_미납_세액_' class='panel-body'><!--Outstanding Liability(미납 세액) 화면서브그룹 시작-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default' type='button' value='Outstanding Liability Info<br>(미납 세액 정보)' onclick="window.open('UI-DMCI-O-0001-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')"><span class='glyphicon glyphicon-search'></span> Outstanding Liability Info<br>(미납 세액 정보)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-DMCI-03-O-1401_TABLE_466' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Debit Amount<br>(부과 금액)</th>
+        <td width='35%' style='text-align: left;' class=''>
+150847300        </td>
+      <th width='15%' >Payment<br>(납부)</th>
+        <td width='35%' style='text-align: left;' class=''>
+65827180        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Discharge<br>(소멸)</th>
+        <td width='35%' style='text-align: left;' class=''>
+0        </td>
+      <th width='15%' >Balance<br>(잔액)</th>
+        <td width='35%' style='text-align: left;' class=''>
+85020120        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Interest<br>(이자)</th>
+        <td width='35%' style='text-align: left;' class=''>
+4511227        </td>
+      <th width='15%' >Total<br>(합계)</th>
+        <td width='35%' style='text-align: left;' class=''>
+89531347        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-O-1401_TABLE_466').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New_신규__Outstanding_Liability_미납_세액____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Outstanding Liability(미납 세액) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New_신규_____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Write_back_of_tax_상각_세금_취소__New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크__').toggle();" id='Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크__'><span class='glyphicon glyphicon-menu-hamburger'></span> Reasons for write off are (Tick appropriate)(상각(탕감) 사유 (해당 항목에 체크))</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Write_back_of_tax_상각_세금_취소__New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크__' class='panel-body'><!--Reasons for write off are (Tick appropriate)(상각(탕감) 사유 (해당 항목에 체크)) 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-03-O-1401_TABLE_474' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Reason of Write off<br>(상각(결손처분) 사유)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160' id='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Untraceable_행방불명_
+_161' type='checkbox'  value='Untraceable(행방불명)
+' >
+        <label class='label-for-select ' for='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Untraceable_행방불명_
+_161'>Untraceable(행방불명)
+</label>
+        <input name='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160' id='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Death_and_no_estates_사망_및_상속재산_없음_
+_162' type='checkbox'  value='Death and no estates(사망 및 상속재산 없음)
+' >
+        <label class='label-for-select ' for='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Death_and_no_estates_사망_및_상속재산_없음_
+_162'>Death and no estates(사망 및 상속재산 없음)
+</label>
+        <input name='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160' id='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Insolvency_지급불능_
+_163' type='checkbox'  value='Insolvency(지급불능)
+' >
+        <label class='label-for-select ' for='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Insolvency_지급불능_
+_163'>Insolvency(지급불능)
+</label>
+        <input name='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160' id='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Removal_out_of_jurisdiction_관할구역_밖으로_이주_
+_164' type='checkbox'  value='Removal out of jurisdiction(관할구역 밖으로 이주)
+' >
+        <label class='label-for-select ' for='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Removal_out_of_jurisdiction_관할구역_밖으로_이주_
+_164'>Removal out of jurisdiction(관할구역 밖으로 이주)
+</label>
+        <input name='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160' id='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Financial_Hardship_경제적_곤란_
+_165' type='checkbox'  value='Financial Hardship(경제적 곤란)
+' >
+        <label class='label-for-select ' for='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Financial_Hardship_경제적_곤란_
+_165'>Financial Hardship(경제적 곤란)
+</label>
+        <input name='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160' id='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Other_arrears_not_in_above_classes_기타_상기_분류에_해당하지_않는_체납_
+_166' type='checkbox'  value='Other arrears not in above classes(기타 상기 분류에 해당하지 않는 체납)
+' >
+        <label class='label-for-select ' for='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Other_arrears_not_in_above_classes_기타_상기_분류에_해당하지_않는_체납_
+_166'>Other arrears not in above classes(기타 상기 분류에 해당하지 않는 체납)
+</label>
+        <input name='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160' id='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Loss_by_negligence_과실에_의한_손실_
+_167' type='checkbox'  value='Loss by negligence(과실에 의한 손실)
+' >
+        <label class='label-for-select ' for='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Loss_by_negligence_과실에_의한_손실_
+_167'>Loss by negligence(과실에 의한 손실)
+</label>
+        <input name='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160' id='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Other_reasons__State__기타_사유_명시___168' type='checkbox'  value='Other reasons (State)(기타 사유(명시))' >
+        <label class='label-for-select ' for='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Reason_of_Write_off<br>_상각_결손처분__사유__160_Other_reasons__State__기타_사유_명시___168'>Other reasons (State)(기타 사유(명시))</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Other reasons (State)<br>(기타 사유(명시))</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='New_신규__Reasons_for_write_off_are__Tick_appropriate__상각_탕감__사유__해당_항목에_체크____Other_reasons__State_<br>_기타_사유_명시___1' value=''  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-O-1401_TABLE_474').rowspan(0);
+});
+</script>
+      </div><!--Reasons for write off are (Tick appropriate)(상각(탕감) 사유 (해당 항목에 체크)) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New_신규_____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Write_back_of_tax_상각_세금_취소__New_신규__Requirement_요구사항_').toggle();" id='Requirement_요구사항_'><span class='glyphicon glyphicon-menu-hamburger'></span> Requirement(요구사항)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Write_back_of_tax_상각_세금_취소__New_신규__Requirement_요구사항_' class='panel-body'><!--Requirement(요구사항) 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-03-O-1401_TABLE_477' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Remarks<br>(비고)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+<textarea class='form-control ' rows='4' id='New_신규__Requirement_요구사항___Remarks<br>_비고__1' ></textarea>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Attachments<br>(첨부파일)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control input-file ' type='text' id='New_신규__Requirement_요구사항___Attachments<br>_첨부파일__1' value='' readonly>
+                        <label class='input-group-btn'>
+                           <span class='btn btn-primary btn-sm'>
+                               &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
+                           </span>
+                        </label>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-O-1401_TABLE_477').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New_신규__Requirement_요구사항____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--Requirement(요구사항) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='Uncollectible tax for write off Abandonment<br>(상각(포기) 대상 징수불능세금)' onclick='onloadImage("../images-DOC/03/[DME10] Uncollectible tax for write off Abandonment(EN).jpg","800","1200")'><span class='glyphicon glyphicon-list-alt'></span> Uncollectible tax for write off Abandonment<br>(상각(포기) 대상 징수불능세금)</button>
+        <button class='btn btn-default btn-left' type='button' value='Write off Abandonment of Tax<br>(세금 상각(포기) 처리)' onclick='onloadImage("../images-DOC/03/[DME10] Write off Abandonment of Tax(EN).jpg","800","1200")'><span class='glyphicon glyphicon-list-alt'></span> Write off Abandonment of Tax<br>(세금 상각(포기) 처리)</button>
+        <button class='btn btn-info' type='button' value='Save<br>(저장)' >Save<br>(저장)</button>
+        <button class='btn btn-danger' type='button' value='Delete<br>(삭제)' >Delete<br>(삭제)</button>
+        <button class='btn btn-success' type='button' value='Submit<br>(제출하다)' >Submit<br>(제출하다)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+      </div><!--New(신규) 화면메인그룹 종료-->
+
+    </div><!--New(신규) 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           
