@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-DMCI-04-O-0601_담당자 배부</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> 담당자 배부 - UI-DMCI-04-O-0601</h1>
+<div class='pull-right'><a href='UI-DMCI-04-O-0601(EN).html'>EN</a> | <a href='UI-DMCI-04-O-0601(KR).html'>KR</a> | <a href='UI-DMCI-04-O-0601(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div>  <table id='UI-DMCI-04-O-0601_TABLE_2' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >대상 일자</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group form-inline form-group-sm'>                              
+      <div class=' input-group'>                                                                
+          <div class='input-group date' id='___대상_일자_div_1'>                         
+                  <input type='text' class='form-control '  id='___대상_일자' value='' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+                ~                                                                         
+          <div class='input-group date' id='___대상_일자_div_2'>                         
+                  <input type='text' class='form-control '  id='___대상_일자' value='' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+      </div>
+    </div>
+  </div>
+    <script type='text/javascript'>
+      $(function () { $('#___대상_일자_div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+      $(function () { $('#___대상_일자_div_2').datetimepicker({format: 'DD/MM/YYYY'}); });
+    </script>
+
+        </td>
+      <th width='15%' >상태</th>
+        <td width='35%' style='text-align: left;' class=''>
+        <input name='___상태_1' id='___상태_1_[A]_Received_2' type='radio'  value='[A] Received' >
+        <label class='label-for-select ' for='___상태_1_[A]_Received_2'>[A] Received</label>
+        <input name='___상태_1' id='___상태_1_[B]_Officer_Assigned_3' type='radio' checked value='[B] Officer Assigned' >
+        <label class='label-for-select ' for='___상태_1_[B]_Officer_Assigned_3'>[B] Officer Assigned</label>
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >TANSAD 번호</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group form-inline form-group-sm '>                              
+        <div class='text-group col-sm-12' id=''>                         
+<input class='form-control ' type='text' id='___TANSAD_번호_1'  maxlength=''  size='' > - <input class='form-control ' type='text' id='___TANSAD_번호_2'  maxlength=''  size='' > - <input class='form-control ' type='text' id='___TANSAD_번호_3'  maxlength=''  size='' >        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-04-O-0601_TABLE_2').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='초기화' ><span class='glyphicon glyphicon-refresh'></span> 초기화</button>
+        <button class='btn btn-default' type='button' value='조회' ><span class='glyphicon glyphicon-search'></span> 조회</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-DMCI-04-O-0601_TABLE_7' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>TANSAD 번호</th>
+      <th class='text-center'>대상 일자</th>
+      <th class='text-center'>대상 사유</th>
+      <th class='text-center'>검증 직원</th>
+      <th class='text-center'></th>
+      <th class='text-center'>아이디</th>
+      <th class='text-center'>명</th>
+      <th class='text-center'>개수</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+        <input name='___0_4' id='___0_4__5' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_4__5'></label>
+        </td>
+        <td class=''>
+TZAR-24-1326546        </td>
+        <td class=''>
+16/07/2024 22:36        </td>
+        <td class=''>
+RULE 3: The following item(s) in this declaration by non-business TIN require CDR approval: Item No: 1, HS Cd: 87042190        </td>
+        <td class=''>
+JOACHIM T. MELLA        </td>
+        <td class=''>
+        <input name='___5_6' id='___5_6__7' type='radio'  value='' >
+        <label class='label-for-select ' for='___5_6__7'></label>
+        </td>
+        <td class=''>
+CUPIA_CUO        </td>
+        <td class=''>
+SUPER MANAGER        </td>
+        <td class=''>
+2        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_8' id='___0_8__9' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_8__9'></label>
+        </td>
+        <td class=''>
+TZDA-24-1322884        </td>
+        <td class=''>
+02/07/2024 14:32        </td>
+        <td class=''>
+
+RULE 1: Count of import declarations in last 3 months is 3 declarations while only 2 declarations are allowed by CDR for non-business TIN.        </td>
+        <td class=''>
+JOSHUA JAMES NKINDA        </td>
+        <td class=''>
+        <input name='___5_10' id='___5_10__11' type='radio'  value='' >
+        <label class='label-for-select ' for='___5_10__11'></label>
+        </td>
+        <td class=''>
+KILABU.GAHYE        </td>
+        <td class=''>
+Kilabu Gahye Dally        </td>
+        <td class=''>
+0        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_12' id='___0_12__13' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_12__13'></label>
+        </td>
+        <td class=''>
+TZDA-24-1340745        </td>
+        <td class=''>
+14/07/2024 14:39        </td>
+        <td class=''>
+
+RULE 1: Count of import declarations in last 3 months is 3 declarations while only 2 declarations are allowed by CDR for non-business TIN.        </td>
+        <td class=''>
+JOSHUA JAMES NKINDA        </td>
+        <td class=''>
+        <input name='___5_14' id='___5_14__15' type='radio'  value='' >
+        <label class='label-for-select ' for='___5_14__15'></label>
+        </td>
+        <td class=''>
+ROLAND.KIMWERI        </td>
+        <td class=''>
+Roland Kimweri        </td>
+        <td class=''>
+0        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_16' id='___0_16__17' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_16__17'></label>
+        </td>
+        <td class=''>
+TZDA-24-1344012        </td>
+        <td class=''>
+15/07/2024 12:05        </td>
+        <td class=''>
+
+RULE 1: Count of import declarations in last 3 months is 3 declarations while only 2 declarations are allowed by CDR for non-business TIN.        </td>
+        <td class=''>
+RASHID SALEH KOMBO        </td>
+        <td class=''>
+        <input name='___5_18' id='___5_18__19' type='radio'  value='' >
+        <label class='label-for-select ' for='___5_18__19'></label>
+        </td>
+        <td class=''>
+FELIX.TINKASIMILE        </td>
+        <td class=''>
+FELIX TINKASIMILE        </td>
+        <td class=''>
+0        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_20' id='___0_20__21' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_20__21'></label>
+        </td>
+        <td class=''>
+TZDA-24-1346944        </td>
+        <td class=''>
+15/07/2024 17:13        </td>
+        <td class=''>
+
+RULE 1: Count of import declarations in last 3 months is 4 declarations while only 2 declarations are allowed by CDR for non-business TIN.        </td>
+        <td class=''>
+ARNOLDIUS RWEGASIRA        </td>
+        <td class=''>
+        <input name='___5_22' id='___5_22__23' type='radio'  value='' >
+        <label class='label-for-select ' for='___5_22__23'></label>
+        </td>
+        <td class=''>
+CUO        </td>
+        <td class=''>
+SUPER MANAGER        </td>
+        <td class=''>
+4        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_24' id='___0_24__25' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_24__25'></label>
+        </td>
+        <td class=''>
+TZDA-24-1349892        </td>
+        <td class=''>
+17/07/2024 12:33        </td>
+        <td class=''>
+
+RULE 1: Count of import declarations in last 3 months is 4 declarations while only 2 declarations are allowed by CDR for non-business TIN.        </td>
+        <td class=''>
+JOSHUA JAMES NKINDA        </td>
+        <td class=''>
+        <input name='___5_26' id='___5_26__27' type='radio'  value='' >
+        <label class='label-for-select ' for='___5_26__27'></label>
+        </td>
+        <td class=''>
+PAUL.MATINA        </td>
+        <td class=''>
+PAUL MATINA        </td>
+        <td class=''>
+0        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_28' id='___0_28__29' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_28__29'></label>
+        </td>
+        <td class=''>
+TZDA-SS-1353011        </td>
+        <td class=''>
+08/01/2025 07:57        </td>
+        <td class=''>
+
+RULE 1: Count of import declarations in last 6 months is 4 declarations while only 2 declarations are allowed by CDR for non-business TIN.        </td>
+        <td class=''>
+SUPER MANAGER        </td>
+        <td class=''>
+        <input name='___5_30' id='___5_30__31' type='radio'  value='' >
+        <label class='label-for-select ' for='___5_30__31'></label>
+        </td>
+        <td class=''>
+CUO_TZMG        </td>
+        <td class=''>
+SUPER MANAGER_TZMG        </td>
+        <td class=''>
+0        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_32' id='___0_32__33' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_32__33'></label>
+        </td>
+        <td class=''>
+TZDL-24-1151004        </td>
+        <td class=''>
+24/06/2024 14:37        </td>
+        <td class=''>
+
+RULE 3: The following item(s) in this declaration by non-business TIN require CDR approval: Item No: 1, HS Cd: 87120000        </td>
+        <td class=''>
+JOSHUA JAMES NKINDA        </td>
+        <td class=''>
+        <input name='___5_34' id='___5_34__35' type='radio'  value='' >
+        <label class='label-for-select ' for='___5_34__35'></label>
+        </td>
+        <td class=''>
+CUO_ZNLR        </td>
+        <td class=''>
+SUPER MANAGER_ZNLR        </td>
+        <td class=''>
+0        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_36' id='___0_36__37' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_36__37'></label>
+        </td>
+        <td class=''>
+TZDL-24-1221649        </td>
+        <td class=''>
+18/06/2024 12:55        </td>
+        <td class=''>
+
+RULE 1: Count of import declarations in last 3 months is 3 declarations while only 2 declarations are allowed by CDR for non-business TIN.        </td>
+        <td class=''>
+JOSHUA JAMES NKINDA        </td>
+        <td class=''>
+        <input name='___5_38' id='___5_38__39' type='radio'  value='' >
+        <label class='label-for-select ' for='___5_38__39'></label>
+        </td>
+        <td class=''>
+CUO_TZTM        </td>
+        <td class=''>
+SUPER MANAGER_TZTM        </td>
+        <td class=''>
+0        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_40' id='___0_40__41' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_40__41'></label>
+        </td>
+        <td class=''>
+TZDL-24-1237389        </td>
+        <td class=''>
+12/06/2024 12:23        </td>
+        <td class=''>
+
+RULE 3: The following item(s) in this declaration by non-business TIN require CDR approval: Item No: 16, HS Cd: 87120000        </td>
+        <td class=''>
+JOSHUA JAMES NKINDA        </td>
+        <td class=''>
+        <input name='___5_42' id='___5_42__43' type='radio'  value='' >
+        <label class='label-for-select ' for='___5_42__43'></label>
+        </td>
+        <td class=''>
+CUO_TZTP        </td>
+        <td class=''>
+SUPER MANAGER_TZTP        </td>
+        <td class=''>
+1        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class='text-center'> 
+    <ul class='pagination pagination-sm'> 
+      <li class='disabled'><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-left'></span></a></li>          
+      <li><a href='javascript://return false;'>1</a></li>          
+      <li><a href='javascript://return false;'>2</a></li>          
+      <li><a href='javascript://return false;'>3</a></li>          
+      <li><a href='javascript://return false;'>4</a></li>          
+      <li><a href='javascript://return false;'>5</a></li>          
+      <li><a href='javascript://return false;'>6</a></li>          
+      <li><a href='javascript://return false;'>7</a></li>          
+      <li><a href='javascript://return false;'>8</a></li>          
+      <li><a href='javascript://return false;'>9</a></li>          
+      <li><a href='javascript://return false;'>10</a></li>         
+      <li><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-right'></span></a></li>          
+    </ul>                                 
+  </div>                                  
+
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default' type='button' value='저장' >저장</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           

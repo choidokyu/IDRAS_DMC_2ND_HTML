@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-DMCI-05-O-0703_Aging analysis (Auction Days)</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> Aging analysis (Auction Days) - UI-DMCI-05-O-0703</h1>
+<div class='pull-right'><a href='UI-DMCI-05-O-0703(EN).html'>EN</a> | <a href='UI-DMCI-05-O-0703(KR).html'>KR</a> | <a href='UI-DMCI-05-O-0703(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div>  <table id='UI-DMCI-05-O-0703_TABLE_1027' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Date of Notice of Intention to Sell<span class='mandatory'> *</span></th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group form-inline form-group-sm'>                              
+      <div class=' input-group'>                                                                
+          <div class='input-group date' id='___Date_of_Notice_of_Intention_to_Sell_div_1'>                         
+                  <input type='text' class='form-control '  id='___Date_of_Notice_of_Intention_to_Sell' value='26/05/2025' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+                ~                                                                         
+          <div class='input-group date' id='___Date_of_Notice_of_Intention_to_Sell_div_2'>                         
+                  <input type='text' class='form-control '  id='___Date_of_Notice_of_Intention_to_Sell' value='02/06/2025' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+      </div>
+    </div>
+  </div>
+    <script type='text/javascript'>
+      $(function () { $('#___Date_of_Notice_of_Intention_to_Sell_div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+      $(function () { $('#___Date_of_Notice_of_Intention_to_Sell_div_2').datetimepicker({format: 'DD/MM/YYYY'}); });
+    </script>
+
+        </td>
+      <th width='15%' >Tax Region</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Tax_Region_1' value=''  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Tax Center</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Tax_Center_1' value=''  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0703_TABLE_1027').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='Reset' ><span class='glyphicon glyphicon-refresh'></span> Reset</button>
+        <button class='btn btn-default' type='button' value='Search' ><span class='glyphicon glyphicon-search'></span> Search</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='___To_evaluate_the_time_delayed_to_sale_the_charge_assets_issued_Notice_of_Intension_to_sell_1'>To evaluate the time delayed to sale the charge assets issued Notice of Intension to sell</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-DMCI-05-O-0703_TABLE_1033' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>S/N</th>
+      <th class='text-center'>Asset Category</th>
+      <th class='text-center'>0 - 30 Days</th>
+      <th class='text-center'>31 - 90 Days</th>
+      <th class='text-center'>91 - 180 Days</th>
+      <th class='text-center'>181 - 365 Days</th>
+      <th class='text-center'>>180 Days</th>
+      <th class='text-center'>Grand Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+1        </td>
+        <td class=''>
+INTEREST IN LAND AND BUILDING         </td>
+        <td class=''>
+127,482,691         </td>
+        <td class=''>
+17,747,336         </td>
+        <td class=''>
+232,633,623         </td>
+        <td class=''>
+458,508,353         </td>
+        <td class=''>
+458,508,353         </td>
+        <td class=''>
+836,372,003         </td>
+      </tr>
+      <tr>
+        <td class=''>
+2        </td>
+        <td class=''>
+ PERISHABLE GOODS         </td>
+        <td class=''>
+ 5,000,000         </td>
+        <td class=''>
+ 1,044,000         </td>
+        <td class=''>
+ 1,371,700         </td>
+        <td class=''>
+ 12,397,784         </td>
+        <td class=''>
+ 12,397,784         </td>
+        <td class=''>
+ 19,813,484         </td>
+      </tr>
+      <tr>
+        <td class=''>
+3        </td>
+        <td class=''>
+ INTAGIBLE ASSET         </td>
+        <td class=''>
+ 15,750,000         </td>
+        <td class=''>
+ 10,310,337         </td>
+        <td class=''>
+ 17,115,000         </td>
+        <td class=''>
+ 19,850,000         </td>
+        <td class=''>
+ 19,850,000         </td>
+        <td class=''>
+ 63,025,337         </td>
+      </tr>
+      <tr>
+        <td class=''>
+4        </td>
+        <td class=''>
+ OTHER TANGIBLE         </td>
+        <td class=''>
+ 12,747,613         </td>
+        <td class=''>
+ 2,401,817         </td>
+        <td class=''>
+ 6,677,200         </td>
+        <td class=''>
+ 20,691,230         </td>
+        <td class=''>
+ 20,691,230         </td>
+        <td class=''>
+ 42,517,859         </td>
+      </tr>
+      <tr>
+        <td class=''>
+        </td>
+        <td class=''>
+ TOTAL        </td>
+        <td class=''>
+ 70,947,148        </td>
+        <td class=''>
+ 8,632,838        </td>
+        <td class=''>
+ 110,895,549        </td>
+        <td class=''>
+ 345,355,481        </td>
+        <td class=''>
+ 345,355,481        </td>
+        <td class=''>
+ 535,831,015        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class='text-center'> 
+    <ul class='pagination pagination-sm'> 
+      <li class='disabled'><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-left'></span></a></li>          
+      <li><a href='javascript://return false;'>1</a></li>          
+      <li><a href='javascript://return false;'>2</a></li>          
+      <li><a href='javascript://return false;'>3</a></li>          
+      <li><a href='javascript://return false;'>4</a></li>          
+      <li><a href='javascript://return false;'>5</a></li>          
+      <li><a href='javascript://return false;'>6</a></li>          
+      <li><a href='javascript://return false;'>7</a></li>          
+      <li><a href='javascript://return false;'>8</a></li>          
+      <li><a href='javascript://return false;'>9</a></li>          
+      <li><a href='javascript://return false;'>10</a></li>         
+      <li><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-right'></span></a></li>          
+    </ul>                                 
+  </div>                                  
+
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           
