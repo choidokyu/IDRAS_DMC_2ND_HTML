@@ -1,0 +1,31 @@
+# =========================
+# 줄바꿈(EOL) 정책 설정
+# =========================
+
+# 모든 텍스트 파일은 LF 사용
+* text=auto eol=lf
+
+# HTML 파일은 CRLF 사용 (Windows 호환용)
+*.html text eol=crlf
+
+# Shell 스크립트 등 유닉스 스타일 유지
+*.sh text eol=lf
+
+# Windows 실행파일이나 바이너리는 줄바꿈 처리 안 함
+*.exe binary
+*.dll binary
+*.png binary
+*.jpg binary
+*.pdf binary
+
+# TypeScript/JavaScript는 LF 고정
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+
+# CSS와 JSON도 LF 고정
+*.css text eol=lf
+*.json text eol=lf
+
+# Markdown 문서도 LF
+*.md text eol=lf
