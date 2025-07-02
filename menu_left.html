@@ -69,15 +69,15 @@
         
         
         function createMenuLevelThreeFour(menuJsonData, parentId) {
-		
-		
+        
+        
             for (var i = 0; i < menuJsonData.length; i++) {
 
                 if (menuJsonData[i].parentId == decodeURI(parentId)) {
 
-					//if(menuJsonData[i].id=='O00000000005_2' && parentId == 'O00000000004_1' ){
-					//	console.log(menuJsonData[i], parentId);
-					//}
+                    //if(menuJsonData[i].id=='O00000000005_2' && parentId == 'O00000000004_1' ){
+                    //  console.log(menuJsonData[i], parentId);
+                    //}
 
                     if (isFolder(menuJsonData[i])) { // menu three
                         $("#menu_three_four_group").append(
@@ -90,17 +90,17 @@
                         // 🔧 부모 UL이 없으면 만들어줌
                         if ($("#menu_three_" + parentId).length === 0) {
                             $("#menu_three_four_group").append(
-								//"<h1><a href=\"\">" + menuJsonData[i].name + "</a></h1>"
-								"<h1><a href=\"javascript:void(0);\" onclick=\"link('" + menuJsonData[i].id + "','" + menuJsonData[i].file + "')\">" + menuJsonData[i].name + "</a></h1>"
+                                //"<h1><a href=\"\">" + menuJsonData[i].name + "</a></h1>"
+                                "<h1><a href=\"javascript:void(0);\" onclick=\"link('" + menuJsonData[i].id + "','" + menuJsonData[i].file + "')\">" + menuJsonData[i].name + "</a></h1>"
                             );
                         }
-						else {
-							$("#menu_three_" + parentId).append(
-								"<li><a class='leftMenu' id='" + menuJsonData[i].id +
-								"' onclick=\"link('" + menuJsonData[i].id + "','" + menuJsonData[i].file + "')\">" +
-								menuJsonData[i].name + "</a></li>"
-							);
-						}
+                        else {
+                            $("#menu_three_" + parentId).append(
+                                "<li><a class='leftMenu' id='" + menuJsonData[i].id +
+                                "' onclick=\"link('" + menuJsonData[i].id + "','" + menuJsonData[i].file + "')\">" +
+                                menuJsonData[i].name + "</a></li>"
+                            );
+                        }
                     }
                 }
             }
@@ -117,8 +117,12 @@
             
           $(".leftMenu").css("color","#666").css("font-weight", "");
           $("#"+screenid).css("color","red").css("font-weight", "bold");
+          
+          // 주소창에 해시 추가
+          //location.hash = screenid;
+          location.hash = screenid;
 
-            parent.mainFrame.location.href = html;
+          parent.mainFrame.location.href = html;
         }
     
         function toggleLeftMenu() {

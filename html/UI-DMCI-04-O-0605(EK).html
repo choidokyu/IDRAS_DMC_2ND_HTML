@@ -24,97 +24,254 @@
 <div class='pull-right'><a href='UI-DMCI-04-O-0605(EN).html'>EN</a> | <a href='UI-DMCI-04-O-0605(KR).html'>KR</a> | <a href='UI-DMCI-04-O-0605(EK).html'>EK</a></div>  </div>
 </div><!--화면명 Row 종료-->
 
-<div class='fixedTitleBlock'></div>  <table id='UI-DMCI-04-O-0605_TABLE_52' class='table table-bordered table-hover'>
-    <tr>
-      <th width='15%' >Year<br>(년)</th>
-        <td width='35%' style='text-align: left;' class=''>
-  <div>
-      <select class='form-control ' id='___Year<br>_년_' >
-            <option >2025</option>
-            <option >2024</option>
-            <option >2023</option>
-            <option >2022</option>
-            <option >2021</option>
-            <option >2020</option>
-      </select>
-    </div>
-  </div>
+<div class='fixedTitleBlock'></div>
 
-        </td>
+<table id='UI-DMCI-04-O-0605_TABLE_48' class='table table-bordered table-hover'>
+    <tr>
       <th width='15%' >Month<br>(월)</th>
-        <td width='35%' style='text-align: left;' class=''>
-  <div>
-      <select class='form-control ' id='___Month<br>_월_' >
-            <option selected>January</option>
-            <option >February</option>
-            <option >March</option>
-            <option >April</option>
-            <option >May</option>
-            <option >June</option>
-            <option >July</option>
-            <option >August</option>
-            <option >September</option>
-            <option >October</option>
-            <option >November</option>
-            <option >December</option>
+      <td colspan="3" style='text-align: left;' >
+      
+      <select class='form-control d-inline-block w-auto' style="width: 80px; display: inline-block;" id='startYear'>
+        <option selected>2025</option>
+        <option>2024</option>
+        <option>2023</option>
+        <option>2022</option>
+        <option>2021</option>
+        <option>2020</option>
       </select>
-    </div>
-  </div>
+
+      <select class='form-control d-inline-block w-auto' style="width: 100px; display: inline-block;" id='startMonth'>
+        <option selected>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
+
+      <span style="margin: 0 10px;">-</span>
+
+      <select class='form-control d-inline-block w-auto' style="width: 80px; display: inline-block;" id='endYear'>
+        <option selected>2025</option>
+        <option>2024</option>
+        <option>2023</option>
+        <option>2022</option>
+        <option>2021</option>
+        <option>2020</option>
+      </select>
+
+      <select class='form-control d-inline-block w-auto' style="width: 100px; display: inline-block;" id='endMonth'>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option selected>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
 
         </td>
     </tr>
-    <tr>
-      <th width='15%' >Year<br>(년)</th>
-        <td width='35%' style='text-align: left;' class=''>
-  <div>
-      <select class='form-control ' id='___Year<br>_년_' >
-            <option >2025</option>
-            <option >2024</option>
-            <option >2023</option>
-            <option >2022</option>
-            <option >2021</option>
-            <option >2020</option>
-      </select>
-    </div>
-  </div>
+</table>
 
-        </td>
-      <th width='15%' >Month<br>(월)</th>
-        <td width='35%' style='text-align: left;' class=''>
-  <div>
-      <select class='form-control ' id='___Month<br>_월_' >
-            <option >January</option>
-            <option >February</option>
-            <option >March</option>
-            <option >April</option>
-            <option >May</option>
-            <option selected>June</option>
-            <option >July</option>
-            <option >August</option>
-            <option >September</option>
-            <option >October</option>
-            <option >November</option>
-            <option >December</option>
-      </select>
-    </div>
-  </div>
 
-        </td>
-    </tr>
-  </table>
-<script type="text/javascript">
-$(window).load(function(){
-  $('#UI-DMCI-04-O-0605_TABLE_52').rowspan(0);
-});
-</script>
     <div class='row'><!--버튼그룹 Row 시작-->
       <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
         <button class='btn btn-default btn-left' type='button' value='Reset<br>(초기화)' ><span class='glyphicon glyphicon-refresh'></span> Reset<br>(초기화)</button>
+        <button class='btn btn-default' type='button' value='Excel Download<br>(엑셀 다운로드)' ><span class='glyphicon glyphicon-refresh'></span> Excel Download<br>(엑셀 다운로드)</button>
         <button class='btn btn-default' type='button' value='Search<br>(조회)' ><span class='glyphicon glyphicon-search'></span> Search<br>(조회)</button>
       </div><!--버튼그룹 종료-->
     </div><!--버튼그룹 Row 종료-->
 
     <hr>
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Weekly_Target_Declaration_Summary_주간_신고서_요약___MONTHLY_REPORT_FOR_August_2025__TANSAD_CONSIDERED_ARE_EX1,_IM4,_IM7___IM9_ONLY__2025년_8월_월간_보고서__TANSAD는_EX1,_IM4,_IM7,_IM9만_포함__').toggle();" id='MONTHLY_REPORT_FOR_August_2025__TANSAD_CONSIDERED_ARE_EX1,_IM4,_IM7___IM9_ONLY__2025년_8월_월간_보고서__TANSAD는_EX1,_IM4,_IM7,_IM9만_포함__'><span class='glyphicon glyphicon-menu-hamburger'></span> MONTHLY REPORT FOR August 2025 (TANSAD CONSIDERED ARE EX1, IM4, IM7 & IM9 ONLY)(2025년 8월 월간 보고서 (TANSAD는 EX1, IM4, IM7, IM9만 포함))</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Weekly_Target_Declaration_Summary_주간_신고서_요약___MONTHLY_REPORT_FOR_August_2025__TANSAD_CONSIDERED_ARE_EX1,_IM4,_IM7___IM9_ONLY__2025년_8월_월간_보고서__TANSAD는_EX1,_IM4,_IM7,_IM9만_포함__' class='panel-body'><!--MONTHLY REPORT FOR August 2025 (TANSAD CONSIDERED ARE EX1, IM4, IM7 & IM9 ONLY)(2025년 8월 월간 보고서 (TANSAD는 EX1, IM4, IM7, IM9만 포함)) 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-04-O-0605_TABLE_55' class='table table-bordered table-hover'>
+    <thead>
+      <tr>
+        <th class='text-center' rowspan="2"></th>
+        <th class='text-center' rowspan="2">Month<br>(월)</th>
+        <th class='text-center' rowspan="2">Week<br>(주)</th>
+        <th class='text-center' rowspan="2">No. of TANSAD Registered<br>(등록된 TANSAD 건수)</th>
+        <th class='text-center' colspan="6">No. of Entry Targeted<br>(타겟 대상 신고 건수)</th>
+        <th class='text-center' rowspan="2">Customs Value (repeated)<br>(과세가격 (다시 한번 표시됨))</th>
+      </tr>
+      <tr>
+        <th class='text-center'>Frequency<br>(빈도)</th>
+        <th class='text-center'>Customs Value<br>(과세가격)</th>
+        <th class='text-center'>HS Code<br>(HS 코드)</th>
+        <th class='text-center'>Quantity<br>(수량)</th>
+        <th class='text-center'>Total<br>(합계)</th>
+        <th class='text-center'>% of Entry Targeted<br>(목표 항목 비율 (%))</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+1        </td>
+        <td class=''>
+January 2025        </td>
+        <td class=''>
+01/01/2025 ~ 05/01/2025        </td>
+        <td class=''>
+19        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+      </tr>
+      <tr>
+        <td class=''>
+2        </td>
+        <td class=''>
+January 2025        </td>
+        <td class=''>
+06/01/2025 ~ 12/01/2025        </td>
+        <td class=''>
+108        </td>
+        <td class=''>
+3        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+3        </td>
+        <td class=''>
+2.78        </td>
+        <td class=''>
+6,654,454.4        </td>
+      </tr>
+      <tr>
+        <td class=''>
+3        </td>
+        <td class=''>
+January 2025        </td>
+        <td class=''>
+13/01/2025 ~ 19/01/2025        </td>
+        <td class=''>
+221        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+1        </td>
+        <td class=''>
+1        </td>
+        <td class=''>
+2        </td>
+        <td class=''>
+0.9        </td>
+        <td class=''>
+106,809,604.48        </td>
+      </tr>
+      <tr>
+        <td class=''>
+4        </td>
+        <td class=''>
+January 2025        </td>
+        <td class=''>
+20/01/2025 ~ 26/01/2025        </td>
+        <td class=''>
+33        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+      </tr>
+      <tr>
+        <td class=''>
+5        </td>
+        <td class=''>
+January 2025        </td>
+        <td class=''>
+27/01/2025 ~ 31/01/2025        </td>
+        <td class=''>
+24        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+0        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class='text-center'> 
+    <ul class='pagination pagination-sm'> 
+      <li class='disabled'><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-left'></span></a></li>          
+      <li><a href='javascript://return false;'>1</a></li>          
+      <li><a href='javascript://return false;'>2</a></li>          
+      <li><a href='javascript://return false;'>3</a></li>          
+      <li><a href='javascript://return false;'>4</a></li>          
+      <li><a href='javascript://return false;'>5</a></li>          
+      <li><a href='javascript://return false;'>6</a></li>          
+      <li><a href='javascript://return false;'>7</a></li>          
+      <li><a href='javascript://return false;'>8</a></li>          
+      <li><a href='javascript://return false;'>9</a></li>          
+      <li><a href='javascript://return false;'>10</a></li>         
+      <li><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-right'></span></a></li>          
+    </ul>                                 
+  </div>                                  
+
+
+      </div><!--MONTHLY REPORT FOR August 2025 (TANSAD CONSIDERED ARE EX1, IM4, IM7 & IM9 ONLY)(2025년 8월 월간 보고서 (TANSAD는 EX1, IM4, IM7, IM9만 포함)) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
 </div><!--최상위 컨테이너 종료--> 
 </body>                           
 </html>                           
