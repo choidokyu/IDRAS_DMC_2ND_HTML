@@ -24,7 +24,7 @@
 <div class='pull-right'><a href='UI-DMCI-05-O-0401(EN).html'>EN</a> | <a href='UI-DMCI-05-O-0401(KR).html'>KR</a> | <a href='UI-DMCI-05-O-0401(EK).html'>EK</a></div>  </div>
 </div><!--화면명 Row 종료-->
 
-<div class='fixedTitleBlock'></div>  <table id='UI-DMCI-05-O-0401_TABLE_448' class='table table-bordered table-hover'>
+<div class='fixedTitleBlock'></div>  <table id='UI-DMCI-05-O-0401_TABLE_19' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >Processing date<br>(처리 일자)</th>
         <td width='35%' style='text-align: left;' class=''>
@@ -160,13 +160,13 @@
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-05-O-0401_TABLE_448').rowspan(0);
+  $('#UI-DMCI-05-O-0401_TABLE_19').rowspan(0);
 });
 </script>
     <div class='row'><!--버튼그룹 Row 시작-->
       <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
         <button class='btn btn-default btn-left' type='button' value='Reset<br>(초기화)' ><span class='glyphicon glyphicon-refresh'></span> Reset<br>(초기화)</button>
-        <button class='btn btn-info' type='button' value='New<br>(신규)' onclick="window.open('UI-DMCI-05-O-0401-1-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">New<br>(신규)</button>
+        <button class='btn btn-info' type='button' value='New<br>(신규)' onclick='alert("instead of sending you direct to the pop up when you click new, The system should move you down to a table to fill in taxpayers TIN then after validation, it should display name and other taxpayers details. \n\n Only a search sign in front of TIN field, once clicked, can display a pop up for TIN Selection (in case officer want to select/filter from the list) \n\n New 버튼을 클릭했을 때 바로 팝업으로 이동하는 대신, 시스템은 먼저 아래 테이블로 이동시켜 납세자의 TIN을 입력하게 해야 합니다. 그 후 TIN이 유효성 검증되면, 납세자의 이름과 기타 정보가 표시되어야 합니다. TIN 입력란 앞에는 검색 아이콘만 배치하고, 이 아이콘을 클릭했을 때만 팝업이 열려 TIN을 선택하거나 목록에서 필터링할 수 있도록 해야 합니다.");'>New<br>(신규)</button>
         <button class='btn btn-default' type='button' value='Search<br>(조회)' ><span class='glyphicon glyphicon-search'></span> Search<br>(조회)</button>
       </div><!--버튼그룹 종료-->
     </div><!--버튼그룹 Row 종료-->
@@ -180,7 +180,7 @@ $(window).load(function(){
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
-  <table id='UI-DMCI-05-O-0401_TABLE_457' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-05-O-0401_TABLE_28' class='table table-bordered table-hover'>
     <colgroup>
       <col width='LINE%' >
       <col width='LINE%' >
@@ -475,7 +475,7 @@ RA4│Approver Reject(승인자 거부)        </td>
 
       <div id='Notification_of_Intention_to_Sell_the_Charged_Asset_부과자산_매각의사_통지__New_신규_' class='panel-body'><!--New(신규) 화면메인그룹 시작-->
 
-  <table id='UI-DMCI-05-O-0401_TABLE_465' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-05-O-0401_TABLE_36' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >Application No<br>(신청 번호)</th>
         <td width='35%' style='text-align: left;' class=''>
@@ -495,7 +495,7 @@ OO5│Officer Registration(담당자 등록)        </td>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-05-O-0401_TABLE_465').rowspan(0);
+  $('#UI-DMCI-05-O-0401_TABLE_36').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -518,11 +518,20 @@ $(window).load(function(){
 
       <div id='Notification_of_Intention_to_Sell_the_Charged_Asset_부과자산_매각의사_통지__New_신규__Taxpayer_Information_납세자_정보_' class='panel-body'><!--Taxpayer Information(납세자 정보) 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-05-O-0401_TABLE_470' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-05-O-0401_TABLE_41' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >TIN<br>(TIN)</th>
+      <th width='15%' >TIN<br>(TIN)<span class='mandatory'> *</span></th>
         <td width='35%' style='text-align: left;' class=''>
-172-206-670        </td>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='New_신규__Taxpayer_Information_납세자_정보___TIN<br>_TIN__1' value='172-206-670'  >
+        <a class='input-group-addon' onclick='onloadImage("../images-DOC/TIN_Information.png","900","1600")'><span class='glyphicon glyphicon-question-sign' onclick='onloadImage("../images-DOC/TIN_Information.png","900","1600")'></span></a>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
       <th width='15%' >Taxpayer's Name<br>(납세자 이름)</th>
         <td width='35%' style='text-align: left;' class=''>
 JEDIDA ATIENO OUMA        </td>
@@ -546,19 +555,35 @@ DOD | DODOMA        </td>
     <tr>
       <th width='15%' >Postal Address<br>(우편 주소)</th>
         <td style='text-align: left;' colspan='3' class=''>
-P.O Box 0, undefined        </td>
+P.O.Box 3456 Daejon        </td>
     </tr>
     </tr>
     <tr>
       <th width='15%' >Physical Address<br>(실제 주소)</th>
         <td style='text-align: left;' colspan='3' class=''>
-Rorya Tai Sota        </td>
+95, 117beon-gil, 35235 Dunsan - daero        </td>
     </tr>
     </tr>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-05-O-0401_TABLE_470').rowspan(0);
+  $('#UI-DMCI-05-O-0401_TABLE_41').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-05-O-0401_TABLE_49' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >DEV NOTE<br>(DEV NOTE)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+1. The format for Postal Address should Include Post office Box Number and Postal City
+<BR> 2. The format for Physical Address should include the standard format that starts with House number, Subward (street), Post code and Ward. with space separating each of the 4 parameters.
+<BR>1. 우편 주소 형식에는 우체국 사서함 번호와 우편 도시명이 포함되어야 합니다.
+<BR>2. 실제 주소 형식은 '건물 번호, 세부 지역(거리), 우편번호, 동(구역)' 순서로 시작하는 표준 형식을 따라야 하며, 각 항목은 공백으로 구분되어야 합니다.        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0401_TABLE_49').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -570,6 +595,73 @@ $(window).load(function(){
 </div><!--Row 종료-->
 
       </div><!--Taxpayer Information(납세자 정보) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Notification_of_Intention_to_Sell_the_Charged_Asset_부과자산_매각의사_통지__New_신규__List_of_Notices__통지서_목록_').toggle();" id='List_of_Notices__통지서_목록_'><span class='glyphicon glyphicon-menu-hamburger'></span> List of Notices (통지서 목록)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Notification_of_Intention_to_Sell_the_Charged_Asset_부과자산_매각의사_통지__New_신규__List_of_Notices__통지서_목록_' class='panel-body'><!--List of Notices (통지서 목록) 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-05-O-0401_TABLE_51' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col width='LINE%' >
+      <col width='LINE%' >
+      <col width='LINE%' >
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>Notice Reference No<br>(통지서 참조 번호)</th>
+      <th class='text-center'>Notice Type<br>(통지 유형)</th>
+      <th class='text-center'>Issuance Date<br>(발급 일자)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+        <input name='New_신규__List_of_Notices__통지서_목록___0_88' id='New_신규__List_of_Notices__통지서_목록___0_88__89' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Notices__통지서_목록___0_88__89'></label>
+        </td>
+        <td class=''>
+DSWR20250000000055I        </td>
+        <td class=''>
+30│Distrained/Restrained(압류/압수)
+        </td>
+        <td class=''>
+11/06/2025        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='New_신규__List_of_Notices__통지서_목록___0_90' id='New_신규__List_of_Notices__통지서_목록___0_90__91' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Notices__통지서_목록___0_90__91'></label>
+        </td>
+        <td class=''>
+SZN20250000000028I        </td>
+        <td class=''>
+30│Distrained/Restrained(압류/압수)        </td>
+        <td class=''>
+11/06/2025        </td>
+      </tr>
+    </tbody>
+  </table>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='New_신규__List_of_Notices__통지서_목록____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--List of Notices (통지서 목록) 화면서브그룹 종료-->
 
 </div><!--화면서브그룹 Row 종료-->
 
@@ -592,35 +684,39 @@ $(window).load(function(){
     </div><!--버튼그룹 Row 종료-->
 
     <hr>
-  <table id='UI-DMCI-05-O-0401_TABLE_480' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-05-O-0401_TABLE_57' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >Debit Amount<br>(부과 금액)</th>
+      <th width='15%' >Notice Type<br>(통지 유형)</th>
         <td width='35%' style='text-align: left;' class=''>
-3,946,398,79        </td>
-      <th width='15%' >Payment<br>(납부)</th>
+30│압류/압수        </td>
+      <th width='15%' >Notice Reference No<br>(통지서 참조 번호)</th>
         <td width='35%' style='text-align: left;' class=''>
-0        </td>
+DSWR20250000000055I        </td>
     </tr>
     <tr>
-      <th width='15%' >Discharge<br>(소멸)</th>
-        <td width='35%' style='text-align: left;' class=''>
-0        </td>
-      <th width='15%' >Balance<br>(잔액)</th>
-        <td width='35%' style='text-align: left;' class=''>
-3,946,398,79        </td>
+      <th width='15%' >Issuance Date<br>(발급 일자)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+11/06/2025        </td>
+    </tr>
     </tr>
     <tr>
+      <th width='15%' >Principal Tax balance<br>(원금 세액)</th>
+        <td width='35%' style='text-align: left;' class=''>
+3,946,398,79        </td>
       <th width='15%' >Interest<br>(이자)</th>
         <td width='35%' style='text-align: left;' class=''>
 1,743,397,85        </td>
-      <th width='15%' >Total<br>(합계)</th>
-        <td width='35%' style='text-align: left;' class=''>
+    </tr>
+    <tr>
+      <th width='15%' >Total outstanding Tax<br>(총 미납 세액)</th>
+        <td style='text-align: left;' colspan='3' class=''>
 5,689,796.64        </td>
+    </tr>
     </tr>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-05-O-0401_TABLE_480').rowspan(0);
+  $('#UI-DMCI-05-O-0401_TABLE_57').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -647,7 +743,7 @@ $(window).load(function(){
 
       <div id='Notification_of_Intention_to_Sell_the_Charged_Asset_부과자산_매각의사_통지__New_신규__List_of_Assets_자산_목록_' class='panel-body'><!--List of Assets(자산 목록) 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-05-O-0401_TABLE_487' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-05-O-0401_TABLE_64' class='table table-bordered table-hover'>
     <colgroup>
       <col>
       <col>
@@ -679,8 +775,8 @@ $(window).load(function(){
     <tbody>
       <tr>
         <td class=''>
-        <input name='New_신규__List_of_Assets_자산_목록___0_107' id='New_신규__List_of_Assets_자산_목록___0_107__108' type='checkbox'  value='' >
-        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_107__108'></label>
+        <input name='New_신규__List_of_Assets_자산_목록___0_92' id='New_신규__List_of_Assets_자산_목록___0_92__93' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_92__93'></label>
         </td>
         <td class=''>
 G1        </td>
@@ -710,8 +806,8 @@ DSWR20250000000055I
       </tr>
       <tr>
         <td class=''>
-        <input name='New_신규__List_of_Assets_자산_목록___0_109' id='New_신규__List_of_Assets_자산_목록___0_109__110' type='checkbox'  value='' >
-        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_109__110'></label>
+        <input name='New_신규__List_of_Assets_자산_목록___0_94' id='New_신규__List_of_Assets_자산_목록___0_94__95' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_94__95'></label>
         </td>
         <td class=''>
 G2        </td>
@@ -741,10 +837,11 @@ DSWR20250000000055I
       </tr>
       <tr>
         <td class=''>
-            <input name='New_신규__List_of_Assets_자산_목록___0_111' id='New_신규__List_of_Assets_자산_목록___0_111__112' type='checkbox'  value=''  checked>
-            <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_111__112'></label>
+        <input name='New_신규__List_of_Assets_자산_목록___0_96' id='New_신규__List_of_Assets_자산_목록___0_96__97' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_96__97'></label>
         </td>
-        <td class=''>G3</td>
+        <td class=''>
+G3        </td>
         <td class=''>
 <a href='javascript://return false;' onclick="window.open('UI-ASSET-20-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000101921</a>        </td>
         <td class=''>
@@ -773,8 +870,8 @@ Warehouse 03        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_신규__List_of_Assets_자산_목록___0_113' id='New_신규__List_of_Assets_자산_목록___0_113__114' type='checkbox'  value='' >
-        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_113__114'></label>
+        <input name='New_신규__List_of_Assets_자산_목록___0_98' id='New_신규__List_of_Assets_자산_목록___0_98__99' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_98__99'></label>
         </td>
         <td class=''>
 G4        </td>
@@ -806,8 +903,8 @@ Warehouse 04        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_신규__List_of_Assets_자산_목록___0_115' id='New_신규__List_of_Assets_자산_목록___0_115__116' type='checkbox'  value='' >
-        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_115__116'></label>
+        <input name='New_신규__List_of_Assets_자산_목록___0_100' id='New_신규__List_of_Assets_자산_목록___0_100__101' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_100__101'></label>
         </td>
         <td class=''>
 G5        </td>
@@ -839,8 +936,8 @@ Warehouse 05        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_신규__List_of_Assets_자산_목록___0_117' id='New_신규__List_of_Assets_자산_목록___0_117__118' type='checkbox'  value='' >
-        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_117__118'></label>
+        <input name='New_신규__List_of_Assets_자산_목록___0_102' id='New_신규__List_of_Assets_자산_목록___0_102__103' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_102__103'></label>
         </td>
         <td class=''>
 G6        </td>
@@ -872,10 +969,11 @@ Warehouse 06        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_신규__List_of_Assets_자산_목록___0_119' id='New_신규__List_of_Assets_자산_목록___0_119__120' type='checkbox'  value='' checked>
-        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_119__120'></label>
+        <input name='New_신규__List_of_Assets_자산_목록___0_104' id='New_신규__List_of_Assets_자산_목록___0_104__105' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_104__105'></label>
         </td>
-        <td class=''>G7</td>
+        <td class=''>
+G7        </td>
         <td class=''>
 <a href='javascript://return false;' onclick="window.open('UI-ASSET-32-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000102661</a>        </td>
         <td class=''>
@@ -904,10 +1002,11 @@ Warehouse 07        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_신규__List_of_Assets_자산_목록___0_121' id='New_신규__List_of_Assets_자산_목록___0_121__122' type='checkbox'  value='' checked>
-        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_121__122'></label>
+        <input name='New_신규__List_of_Assets_자산_목록___0_106' id='New_신규__List_of_Assets_자산_목록___0_106__107' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_106__107'></label>
         </td>
-        <td class=''>G8</td>
+        <td class=''>
+G8        </td>
         <td class=''>
 <a href='javascript://return false;' onclick="window.open('UI-ASSET-33-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000001891</a>        </td>
         <td class=''>
@@ -936,8 +1035,8 @@ Warehouse 08        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_신규__List_of_Assets_자산_목록___0_123' id='New_신규__List_of_Assets_자산_목록___0_123__124' type='checkbox'  value='' >
-        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_123__124'></label>
+        <input name='New_신규__List_of_Assets_자산_목록___0_108' id='New_신규__List_of_Assets_자산_목록___0_108__109' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_108__109'></label>
         </td>
         <td class=''>
 G9        </td>
@@ -969,8 +1068,8 @@ Warehouse 09        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_신규__List_of_Assets_자산_목록___0_125' id='New_신규__List_of_Assets_자산_목록___0_125__126' type='checkbox'  value='' >
-        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_125__126'></label>
+        <input name='New_신규__List_of_Assets_자산_목록___0_110' id='New_신규__List_of_Assets_자산_목록___0_110__111' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_110__111'></label>
         </td>
         <td class=''>
 G10        </td>
@@ -1002,10 +1101,11 @@ Warehouse 10        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_신규__List_of_Assets_자산_목록___0_127' id='New_신규__List_of_Assets_자산_목록___0_127__128' type='checkbox'  value='' checked>
-        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_127__128'></label>
+        <input name='New_신규__List_of_Assets_자산_목록___0_112' id='New_신규__List_of_Assets_자산_목록___0_112__113' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_112__113'></label>
         </td>
-        <td class=''>G11</td>
+        <td class=''>
+G11        </td>
         <td class=''>
 <a href='javascript://return false;' onclick="window.open('UI-ASSET-42-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000102881</a>        </td>
         <td class=''>
@@ -1028,8 +1128,8 @@ SZN20250000000028I        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='New_신규__List_of_Assets_자산_목록___0_129' id='New_신규__List_of_Assets_자산_목록___0_129__130' type='checkbox'  value='' >
-        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_129__130'></label>
+        <input name='New_신규__List_of_Assets_자산_목록___0_114' id='New_신규__List_of_Assets_자산_목록___0_114__115' type='checkbox'  value='' >
+        <label class='label-for-select ' for='New_신규__List_of_Assets_자산_목록___0_114__115'></label>
         </td>
         <td class=''>
         </td>
@@ -1054,7 +1154,7 @@ SZN20250000000028I        </td>
       </tr>
     </tbody>
   </table>
-  <table id='UI-DMCI-05-O-0401_TABLE_498' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-05-O-0401_TABLE_75' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >DEV NOTE<br>(DEV NOTE)</th>
         <td style='text-align: left;' colspan='3' class=''>
@@ -1064,7 +1164,7 @@ Primary Grouping Criteria TIN , Notice , Warehouse , Asset Type<br>(기본 그�
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-05-O-0401_TABLE_498').rowspan(0);
+  $('#UI-DMCI-05-O-0401_TABLE_75').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -1099,7 +1199,7 @@ $(window).load(function(){
 
       <div id='Notification_of_Intention_to_Sell_the_Charged_Asset_부과자산_매각의사_통지__New_신규__Estimated_sales_distribution_account_예상_판매_대금_분배_계정_' class='panel-body'><!--Estimated sales distribution account(예상 판매 대금 분배 계정) 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-05-O-0401_TABLE_501' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-05-O-0401_TABLE_78' class='table table-bordered table-hover'>
     <colgroup>
       <col>
       <col>
@@ -1228,7 +1328,7 @@ setNm 42        </td>
       </tr>
     </tbody>
   </table>
-  <table id='UI-DMCI-05-O-0401_TABLE_509' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-05-O-0401_TABLE_86' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >DEV NOTE<br>(DEV NOTE)</th>
         <td style='text-align: left;' colspan='3' class=''>
@@ -1247,7 +1347,7 @@ setNm 42        </td>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-05-O-0401_TABLE_509').rowspan(0);
+  $('#UI-DMCI-05-O-0401_TABLE_86').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -1258,7 +1358,7 @@ $(window).load(function(){
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
-  <table id='UI-DMCI-05-O-0401_TABLE_511' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-05-O-0401_TABLE_88' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >[S]Sales proceed<br>([S]매각 대금)</th>
         <td style='text-align: left;' colspan='3' class=''>
@@ -1314,7 +1414,7 @@ $(window).load(function(){
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-05-O-0401_TABLE_511').rowspan(0);
+  $('#UI-DMCI-05-O-0401_TABLE_88').rowspan(0);
 });
 </script>
       </div><!--Estimated sales distribution account(예상 판매 대금 분배 계정) 화면서브그룹 종료-->
@@ -1341,7 +1441,7 @@ $(window).load(function(){
 
       <div id='Notification_of_Intention_to_Sell_the_Charged_Asset_부과자산_매각의사_통지__New_신규__Requirement_요구사항_' class='panel-body'><!--Requirement(요구사항) 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-05-O-0401_TABLE_518' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-05-O-0401_TABLE_95' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >Remarks<br>(비고)</th>
         <td style='text-align: left;' colspan='3' class=''>
@@ -1378,7 +1478,7 @@ $(window).load(function(){
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-05-O-0401_TABLE_518').rowspan(0);
+  $('#UI-DMCI-05-O-0401_TABLE_95').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
