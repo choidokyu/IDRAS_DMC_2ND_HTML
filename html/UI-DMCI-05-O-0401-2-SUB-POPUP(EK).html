@@ -1,0 +1,533 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-DMCI-05-O-0401-2-SUB-POPUP_List of Assets(자산 목록)</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> List of Assets(자산 목록) - UI-DMCI-05-O-0401-2-SUB-POPUP</h1>
+<div class='pull-right'><a href='UI-DMCI-05-O-0401-2-SUB-POPUP(EN).html'>EN</a> | <a href='UI-DMCI-05-O-0401-2-SUB-POPUP(KR).html'>KR</a> | <a href='UI-DMCI-05-O-0401-2-SUB-POPUP(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div>  <table id='UI-DMCI-05-O-0401-2-SUB-POPUP_TABLE_2' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Asset Category<br>(자산 분류)</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Asset_Category<br>_자산_분류__1' value=''  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Asset Type<br>(자산 유형)</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+      <select class='form-control ' id='___Asset_Type<br>_자산_유형_' >
+            <option ></option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Asset No.<br>(자산 번호)</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Asset_No.<br>_자산_번호__1' value=''  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Asset Name<br>(자산 이름)</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+      <select class='form-control ' id='___Asset_Name<br>_자산_이름_' >
+            <option ></option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0401-2-SUB-POPUP_TABLE_2').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='Reset<br>(초기화)' ><span class='glyphicon glyphicon-refresh'></span> Reset<br>(초기화)</button>
+        <button class='btn btn-default' type='button' value='Search<br>(조회)' ><span class='glyphicon glyphicon-search'></span> Search<br>(조회)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-DMCI-05-O-0401-2-SUB-POPUP_TABLE_8' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col width='LINK%' >
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>Group<br>(그룹)</th>
+      <th class='text-center'>Asset No.<br>(자산 번호)</th>
+      <th class='text-center'>Asset Category<br>(자산 분류)</th>
+      <th class='text-center'>Asset Type<br>(자산 유형)</th>
+      <th class='text-center'>Asset Name<br>(자산 이름)</th>
+      <th class='text-center'>Valuation Amount (TZS)<br>(평가 금액 (TZS))</th>
+      <th class='text-center'>Total Number of Assets<br>(자산 총 개수)</th>
+      <th class='text-center'>Number of Locations<br>(위치 수)</th>
+      <th class='text-center'>Warehouse ID<br>(창고 ID)</th>
+      <th class='text-center'>Warehouse Name<br>(창고 이름)</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class=''>
+            <input name='___0_5' id='___0_5__6' type='checkbox' value=''><label class='label-for-select ' for='___0_5__6'/>
+        </td>
+        <td class=''>G1</td>
+        <td class=''>
+            <a href='javascript://return false;' onclick="window.open('UI-ASSET-10-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000102691</a>
+        </td>
+        <td class=''>10│Interest in Land/Buildings(토지/건물에 대한 권리)</td>
+        <td class=''>
+10│Land(토지)
+        </td>
+        <td class=''>
+earth        </td>
+        <td class=''>
+55,000,000
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+    </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_7' id='___0_7__8' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_7__8'></label>
+        </td>
+        <td class=''>
+G2        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-11-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000102701</a>        </td>
+        <td class=''>
+10│Interest in Land/Buildings(토지/건물에 대한 권리)
+        </td>
+        <td class=''>
+11│Building (with land)(건물(토지 포함))
+        </td>
+        <td class=''>
+building        </td>
+        <td class=''>
+45,000,000
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_9' id='___0_9__10' type='checkbox' checked value='' >
+        <label class='label-for-select ' for='___0_9__10'></label>
+        </td>
+        <td class=''>
+G3        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-20-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000101921</a>        </td>
+        <td class=''>
+20│Perishable Goods(부패하기 쉬운 상품)
+        </td>
+        <td class=''>
+20│Processed Perishable Goods(가공된 부패성 물품)
+        </td>
+        <td class=''>
+Fresh Fresh        </td>
+        <td class=''>
+150,000
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+
+WRHS20250000000003I        </td>
+        <td class=''>
+
+Warehouse 03        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_11' id='___0_11__12' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_11__12'></label>
+        </td>
+        <td class=''>
+G4        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-21-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET20250000010216E</a>        </td>
+        <td class=''>
+20│Perishable Goods(부패하기 쉬운 상품)
+        </td>
+        <td class=''>
+21│Unprocessed Perishable Goods(비가공 부패성 물품)
+        </td>
+        <td class=''>
+Unfresh Unfresh        </td>
+        <td class=''>
+180,000
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+
+WRHS20250000000004I        </td>
+        <td class=''>
+
+Warehouse 04        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_13' id='___0_13__14' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_13__14'></label>
+        </td>
+        <td class=''>
+G5        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-30-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000001131</a>        </td>
+        <td class=''>
+30│Other Tangible Assets(기타 유형자산)
+        </td>
+        <td class=''>
+30│Motor vehicle(차량)
+        </td>
+        <td class=''>
+super car        </td>
+        <td class=''>
+3,000,000
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+
+WRHS20250000000005I        </td>
+        <td class=''>
+
+Warehouse 05        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_15' id='___0_15__16' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_15__16'></label>
+        </td>
+        <td class=''>
+G6        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-31-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000102901</a>        </td>
+        <td class=''>
+30│Other Tangible Assets(기타 유형자산)
+        </td>
+        <td class=''>
+31│Marine Vessels(선박)
+        </td>
+        <td class=''>
+asetNm 31-2        </td>
+        <td class=''>
+65,000,000
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+
+WRHS20250000000006I        </td>
+        <td class=''>
+
+Warehouse 06        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_17' id='___0_17__18' type='checkbox' checked value='' >
+        <label class='label-for-select ' for='___0_17__18'></label>
+        </td>
+        <td class=''>
+G7        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-32-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000102661</a>        </td>
+        <td class=''>
+30│Other Tangible Assets(기타 유형자산)
+        </td>
+        <td class=''>
+32│Electronics/Machines(전자/기계류)
+        </td>
+        <td class=''>
+test machine        </td>
+        <td class=''>
+4,000,000
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+
+WRHS20250000000007I        </td>
+        <td class=''>
+
+Warehouse 07        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_19' id='___0_19__20' type='checkbox' checked value='' >
+        <label class='label-for-select ' for='___0_19__20'></label>
+        </td>
+        <td class=''>
+G8        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-33-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000001891</a>        </td>
+        <td class=''>
+30│Other Tangible Assets(기타 유형자산)
+        </td>
+        <td class=''>
+33│Other non- Perishable Goods(기타 비부패성 물품)
+        </td>
+        <td class=''>
+qty        </td>
+        <td class=''>
+1,500,000
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+
+WRHS20250000000008I        </td>
+        <td class=''>
+
+Warehouse 08        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_21' id='___0_21__22' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_21__22'></label>
+        </td>
+        <td class=''>
+G9        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-40-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000102871</a>        </td>
+        <td class=''>
+40│Intagible asset(무형자산)
+        </td>
+        <td class=''>
+40│Shares/Units(주식/지분)
+        </td>
+        <td class=''>
+asetNm 40        </td>
+        <td class=''>
+180,000
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+
+WRHS20250000000009I        </td>
+        <td class=''>
+
+Warehouse 09        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_23' id='___0_23__24' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_23__24'></label>
+        </td>
+        <td class=''>
+G10        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-41-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000102851</a>        </td>
+        <td class=''>
+40│Intagible asset(무형자산)
+        </td>
+        <td class=''>
+41│Bonds(채권)
+        </td>
+        <td class=''>
+asetNm 41        </td>
+        <td class=''>
+500,000
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+
+WRHS20250000000010I        </td>
+        <td class=''>
+
+Warehouse 10        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_25' id='___0_25__26' type='checkbox' checked value='' >
+        <label class='label-for-select ' for='___0_25__26'></label>
+        </td>
+        <td class=''>
+G11        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-42-SUB-POPUP(EK).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000102881</a>        </td>
+        <td class=''>
+40│Intagible asset(무형자산)        </td>
+        <td class=''>
+42│Other Intangible Assets(기타 무형 자산)        </td>
+        <td class=''>
+setNm 42        </td>
+        <td class=''>
+250,000
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='___0_27' id='___0_27__28' type='checkbox'  value='' >
+        <label class='label-for-select ' for='___0_27__28'></label>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+<a href='javascript://return false;'>total</a>        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+175,760,000        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class='text-center'> 
+    <ul class='pagination pagination-sm'> 
+      <li class='disabled'><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-left'></span></a></li>          
+      <li><a href='javascript://return false;'>1</a></li>          
+      <li><a href='javascript://return false;'>2</a></li>          
+      <li><a href='javascript://return false;'>3</a></li>          
+      <li><a href='javascript://return false;'>4</a></li>          
+      <li><a href='javascript://return false;'>5</a></li>          
+      <li><a href='javascript://return false;'>6</a></li>          
+      <li><a href='javascript://return false;'>7</a></li>          
+      <li><a href='javascript://return false;'>8</a></li>          
+      <li><a href='javascript://return false;'>9</a></li>          
+      <li><a href='javascript://return false;'>10</a></li>         
+      <li><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-right'></span></a></li>          
+    </ul>                                 
+  </div>                                  
+
+
+  <table id='UI-DMCI-05-O-0401-2-SUB-POPUP_TABLE_19' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >DEV NOTE<br>(DEV NOTE)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+Primary Grouping Criteria TIN , Notice , Warehouse , Asset Type<br>(기본 그룹화 기준 TIN , 통지, 창고, 자산 유형)        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-05-O-0401-2-SUB-POPUP_TABLE_19').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='Cancel<br>(취소)' >Cancel<br>(취소)</button>
+        <button class='btn btn-default' type='button' value='Select<br>(선택하다)' >Select<br>(선택하다)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           
