@@ -804,158 +804,99 @@ $(window).load(function(){
 
 
 
-
-
-
-
-
-
-
-
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
       <div id='부과자산_매각의사_통지_신규_선택_된_자산_목록' class='panel-body'><!--선택 된 자산 목록 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-05-O-0401_TABLE_65' class='table table-bordered table-hover'>
-    <colgroup>
-      <col>
-      <col>
-      <col width='LINK%' >
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-    </colgroup>
-    <thead>
-      <tr>
-      <th class='text-center'>번호</th>
-      <th class='text-center'>그룹</th>
-      <th class='text-center'>자산 번호</th>
-      <th class='text-center'>자산 유형</th>
-      <th class='text-center'>자산 이름</th>
-      <th class='text-center'>평가 금액 (TZS)</th>
-      <th class='text-center'>자산 총 개수</th>
-      <th class='text-center'>위치 수</th>
-      <th class='text-center'>창고 이름</th>
-      <th class='text-center'>수수료율</th>
-      <th class='text-center'>수수료</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class=''>
-1        </td>
-        <td class=''>
-G3        </td>
-        <td class=''>
-<a href='javascript://return false;' onclick="window.open('UI-ASSET-10-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000101921</a>        </td>
-        <td class=''>
-20│Processed Perishable Goods
-        </td>
-        <td class=''>
-Fresh Fresh
-        </td>
-        <td class=''>
-150,000
-        </td>
-        <td class=''>
-1        </td>
-        <td class=''>
-1        </td>
-        <td class=''>
-Warehouse 03        </td>
-        <td class=''>
-5%        </td>
-        <td class=''>
-7,500        </td>
-      </tr>
-      <tr>
-        <td class=''>
-2        </td>
-        <td class=''>
-G7        </td>
-        <td class=''>
-<a href='javascript://return false;' onclick="window.open('UI-ASSET-11-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
-ASET202500000102661</a>        </td>
-        <td class=''>
-32│Electronics/Machines
-        </td>
-        <td class=''>
-test machine
-        </td>
-        <td class=''>
-4,000,000
-        </td>
-        <td class=''>
-1        </td>
-        <td class=''>
-1        </td>
-        <td class=''>
-Warehouse 07        </td>
-        <td class=''>
-3%        </td>
-        <td class=''>
-120,000        </td>
-      </tr>
-      <tr>
-        <td class=''>
-3        </td>
-        <td class=''>
-G8        </td>
-        <td class=''>
-<a href='javascript://return false;' onclick="window.open('UI-ASSET-20-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
-ASET202500000001891</a>        </td>
-        <td class=''>
-33│Other non- Perishable Goods
-        </td>
-        <td class=''>
-qty
-        </td>
-        <td class=''>
-1,500,000
-        </td>
-        <td class=''>
-1        </td>
-        <td class=''>
-1        </td>
-        <td class=''>
-Warehouse 08        </td>
-        <td class=''>
-3%        </td>
-        <td class=''>
-45,000        </td>
-      </tr>
-      <tr>
-        <td class=''>
-4        </td>
-        <td class=''>
-G11        </td>
-        <td class=''>
-<a href='javascript://return false;' onclick="window.open('UI-ASSET-21-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
-ASET202500000102881</a>        </td>
-        <td class=''>
-42│Other Intangible Assets        </td>
-        <td class=''>
-setNm 42        </td>
-        <td class=''>
-250,000        </td>
-        <td class=''>
-1        </td>
-        <td class=''>
-1        </td>
-        <td class=''>
-Warehouse 11        </td>
-        <td class=''>
-3%        </td>
-        <td class=''>
-7,500        </td>
-      </tr>
-    </tbody>
-  </table>
+<table id="UI-DMCI-05-O-0401_TABLE_65" class="table table-bordered table-hover">
+  <colgroup>
+    <col> <!-- 번호 -->
+    <col> <!-- 그룹 -->
+    <col width="LINK%"> <!-- 자산 번호 -->
+    <col> <!-- 자산 유형 -->
+    <col> <!-- 자산 이름 -->
+    <col> <!-- 평가 금액 -->
+    <col> <!-- 창고 이름 -->
+    <col> <!-- 수수료율 -->
+    <col> <!-- 수수료 -->
+  </colgroup>
+  <thead>
+    <tr>
+      <th class="text-center">번호</th>
+      <th class="text-center">그룹</th>
+      <th class="text-center">자산 번호</th>
+      <th class="text-center">자산 유형</th>
+      <th class="text-center">자산 이름</th>
+      <th class="text-center">평가 금액 (TZS)</th>
+      <th class="text-center">창고 이름</th>
+      <th class="text-center">수수료율</th>
+      <th class="text-center">수수료</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>G3</td>
+      <td>
+        <a href="javascript://return false;" onclick="window.open('UI-ASSET-10-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
+          ASET202500000101921
+        </a>
+      </td>
+      <td>20│Processed Perishable Goods</td>
+      <td>Fresh Fresh</td>
+      <td>150,000</td>
+      <td>Warehouse 03</td>
+      <td>5%</td>
+      <td>7,500</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>G7</td>
+      <td>
+        <a href="javascript://return false;" onclick="window.open('UI-ASSET-11-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
+          ASET202500000102661
+        </a>
+      </td>
+      <td>32│Electronics/Machines</td>
+      <td>test machine</td>
+      <td>4,000,000</td>
+      <td>Warehouse 07</td>
+      <td>3%</td>
+      <td>120,000</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>G8</td>
+      <td>
+        <a href="javascript://return false;" onclick="window.open('UI-ASSET-20-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
+          ASET202500000001891
+        </a>
+      </td>
+      <td>33│Other non-Perishable Goods</td>
+      <td>qty</td>
+      <td>1,500,000</td>
+      <td>Warehouse 08</td>
+      <td>3%</td>
+      <td>45,000</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>G11</td>
+      <td>
+        <a href="javascript://return false;" onclick="window.open('UI-ASSET-21-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
+          ASET202500000102881
+        </a>
+      </td>
+      <td>42│Other Intangible Assets</td>
+      <td>setNm 42</td>
+      <td>250,000</td>
+      <td>Warehouse 11</td>
+      <td>3%</td>
+      <td>7,500</td>
+    </tr>
+  </tbody>
+</table>
+
   
   
 <table id='UI-DMCI-05-O-0401_TABLE_76' class='table table-bordered table-hover'>
