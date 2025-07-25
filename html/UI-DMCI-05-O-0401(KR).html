@@ -626,7 +626,7 @@ $(window).load(function(){
     <tbody>
       <tr>
         <td class=''>
-        <input name='신규_통지서_목록' id='신규_통지서_목록__0_88__89' type='radio' checked value='' >
+        <input name='신규_통지서_목록__0_88' id='신규_통지서_목록__0_88__89' type='radio'  value='' >
         <label class='label-for-select ' for='신규_통지서_목록__0_88__89'></label>
         </td>
         <td class=''>
@@ -639,7 +639,7 @@ DSWR20250000000055I        </td>
       </tr>
       <tr>
         <td class=''>
-        <input name='신규_통지서_목록' id='신규_통지서_목록__0_90__91' type='radio'  value='' >
+        <input name='신규_통지서_목록__0_90' id='신규_통지서_목록__0_90__91' type='radio'  value='' >
         <label class='label-for-select ' for='신규_통지서_목록__0_90__91'></label>
         </td>
         <td class=''>
@@ -663,76 +663,49 @@ SZN20250000000028I        </td>
 
 </div><!--화면서브그룹 Row 종료-->
 
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
-
-
-
-
-
-
-
-
-
-<!--
-<div class='sub-group-title row'>
   <div class='col-sm-12'>
       <h3 onclick="$('#부과자산_매각의사_통지_신규_미납_세액').toggle();" id='미납_세액'><span class='glyphicon glyphicon-menu-hamburger'></span> 미납 세액</h3>
   </div>
+
 </div>
-<div class='row'>
-  <div class='col-sm-12 text-right'>
-    <button class='btn btn-default' type='button' value='미납 세액 정보' onclick="window.open('UI-DMCI-O-0001-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')"><span class='glyphicon glyphicon-search'></span> 미납 세액 정보</button>
-  </div>
-</div>
--->
-
-
-
-
-<div class='row'><!-- 제목 + 버튼 통합 Row 시작 -->
-  <div class='col-sm-12'>
-    <div style="display: flex; align-items: center; justify-content: space-between;">
-      <h3 id='미납_세액' onclick="$('#부과자산_매각의사_통지_신규_미납_세액').toggle();" style="margin: 0;">
-        <span class='glyphicon glyphicon-menu-hamburger'></span> 미납 세액
-      </h3>
-      <button class='btn btn-default' type='button' value='미납 세액 정보'
-        onclick="window.open('UI-DMCI-O-0001-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
-        <span class='glyphicon glyphicon-search'></span> 미납 세액 정보
-      </button>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
 
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
       <div id='부과자산_매각의사_통지_신규_미납_세액' class='panel-body'><!--미납 세액 화면서브그룹 시작-->
 
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default' type='button' value='미납 세액 정보' onclick="window.open('UI-DMCI-O-0001-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')"><span class='glyphicon glyphicon-search'></span> 미납 세액 정보</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
 
-<table id='UI-DMCI-05-O-0401_TABLE_57' class='table table-bordered table-hover'>
-  <tr>
-    <th width='15%'>통지 유형</th>
-    <td width='18%'>30│압류/압수</td>
-    <th width='15%'>통지서 참조 번호</th>
-    <td width='18%'>DSWR20250000000055I</td>
-    <th width='15%'>발급 일자</th>
-    <td width='19%'>11/06/2025</td>
-  </tr>
-  <tr>
-    <th>원금 세액</th>
-    <td>3,946,398.79</td>
-    <th>이자</th>
-    <td>1,743,397.85</td>
-    <th>총 미납 세액</th>
-    <td>5,689,796.64</td>
-  </tr>
-</table>
+    <hr>
+  <table id='UI-DMCI-05-O-0401_TABLE_57' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >통지 유형</th>
+        <td width='18%' style='text-align: left;' class=''>
+30│압류/압수        </td>
+      <th width='15%' >통지서 참조 번호</th>
+        <td width='18%' style='text-align: left;' class=''>
+DSWR20250000000055I        </td>
+      <th width='15%' >발급 일자</th>
+        <td width='18%' style='text-align: left;' class=''>
+11/06/2025        </td>
+    </tr>
+    <tr>
+      <th width='15%' >원금 세액</th>
+        <td width='18%' style='text-align: left;' class=''>
+3,946,398,79        </td>
+      <th width='15%' >이자</th>
+        <td width='18%' style='text-align: left;' class=''>
+1,743,397,85        </td>
+      <th width='15%' >총 미납 세액</th>
+        <td width='18%' style='text-align: left;' class=''>
+5,689,796.64        </td>
+    </tr>
+  </table>
 <script type="text/javascript">
 $(window).load(function(){
   $('#UI-DMCI-05-O-0401_TABLE_57').rowspan(0);
@@ -750,194 +723,193 @@ $(window).load(function(){
 
 </div><!--화면서브그룹 Row 종료-->
 
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default' type='button' value='매각할 자산 추가' onclick="window.open('UI-DMCI-05-O-0401-2-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')"><span class='glyphicon glyphicon-search'></span> 매각할 자산 추가</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
 
+    <hr>
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<div class='row'>
-  <div class='col-sm-12 text-right'>
-    <button class='btn btn-default' type='button' value='매각할 자산 추가' onclick="window.open('UI-DMCI-05-O-0401-2-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')"><span class='glyphicon glyphicon-search'></span> 매각할 자산 추가</button>
-  </div>
-</div>
-<div class='sub-group-title row'>
   <div class='col-sm-12'>
       <h3 onclick="$('#부과자산_매각의사_통지_신규_선택_된_자산_목록').toggle();" id='선택_된_자산_목록'><span class='glyphicon glyphicon-menu-hamburger'></span> 선택 된 자산 목록</h3>
   </div>
+
 </div>
--->
-
-
-<div class='row'><!-- 제목 + 버튼 통합 Row 시작 -->
-  <div class='col-sm-12'>
-    <div style="display: flex; align-items: center; justify-content: space-between;">
-      <h3 id='선택_된_자산_목록' onclick="$('#부과자산_매각의사_통지_신규_선택_된_자산_목록').toggle();" style="margin: 0;">
-        <span class='glyphicon glyphicon-menu-hamburger'></span> 선택 된 자산 목록
-      </h3>
-      <button class='btn btn-default' type='button' value='매각할 자산 추가'
-        onclick="window.open('UI-DMCI-05-O-0401-2-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
-        <span class='glyphicon glyphicon-search'></span> 매각할 자산 추가
-      </button>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
       <div id='부과자산_매각의사_통지_신규_선택_된_자산_목록' class='panel-body'><!--선택 된 자산 목록 화면서브그룹 시작-->
 
-<table id="UI-DMCI-05-O-0401_TABLE_65" class="table table-bordered table-hover">
-  <colgroup>
-    <col> <!-- 번호 -->
-    <col> <!-- 그룹 -->
-    <col width="LINK%"> <!-- 자산 번호 -->
-    <col> <!-- 자산 유형 -->
-    <col> <!-- 자산 이름 -->
-    <col> <!-- 평가 금액 -->
-    <col> <!-- 창고 이름 -->
-    <col> <!-- 수수료율 -->
-    <col> <!-- 수수료 -->
-  </colgroup>
-  <thead>
-    <tr>
-      <th class="text-center">번호</th>
-      <th class="text-center">그룹</th>
-      <th class="text-center">자산 번호</th>
-      <th class="text-center">자산 유형</th>
-      <th class="text-center">자산 이름</th>
-      <th class="text-center">평가 금액 (TZS)</th>
-      <th class="text-center">창고 이름</th>
-      <th class="text-center">수수료율</th>
-      <th class="text-center">수수료</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>G3</td>
-      <td>
-        <a href="javascript://return false;" onclick="window.open('UI-ASSET-10-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
-          ASET202500000101921
-        </a>
-      </td>
-      <td>20│Processed Perishable Goods</td>
-      <td>Fresh Fresh</td>
-      <td>150,000</td>
-      <td>Warehouse 03</td>
-      <td>5%</td>
-      <td>7,500</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>G7</td>
-      <td>
-        <a href="javascript://return false;" onclick="window.open('UI-ASSET-11-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
-          ASET202500000102661
-        </a>
-      </td>
-      <td>32│Electronics/Machines</td>
-      <td>test machine</td>
-      <td>4,000,000</td>
-      <td>Warehouse 07</td>
-      <td>3%</td>
-      <td>120,000</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>G8</td>
-      <td>
-        <a href="javascript://return false;" onclick="window.open('UI-ASSET-20-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
-          ASET202500000001891
-        </a>
-      </td>
-      <td>33│Other non-Perishable Goods</td>
-      <td>qty</td>
-      <td>1,500,000</td>
-      <td>Warehouse 08</td>
-      <td>3%</td>
-      <td>45,000</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>G11</td>
-      <td>
-        <a href="javascript://return false;" onclick="window.open('UI-ASSET-21-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
-          ASET202500000102881
-        </a>
-      </td>
-      <td>42│Other Intangible Assets</td>
-      <td>setNm 42</td>
-      <td>250,000</td>
-      <td>Warehouse 11</td>
-      <td>3%</td>
-      <td>7,500</td>
-    </tr>
-  </tbody>
-</table>
+  <table id='UI-DMCI-05-O-0401_TABLE_65' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col width='LINK%' >
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>번호</th>
+      <th class='text-center'>그룹</th>
+      <th class='text-center'>자산 번호</th>
+      <th class='text-center'>자산 유형</th>
+      <th class='text-center'>자산 이름</th>
+      <th class='text-center'>평가 금액 (TZS)</th>
+      <th class='text-center'>창고 이름</th>
+      <th class='text-center'>수수료율</th>
+      <th class='text-center'>수수료</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+1        </td>
+        <td class=''>
+G3        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-10-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">ASET202500000101921</a>        </td>
+        <td class=''>
+20│Processed Perishable Goods
+        </td>
+        <td class=''>
+Fresh Fresh
+        </td>
+        <td class=''>
+150,000
+        </td>
+        <td class=''>
+Warehouse 03        </td>
+        <td class=''>
+5%        </td>
+        <td class=''>
+7,500        </td>
+      </tr>
+      <tr>
+        <td class=''>
+2        </td>
+        <td class=''>
+G7        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-11-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
+ASET202500000102661</a>        </td>
+        <td class=''>
+32│Electronics/Machines
+        </td>
+        <td class=''>
+test machine
+        </td>
+        <td class=''>
+4,000,000
+        </td>
+        <td class=''>
+Warehouse 07        </td>
+        <td class=''>
+3%        </td>
+        <td class=''>
+120,000        </td>
+      </tr>
+      <tr>
+        <td class=''>
+3        </td>
+        <td class=''>
+G8        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-20-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
+ASET202500000001891</a>        </td>
+        <td class=''>
+33│Other non- Perishable Goods
+        </td>
+        <td class=''>
+qty
+        </td>
+        <td class=''>
+1,500,000
+        </td>
+        <td class=''>
+Warehouse 08        </td>
+        <td class=''>
+3%        </td>
+        <td class=''>
+45,000        </td>
+      </tr>
+      <tr>
+        <td class=''>
+4        </td>
+        <td class=''>
+G11        </td>
+        <td class=''>
+<a href='javascript://return false;' onclick="window.open('UI-ASSET-21-SUB-POPUP(KR).html', 'a', 'width=1300, height=700, left=100, top=100')">
+ASET202500000102881</a>        </td>
+        <td class=''>
+42│Other Intangible Assets        </td>
+        <td class=''>
+setNm 42        </td>
+        <td class=''>
+250,000        </td>
+        <td class=''>
+Warehouse 11        </td>
+        <td class=''>
+3%        </td>
+        <td class=''>
+7,500        </td>
+      </tr>
+    </tbody>
+  </table>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='신규_선택_된_자산_목록___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
 
-  
-  
-<table id='UI-DMCI-05-O-0401_TABLE_76' class='table table-bordered table-hover'>
-  <tr>
-    <th width='15%'>자산 총 개수</th>
-    <td width='18%'>4</td>
-    <th width='15%'>[S] 자산 총 가치</th>
-    <td width='18%'>5,900,000</td>
-    <th width='15%'>위치 수</th>
-    <td width='19%'>4</td>
-  </tr>
-  <tr>
-    <th>[E] 예상 대리인 수수료</th>
-    <td>180,000</td>
-    <th>[O] 기타 비용</th>
-    <td>
-      <div class='form-group form-group-sm'>                              
-        <div class='input-group col-sm-12'>
-          <input class='form-control' type='text' id='신규_선택_된_자산_목록__[O]기타_비용_1' value='0'>
+  <table id='UI-DMCI-05-O-0401_TABLE_75' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >자산 총 개수</th>
+        <td width='18%' style='text-align: left;' class=''>
+4        </td>
+      <th width='15%' >자산 총 가치</th>
+        <td width='18%' style='text-align: left;' class=''>
+5,900,000        </td>
+      <th width='15%' >위치 수</th>
+        <td width='18%' style='text-align: left;' class=''>
+4        </td>
+    </tr>
+    <tr>
+      <th width='15%' >[E]예상 대리인 수수료</th>
+        <td width='18%' style='text-align: left;' class=''>
+180,000        </td>
+      <th width='15%' >[O]기타 비용</th>
+        <td width='18%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='신규_선택_된_자산_목록__[O]기타_비용_1' value='0'  >
         </div>
-      </div>
-    </td>
-    <th>예상 총 비용</th>
-    <td colspan="5" style='text-align: left;'>
-      [S] - [E] - [O]<br>
-      (5,900,000 - 180,000 - 4,000 - 0 - 5,689,796.64)<br>
-      <strong>26,203.36</strong>
-    </td>
-  </tr>
-</table>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
 
-  
-  
-  
-  
+        </td>
+      <th width='15%' >예상 총 비용</th>
+        <td width='18%' style='text-align: left;' class=''>
+[E] + [O]
+<BR>(180,000 + 0)
+<BR>180,000        </td>
+    </tr>
+  </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-05-O-0401_TABLE_76').rowspan(0);
+  $('#UI-DMCI-05-O-0401_TABLE_75').rowspan(0);
 });
 </script>
-  <table id='UI-DMCI-05-O-0401_TABLE_82' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-05-O-0401_TABLE_81' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >DEV NOTE</th>
         <td style='text-align: left;' colspan='3' class=''>
@@ -952,7 +924,7 @@ $(window).load(function(){
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-05-O-0401_TABLE_82').rowspan(0);
+  $('#UI-DMCI-05-O-0401_TABLE_81').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -987,7 +959,7 @@ $(window).load(function(){
 
       <div id='부과자산_매각의사_통지_신규_승인_요청' class='panel-body'><!--승인 요청 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-05-O-0401_TABLE_85' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-05-O-0401_TABLE_84' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >Comment</th>
         <td style='text-align: left;' colspan='3' class=''>
@@ -1024,7 +996,7 @@ $(window).load(function(){
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-05-O-0401_TABLE_85').rowspan(0);
+  $('#UI-DMCI-05-O-0401_TABLE_84').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -1057,7 +1029,7 @@ $(window).load(function(){
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
-  <table id='UI-DMCI-05-O-0401_TABLE_93' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-05-O-0401_TABLE_92' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >DEV NOTE</th>
         <td style='text-align: left;' colspan='3' class=''>
@@ -1068,7 +1040,7 @@ $(window).load(function(){
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-05-O-0401_TABLE_93').rowspan(0);
+  $('#UI-DMCI-05-O-0401_TABLE_92').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
