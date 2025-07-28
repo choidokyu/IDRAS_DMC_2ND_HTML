@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-DMCI-03-O-1301_SUB-POPUP_징수 불가 세금 상각_미지급 세금 내역 팝업</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> 징수 불가 세금 상각_미지급 세금 내역 팝업 - UI-DMCI-03-O-1301_SUB-POPUP</h1>
+<div class='pull-right'><a href='UI-DMCI-03-O-1301_SUB-POPUP(EN).html'>EN</a> | <a href='UI-DMCI-03-O-1301_SUB-POPUP(KR).html'>KR</a> | <a href='UI-DMCI-03-O-1301_SUB-POPUP(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div><div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#징수_불가_세금_상각_미지급_세금_내역_팝업__미납_세액').toggle();" id='미납_세액'><span class='glyphicon glyphicon-menu-hamburger'></span> 미납 세액</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='징수_불가_세금_상각_미지급_세금_내역_팝업__미납_세액' class='panel-body'><!--미납 세액 화면서브그룹 시작-->
+
+  <table id='UI-DMCI-03-O-1301_SUB-POPUP_TABLE_67' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>세목</th>
+      <th class='text-center'>사건 유형</th>
+      <th class='text-center'>연도</th>
+      <th class='text-center'>과세 기간</th>
+      <th class='text-center'>납부 기한</th>
+      <th class='text-center'>차변 번호</th>
+      <th class='text-center'>부과 금액</th>
+      <th class='text-center'>납부</th>
+      <th class='text-center'>소멸</th>
+      <th class='text-center'>잔액</th>
+      <th class='text-center'>이자</th>
+      <th class='text-center'>합계</th>
+      <th class='text-center'>비고</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+        <input name='_미납_세액__0_70' id='_미납_세액__0_70__71' type='checkbox' checked value='' >
+        </td>
+        <td class=''>SLT        </td>
+        <td class=''>Others        </td>
+        <td class=''>2023        </td>
+        <td class=''>1        </td>
+        <td class=''>27/01/2023        </td>
+        <td class=''>571091791        </td>
+        <td class=''>203,400        </td>
+        <td class=''>0        </td>
+        <td class=''>0        </td>
+        <td class=''>203,400        </td>
+        <td class=''>72,593.87        </td>
+        <td class=''>275,993.87        </td>
+        <td class=''>        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_미납_세액__0_72' id='_미납_세액__0_72__73' type='checkbox' checked value='' >
+        </td>
+        <td class=''>WTN        </td>
+        <td class=''>Alternative Minimum Tax (...)        </td>
+        <td class=''>2023        </td>
+        <td class=''>1        </td>
+        <td class=''>27/01/2023        </td>
+        <td class=''>571091769        </td>
+        <td class=''>508,500        </td>
+        <td class=''>0        </td>
+        <td class=''>0        </td>
+        <td class=''>508,500        </td>
+        <td class=''>181,484.66        </td>
+        <td class=''>689,984.66        </td>
+        <td class=''>        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_미납_세액__0_74' id='_미납_세액__0_74__75' type='checkbox' checked value='' >
+        </td>
+        <td class=''>WTN        </td>
+        <td class=''>Others        </td>
+        <td class=''>2023        </td>
+        <td class=''>1        </td>
+        <td class=''>21/01/2023        </td>
+        <td class=''>571032899        </td>
+        <td class=''>468,000        </td>
+        <td class=''>0        </td>
+        <td class=''>0        </td>
+        <td class=''>468,000        </td>
+        <td class=''>167,030.13        </td>
+        <td class=''>635,030.13        </td>
+        <td class=''>        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_미납_세액__0_76' id='_미납_세액__0_76__77' type='checkbox' checked value='' >
+        </td>
+        <td class=''>SLT        </td>
+        <td class=''>Others        </td>
+        <td class=''>2023        </td>
+        <td class=''>1        </td>
+        <td class=''>21/01/2023        </td>
+        <td class=''>571032909        </td>
+        <td class=''>99,600        </td>
+        <td class=''>0        </td>
+        <td class=''>0        </td>
+        <td class=''>99,600        </td>
+        <td class=''>35,547.44        </td>
+        <td class=''>135,147.44        </td>
+        <td class=''>        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_미납_세액__0_78' id='_미납_세액__0_78__79' type='checkbox' checked value='' >
+        </td>
+        <td class=''>Value Added Tax        </td>
+        <td class=''>Regular payment        </td>
+        <td class=''>2022        </td>
+        <td class=''>1        </td>
+        <td class=''>14/02/2022        </td>
+        <td class=''>551903742        </td>
+        <td class=''>1,288,290.76        </td>
+        <td class=''>0        </td>
+        <td class=''>0        </td>
+        <td class=''>1,288,290.76        </td>
+        <td class=''>678,754.75        </td>
+        <td class=''>1,967,045.51        </td>
+        <td class=''>        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_미납_세액__0_80' id='_미납_세액__0_80__81' type='checkbox'  value='' >
+        </td>
+        <td class=''>Value Added Tax        </td>
+        <td class=''>Regular payment        </td>
+        <td class=''>2022        </td>
+        <td class=''>2        </td>
+        <td class=''>13/03/2022        </td>
+        <td class=''>552391649        </td>
+        <td class=''>621,354.79        </td>
+        <td class=''>0        </td>
+        <td class=''>0        </td>
+        <td class=''>621,354.79        </td>
+        <td class=''>317,161.82        </td>
+        <td class=''>938,516.61        </td>
+        <td class=''>        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_미납_세액__0_82' id='_미납_세액__0_82__83' type='checkbox'  value='' >
+        </td>
+        <td class=''>Value Added Tax        </td>
+        <td class=''>Regular payment        </td>
+        <td class=''>2021        </td>
+        <td class=''>12        </td>
+        <td class=''>13/01/2022        </td>
+        <td class=''>551454343        </td>
+        <td class=''>184,253.24        </td>
+        <td class=''>0        </td>
+        <td class=''>0        </td>
+        <td class=''>184,253.24        </td>
+        <td class=''>100,141.37        </td>
+        <td class=''>284,394.61        </td>
+        <td class=''>        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_미납_세액__0_84' id='_미납_세액__0_84__85' type='checkbox'  value='' >
+        </td>
+        <td class=''>WTN        </td>
+        <td class=''>Others        </td>
+        <td class=''>2023        </td>
+        <td class=''>1        </td>
+        <td class=''>11/02/2023        </td>
+        <td class=''>571070400        </td>
+        <td class=''>450,000        </td>
+        <td class=''>0        </td>
+        <td class=''>0        </td>
+        <td class=''>450,000        </td>
+        <td class=''>154,157.26        </td>
+        <td class=''>604,157.26        </td>
+        <td class=''>        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_미납_세액__0_86' id='_미납_세액__0_86__87' type='checkbox'  value='' >
+        </td>
+        <td class=''>STP        </td>
+        <td class=''>Others        </td>
+        <td class=''>2023        </td>
+        <td class=''>1        </td>
+        <td class=''>11/02/2023        </td>
+        <td class=''>571032666        </td>
+        <td class=''>90,000        </td>
+        <td class=''>0        </td>
+        <td class=''>0        </td>
+        <td class=''>90,000        </td>
+        <td class=''>30,831.45        </td>
+        <td class=''>120,831.45        </td>
+        <td class=''>        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='_미납_세액__0_88' id='_미납_세액__0_88__89' type='checkbox'  value='' >
+        </td>
+        <td class=''>Pay As You Earn (PAYE)        </td>
+        <td class=''>Regular payment        </td>
+        <td class=''>2024        </td>
+        <td class=''>2        </td>
+        <td class=''>07/03/2024        </td>
+        <td class=''>700336541        </td>
+        <td class=''>33,000        </td>
+        <td class=''>0        </td>
+        <td class=''>0        </td>
+        <td class=''>33,000        </td>
+        <td class=''>5,695.10        </td>
+        <td class=''>38,695.10        </td>
+        <td class=''>        </td>
+      </tr>
+      <tr>
+        <th class=''>        </th>
+        <th class=''>Grand Total        </th>
+        <th class=''>        </th>
+        <th class=''>        </th>
+        <th class=''>        </th>
+        <th class=''>        </th>
+        <th class=''>        </th>
+        <th class=''>3,946,398.79        </th>
+        <th class=''>        </th>
+        <th class=''>        </th>
+        <th class=''>        </th>
+        <th class=''>1,743,397.85        </th>
+        <th class=''>5,689,796.64        </th>
+        <th class=''>        </th>
+      </tr>
+    </tbody>
+  </table>
+  <div class='text-center'> 
+    <ul class='pagination pagination-sm'> 
+      <li class='disabled'><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-left'></span></a></li>          
+      <li><a href='javascript://return false;'>1</a></li>
+      <li><a href='javascript://return false;'>2</a></li>
+      <li><a href='javascript://return false;'>3</a></li>
+      <li><a href='javascript://return false;'>4</a></li>
+      <li><a href='javascript://return false;'>5</a></li>
+      <li><a href='javascript://return false;'>6</a></li>
+      <li><a href='javascript://return false;'>7</a></li>
+      <li><a href='javascript://return false;'>8</a></li>
+      <li><a href='javascript://return false;'>9</a></li>
+      <li><a href='javascript://return false;'>10</a></li>
+      <li><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-right'></span></a></li>          
+    </ul>                                 
+  </div>                                  
+
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='_미납_세액___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--미납 세액 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='취소' >취소</button>
+        <button class='btn btn-default' type='button' value='선택하다' >선택하다</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           

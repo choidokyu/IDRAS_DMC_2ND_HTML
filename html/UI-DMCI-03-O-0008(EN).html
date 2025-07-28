@@ -26,20 +26,20 @@
 
 <div class='fixedTitleBlock'></div>  <table id='UI-DMCI-03-O-0008_TABLE_2' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >Application Date</th>
+      <th width='15%' >Processing date</th>
         <td width='35%' style='text-align: left;' class=''>
   <div>
     <div class='form-group form-inline form-group-sm'>                              
       <div class=' input-group'>                                                                
-          <div class='input-group date' id='___Application_Date_div_1'>                         
-                  <input type='text' class='form-control '  id='___Application_Date' value='2025-06-02' />                
+          <div class='input-group date' id='___Processing_date_div_1'>                         
+                  <input type='text' class='form-control '  id='___Processing_date' value='02/06/2025' />                
                   <span class='input-group-addon'>                                          
                       <span class='glyphicon glyphicon-calendar'></span>                    
                   </span>                                                                   
           </div>                                                                            
                 ~                                                                         
-          <div class='input-group date' id='___Application_Date_div_2'>                         
-                  <input type='text' class='form-control '  id='___Application_Date' value='2025-06-06' />                
+          <div class='input-group date' id='___Processing_date_div_2'>                         
+                  <input type='text' class='form-control '  id='___Processing_date' value='06/06/2025' />                
                   <span class='input-group-addon'>                                          
                       <span class='glyphicon glyphicon-calendar'></span>                    
                   </span>                                                                   
@@ -48,8 +48,8 @@
     </div>
   </div>
     <script type='text/javascript'>
-      $(function () { $('#___Application_Date_div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
-      $(function () { $('#___Application_Date_div_2').datetimepicker({format: 'DD/MM/YYYY'}); });
+      $(function () { $('#___Processing_date_div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+      $(function () { $('#___Processing_date_div_2').datetimepicker({format: 'DD/MM/YYYY'}); });
     </script>
 
         </td>
@@ -57,7 +57,29 @@
         <td width='35%' style='text-align: left;' class=''>
   <div>
       <select class='form-control ' id='___Processing_Status' >
-            <option ></option>
+            <option >All
+</option>
+            <option >OO5│Officer Registration
+</option>
+            <option >RO2│Officer Submit
+</option>
+            <option >RO3│Officer Re-Submit
+</option>
+            <option >RR1│Reviewer Assignment
+</option>
+            <option >RR2│Reviewer Submit
+</option>
+            <option >RR4│Reviewer Send back
+</option>
+            <option >RR3│Reviewer Re-Submit
+</option>
+            <option >RA0│Approver Assignment
+</option>
+            <option >RA5│Approver Approve
+</option>
+            <option >RA3│Approver Send back
+</option>
+            <option >RA4│Approver Reject</option>
       </select>
     </div>
   </div>
@@ -69,7 +91,7 @@
         <td width='35%' style='text-align: left;' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-        <input class='form-control ' type='text' id='___Taxpayer_TIN_1' value='123-456-789'  >
+        <input class='form-control ' type='text' id='___Taxpayer_TIN_1' value='172-206-670'  >
         </div>
       </div><!--항목내의 텍스트 종료-->
     </div><!--항목내의 폼그룹 종료--> 
@@ -80,7 +102,65 @@
         <td width='35%' style='text-align: left;' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-        <input class='form-control ' type='text' id='___Third_Party_TIN_1' value=''  >
+        <input class='form-control ' type='text' id='___Third_Party_TIN_1' value='172-329-098'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Region</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+      <select class='form-control ' id='___Region' >
+            <option >All</option>
+            <option >ARUSHA</option>
+            <option selected>DODOMA</option>
+            <option >GEITA</option>
+            <option >ILALA</option>
+            <option >IRINGA</option>
+            <option >KAGERA</option>
+            <option >KAHAMA</option>
+            <option >KARIAKOO</option>
+            <option >KATAVI</option>
+            <option >KIGOMA</option>
+            <option >KILIMANJARO</option>
+            <option >KINONDONI</option>
+            <option >LARGE TAXPAYERS DEPARTMENT</option>
+            <option >LINDI</option>
+            <option >MANYARA</option>
+            <option >MARA</option>
+            <option >MBEYA</option>
+            <option >MEDIUM TAXPAYERS DIVISION</option>
+            <option >MOROGORO</option>
+            <option >MTWARA</option>
+            <option >MWANZA</option>
+            <option >NJOMBE</option>
+            <option >PEMBA</option>
+            <option >PWANI</option>
+            <option >RUKWA</option>
+            <option >RUVUMA</option>
+            <option >SHINYANGA</option>
+            <option >SIMIYU</option>
+            <option >SINGIDA</option>
+            <option >SONGWE</option>
+            <option >TABORA</option>
+            <option >TANGA</option>
+            <option >TEGETA</option>
+            <option >TEMEKE</option>
+            <option >ZANZIBAR</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+      <th width='15%' >Application No</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Application_No_1' value='TPL-2506-172206670-011'  >
         </div>
       </div><!--항목내의 텍스트 종료-->
     </div><!--항목내의 폼그룹 종료--> 
@@ -97,14 +177,15 @@ $(window).load(function(){
     <div class='row'><!--버튼그룹 Row 시작-->
       <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
         <button class='btn btn-default btn-left' type='button' value='Reset' ><span class='glyphicon glyphicon-refresh'></span> Reset</button>
-        <button class='btn btn-info' type='button' value='New' >New</button>
+        <button class='btn btn-info' type='button' value='New' onclick='alert("instead of sending you direct to the pop up when you click new, The system should move you down to a table to fill in taxpayers TIN then after validation, it should display name and other taxpayers details. \n\n Only a search sign in front of TIN field, once clicked, can display a pop up for TIN Selection (in case officer want to select/filter from the list)");'>New</button>
         <button class='btn btn-default' type='button' value='Search' ><span class='glyphicon glyphicon-search'></span> Search</button>
       </div><!--버튼그룹 종료-->
     </div><!--버튼그룹 Row 종료-->
 
     <hr>
-  <table id='UI-DMCI-03-O-0008_TABLE_9' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_11' class='table table-bordered table-hover'>
     <colgroup>
+      <col>
       <col>
       <col>
       <col>
@@ -117,6 +198,7 @@ $(window).load(function(){
     </colgroup>
     <thead>
       <tr>
+      <th class='text-center'>Number</th>
       <th class='text-center'>Application No</th>
       <th class='text-center'>Taxpayer TIN</th>
       <th class='text-center'>Taxpayer's Name</th>
@@ -124,16 +206,18 @@ $(window).load(function(){
       <th class='text-center'>Third Party TIN</th>
       <th class='text-center'>Third Party Name</th>
       <th class='text-center'>Third Party Type</th>
-      <th class='text-center'>Application Date</th>
+      <th class='text-center'>Processing date</th>
       <th class='text-center'>Processing Status</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td class=''>
-24-DMC-TPL-DOD-123456789-003        </td>
+1        </td>
         <td class=''>
-123-456-789         </td>
+TPL-2506-172206670-003        </td>
+        <td class=''>
+172-206-670        </td>
         <td class=''>
 Mr. Choi         </td>
         <td class=''>
@@ -145,15 +229,19 @@ Mr. Park         </td>
         <td class=''>
 Manager         </td>
         <td class=''>
-2025-05-27         </td>
+11/06/2025
+        </td>
         <td class=''>
-Saved         </td>
+OO5│Officer Registration
+        </td>
       </tr>
       <tr>
         <td class=''>
-24-DMC-TPL-DOD-123456789-002        </td>
+2        </td>
         <td class=''>
- 223-456-789         </td>
+TPL-2506-172206670-002        </td>
+        <td class=''>
+172-206-670        </td>
         <td class=''>
  Ms. Kim         </td>
         <td class=''>
@@ -165,15 +253,19 @@ Saved         </td>
         <td class=''>
  Receiver         </td>
         <td class=''>
- 2025-05-26         </td>
+10/06/2025
+        </td>
         <td class=''>
- Submitted         </td>
+RO2│Officer Submit
+        </td>
       </tr>
       <tr>
         <td class=''>
-24-DMC-TPL-DOD-123456789-001        </td>
+3        </td>
         <td class=''>
- 323-456-789        </td>
+TPL-2506-172206670-001        </td>
+        <td class=''>
+172-206-670        </td>
         <td class=''>
  Mr. John        </td>
         <td class=''>
@@ -185,9 +277,201 @@ Saved         </td>
         <td class=''>
  Agent        </td>
         <td class=''>
- 2025-05-25        </td>
+09/06/2025
+        </td>
         <td class=''>
- Approved        </td>
+RO3│Officer Re-Submit
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+4        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+08/06/2025
+        </td>
+        <td class=''>
+RR1│Reviewer Assignment
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+5        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+07/06/2025
+        </td>
+        <td class=''>
+RR2│Reviewer Submit
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+6        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+06/06/2025
+        </td>
+        <td class=''>
+RR4│Reviewer Send back
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+7        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+05/06/2025
+        </td>
+        <td class=''>
+RR3│Reviewer Re-Submit
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+8        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+04/06/2025
+        </td>
+        <td class=''>
+RA0│Approver Assignment
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+9        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+03/06/2025
+        </td>
+        <td class=''>
+RA5│Approver Approve
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+10        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+02/06/2025
+        </td>
+        <td class=''>
+RA3│Approver Send back
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+11        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+01/06/2025        </td>
+        <td class=''>
+RA4│Approver Reject        </td>
       </tr>
     </tbody>
   </table>
@@ -226,11 +510,11 @@ Saved         </td>
 
       <div id='Third_Party_Liability_New' class='panel-body'><!--New 화면메인그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_19' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_22' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >Application No</th>
         <td width='35%' style='text-align: left;' class=''>
-        </td>
+TPL-2506-172206670-003        </td>
       <th width='15%' >Region</th>
         <td width='35%' style='text-align: left;' class=''>
 [DOD]DODOMA        </td>
@@ -238,15 +522,15 @@ Saved         </td>
     <tr>
       <th width='15%' >Processing Status</th>
         <td width='35%' style='text-align: left;' class=''>
-        </td>
-      <th width='15%' >Application Date</th>
+OO5│Officer Registration(담당자 등록)        </td>
+      <th width='15%' >Processing date</th>
         <td width='35%' style='text-align: left;' class=''>
-        </td>
+02/06/2025        </td>
     </tr>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_19').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_22').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -269,13 +553,13 @@ $(window).load(function(){
 
       <div id='Third_Party_Liability_New_Taxpayer_Information' class='panel-body'><!--Taxpayer Information 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_24' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_27' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >TIN<span class='mandatory'> *</span></th>
         <td width='35%' style='text-align: left;' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-        <input class='form-control ' type='text' id='New_Taxpayer_Information__TIN_1' value='100-113-295'  >
+        <input class='form-control ' type='text' id='New_Taxpayer_Information__TIN_1' value='172-206-670'  >
         <a class='input-group-addon' onclick='onloadImage("../images-DOC/TIN_Information.png","900","1600")'><span class='glyphicon glyphicon-question-sign' onclick='onloadImage("../images-DOC/TIN_Information.png","900","1600")'></span></a>
         </div>
       </div><!--항목내의 텍스트 종료-->
@@ -285,76 +569,54 @@ $(window).load(function(){
         </td>
       <th width='15%' >Taxpayer's Name</th>
         <td width='35%' style='text-align: left;' class=''>
-MOHAMMED YUSUFALI JIVANJEE        </td>
+JEDIDA ATIENO OUMA        </td>
     </tr>
     <tr>
-      <th width='15%' >Business Type</th>
-        <td width='35%' style='text-align: left;' class=''>
-Sole Proprietor        </td>
-      <th width='15%' >Application Type</th>
-        <td width='35%' style='text-align: left;' class=''>
-TIN Application with NIN        </td>
-    </tr>
-    <tr>
-      <th width='15%' >Region</th>
-        <td width='35%' style='text-align: left;' class=''>
-Dar Es Salaam        </td>
-      <th width='15%' >District</th>
-        <td width='35%' style='text-align: left;' class=''>
-Kinondoni        </td>
-    </tr>
-    <tr>
-      <th width='15%' >Ward</th>
-        <td width='35%' style='text-align: left;' class=''>
-Mikocheni        </td>
-      <th width='15%' >Street</th>
+      <th width='15%' >Trading Name</th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
+      <th width='15%' >Tax Region</th>
+        <td width='35%' style='text-align: left;' class=''>
+DOD | DODOMA        </td>
     </tr>
     <tr>
-      <th width='15%' >Barabara Name</th>
-        <td width='35%' style='text-align: left;' class=''>
-        </td>
-      <th width='15%' >House Number</th>
-        <td width='35%' style='text-align: left;' class=''>
-        </td>
-    </tr>
-    <tr>
-      <th width='15%' >P.O Box</th>
-        <td width='35%' style='text-align: left;' class=''>
-33        </td>
-      <th width='15%' >Post Code</th>
-        <td width='35%' style='text-align: left;' class=''>
-14112        </td>
-    </tr>
-    <tr>
-      <th width='15%' >Mobile</th>
-        <td width='35%' style='text-align: left;' class=''>
-255784350146        </td>
       <th width='15%' >Email</th>
         <td width='35%' style='text-align: left;' class=''>
-test@zmzmzmzm.cj        </td>
+        </td>
+      <th width='15%' >Phone Number</th>
+        <td width='35%' style='text-align: left;' class=''>
+0747681462        </td>
     </tr>
     <tr>
-      <th width='15%' >Registration Date</th>
-        <td width='35%' style='text-align: left;' class=''>
-01/07/1999        </td>
-      <th width='15%' >Commencement Date</th>
-        <td width='35%' style='text-align: left;' class=''>
-01/01/2004        </td>
+      <th width='15%' >Postal Address</th>
+        <td style='text-align: left;' colspan='3' class=''>
+P.O.Box 3456 Daejon        </td>
+    </tr>
     </tr>
     <tr>
-      <th width='15%' >Accounting Period</th>
-        <td width='35%' style='text-align: left;' class=''>
-3112        </td>
-      <th width='15%' >Extension of Year of Income</th>
-        <td width='35%' style='text-align: left;' class=''>
-No        </td>
+      <th width='15%' >Physical Address</th>
+        <td style='text-align: left;' colspan='3' class=''>
+95, 117beon-gil, 35235 Dunsan - daero        </td>
+    </tr>
     </tr>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_24').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_27').rowspan(0);
+});
+</script>
+  <table id='UI-DMCI-03-O-0008_TABLE_35' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >DEV NOTE</th>
+        <td style='text-align: left;' colspan='3' class=''>
+1. The format for Postal Address should Include Post office Box Number and Postal City
+<BR> 2. The format for Physical Address should include the standard format that starts with House number, Subward (street), Post code and Ward. with space separating each of the 4 parameters.        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-DMCI-03-O-0008_TABLE_35').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -388,35 +650,22 @@ $(window).load(function(){
     </div><!--버튼그룹 Row 종료-->
 
     <hr>
-  <table id='UI-DMCI-03-O-0008_TABLE_44' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_38' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >Debit Amount</th>
-        <td width='35%' style='text-align: left;' class=''>
-150847300        </td>
-      <th width='15%' >Payment</th>
-        <td width='35%' style='text-align: left;' class=''>
-65827180        </td>
-    </tr>
-    <tr>
-      <th width='15%' >Discharge</th>
-        <td width='35%' style='text-align: left;' class=''>
-0        </td>
-      <th width='15%' >Balance</th>
-        <td width='35%' style='text-align: left;' class=''>
-85020120        </td>
-    </tr>
-    <tr>
+      <th width='15%' >Principal Tax balance</th>
+        <td width='18%' style='text-align: left;' class=''>
+3,946,398,79        </td>
       <th width='15%' >Interest</th>
-        <td width='35%' style='text-align: left;' class=''>
-4511227        </td>
-      <th width='15%' >Total</th>
-        <td width='35%' style='text-align: left;' class=''>
-89531347        </td>
+        <td width='18%' style='text-align: left;' class=''>
+1,743,397,85        </td>
+      <th width='15%' >Total outstanding Tax</th>
+        <td width='18%' style='text-align: left;' class=''>
+5,689,796.64        </td>
     </tr>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_44').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_38').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -443,7 +692,7 @@ $(window).load(function(){
 
       <div id='Third_Party_Liability_New_Taxpayer_Relation' class='panel-body'><!--Taxpayer Relation 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_51' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_42' class='table table-bordered table-hover'>
     <colgroup>
       <col>
       <col>
@@ -461,8 +710,8 @@ $(window).load(function(){
     <tbody>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_3' id='New_Taxpayer_Relation__0_3__4' type='radio'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_3__4'></label>
+        <input name='New_Taxpayer_Relation__0_51' id='New_Taxpayer_Relation__0_51__52' type='radio'  value='' >
+        <label class='label-for-select ' for='New_Taxpayer_Relation__0_51__52'></label>
         </td>
         <td class=''>
 172329098
@@ -476,8 +725,8 @@ ACC│Auditor/Accountant(감사/회계사)
       </tr>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_5' id='New_Taxpayer_Relation__0_5__6' type='radio'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_5__6'></label>
+        <input name='New_Taxpayer_Relation__0_53' id='New_Taxpayer_Relation__0_53__54' type='radio'  value='' >
+        <label class='label-for-select ' for='New_Taxpayer_Relation__0_53__54'></label>
         </td>
         <td class=''>
 166207622
@@ -491,8 +740,8 @@ ADV│Advocate/Lawyer(변호사/변호사)
       </tr>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_7' id='New_Taxpayer_Relation__0_7__8' type='radio'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_7__8'></label>
+        <input name='New_Taxpayer_Relation__0_55' id='New_Taxpayer_Relation__0_55__56' type='radio'  value='' >
+        <label class='label-for-select ' for='New_Taxpayer_Relation__0_55__56'></label>
         </td>
         <td class=''>
 104703976
@@ -506,8 +755,8 @@ AMB│Ambassador(대사)
       </tr>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_9' id='New_Taxpayer_Relation__0_9__10' type='radio'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_9__10'></label>
+        <input name='New_Taxpayer_Relation__0_57' id='New_Taxpayer_Relation__0_57__58' type='radio'  value='' >
+        <label class='label-for-select ' for='New_Taxpayer_Relation__0_57__58'></label>
         </td>
         <td class=''>
 121167689
@@ -521,8 +770,8 @@ CHA│Chief Accountant(최고회계사)
       </tr>
       <tr>
         <td class=''>
-        <input name='New_Taxpayer_Relation__0_11' id='New_Taxpayer_Relation__0_11__12' type='radio'  value='' >
-        <label class='label-for-select ' for='New_Taxpayer_Relation__0_11__12'></label>
+        <input name='New_Taxpayer_Relation__0_59' id='New_Taxpayer_Relation__0_59__60' type='radio'  value='' >
+        <label class='label-for-select ' for='New_Taxpayer_Relation__0_59__60'></label>
         </td>
         <td class=''>
 166148766        </td>
@@ -575,7 +824,7 @@ CHE│Chief Executive Officer(최고경영자(CEO))        </td>
 
       <div id='Third_Party_Liability_New_Third_Party_Info' class='panel-body'><!--Third Party Info 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_56' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_47' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >TIN</th>
         <td width='35%' style='text-align: left;' class=''>
@@ -609,7 +858,7 @@ Employer        </td>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_56').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_47').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -627,28 +876,28 @@ $(window).load(function(){
 <div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
   <div class='col-sm-12'>
-      <h3 onclick="$('#Third_Party_Liability_New_Requirement').toggle();" id='Requirement'><span class='glyphicon glyphicon-menu-hamburger'></span> Requirement</h3>
+      <h3 onclick="$('#Third_Party_Liability_New_Request_approval').toggle();" id='Request_approval'><span class='glyphicon glyphicon-menu-hamburger'></span> Request approval</h3>
   </div>
 
 </div>
 
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
-      <div id='Third_Party_Liability_New_Requirement' class='panel-body'><!--Requirement 화면서브그룹 시작-->
+      <div id='Third_Party_Liability_New_Request_approval' class='panel-body'><!--Request approval 화면서브그룹 시작-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_64' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_55' class='table table-bordered table-hover'>
     <tr>
       <th width='15%' >Receiver & Manager Distinction</th>
         <td style='text-align: left;' colspan='3' class=''>
-        <input name='New_Requirement__Receiver___Manager_Distinction_13' id='New_Requirement__Receiver___Manager_Distinction_13_Receiver_14' type='radio'  value='Receiver' >
-        <label class='label-for-select ' for='New_Requirement__Receiver___Manager_Distinction_13_Receiver_14'>Receiver</label>
-        <input name='New_Requirement__Receiver___Manager_Distinction_13' id='New_Requirement__Receiver___Manager_Distinction_13_Manager_15' type='radio'  value='Manager' >
-        <label class='label-for-select ' for='New_Requirement__Receiver___Manager_Distinction_13_Manager_15'>Manager</label>
+        <input name='New_Request_approval__Receiver___Manager_Distinction_61' id='New_Request_approval__Receiver___Manager_Distinction_61_Receiver_62' type='radio'  value='Receiver' >
+        <label class='label-for-select ' for='New_Request_approval__Receiver___Manager_Distinction_61_Receiver_62'>Receiver</label>
+        <input name='New_Request_approval__Receiver___Manager_Distinction_61' id='New_Request_approval__Receiver___Manager_Distinction_61_Manager_63' type='radio'  value='Manager' >
+        <label class='label-for-select ' for='New_Request_approval__Receiver___Manager_Distinction_61_Manager_63'>Manager</label>
 
 <script type="text/javascript">                                
-$("input[name='New_Requirement__Receiver___Manager_Distinction_13']").change(function(){         
-  var test = $("input[name='New_Requirement__Receiver___Manager_Distinction_13']:checked").val();
-  var fvalue = $("input[name='New_Requirement__Receiver___Manager_Distinction_13']").eq(0).val();
+$("input[name='New_Request_approval__Receiver___Manager_Distinction_61']").change(function(){         
+  var test = $("input[name='New_Request_approval__Receiver___Manager_Distinction_61']:checked").val();
+  var fvalue = $("input[name='New_Request_approval__Receiver___Manager_Distinction_61']").eq(0).val();
   if (test.indexOf(fvalue) != -1) {                                                        
     $('#UIDMCI03O0008COMUIR').show();                                          
     $('#UIDMCI03O0008COMUIM').hide();                                          
@@ -658,7 +907,7 @@ $("input[name='New_Requirement__Receiver___Manager_Distinction_13']").change(fun
   }                  
 });                  
 $(window).load(function(){
-  $("input[name='New_Requirement__Receiver___Manager_Distinction_13']").eq(0).trigger('click');
+  $("input[name='New_Request_approval__Receiver___Manager_Distinction_61']").eq(0).trigger('click');
 });                  
 </script>            
 
@@ -668,7 +917,7 @@ $(window).load(function(){
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_64').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_55').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
@@ -701,13 +950,13 @@ $(window).load(function(){
   <!--IFRAME 종료-->
 </div><!--Row 종료-->
 
-  <table id='UI-DMCI-03-O-0008_TABLE_67' class='table table-bordered table-hover'>
+  <table id='UI-DMCI-03-O-0008_TABLE_58' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >Remarks</th>
+      <th width='15%' >Comment</th>
         <td style='text-align: left;' colspan='3' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-<textarea class='form-control ' rows='4' id='New_Requirement__Remarks_1' ></textarea>
+<textarea class='form-control ' rows='4' id='New_Request_approval__Comment_1' ></textarea>
         </div>
       </div><!--항목내의 텍스트 종료-->
     </div><!--항목내의 폼그룹 종료--> 
@@ -721,7 +970,7 @@ $(window).load(function(){
         <td style='text-align: left;' colspan='3' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-        <input class='form-control input-file ' type='text' id='New_Requirement__Attachments_1' value='' readonly>
+        <input class='form-control input-file ' type='text' id='New_Request_approval__Attachments_1' value='' readonly>
                         <label class='input-group-btn'>
                            <span class='btn btn-primary btn-sm'>
                                &hellip; <span class='glyphicon glyphicon-open-file'><input type='file' style='display: none;' multiple>
@@ -738,18 +987,18 @@ $(window).load(function(){
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-DMCI-03-O-0008_TABLE_67').rowspan(0);
+  $('#UI-DMCI-03-O-0008_TABLE_58').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='New_Requirement___1'></label>
+      <label class='control-label label-line ' for='New_Request_approval___1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
-      </div><!--Requirement 화면서브그룹 종료-->
+      </div><!--Request approval 화면서브그룹 종료-->
 
 </div><!--화면서브그룹 Row 종료-->
 
@@ -759,7 +1008,7 @@ $(window).load(function(){
         <button class='btn btn-default btn-left' type='button' value='Manager Liability' onclick='onloadImage("../images-DOC/03/THIRD PART LIABILITY - Manager Liability(EN).png","800","1200")'><span class='glyphicon glyphicon-refresh'></span> Manager Liability</button>
         <button class='btn btn-info' type='button' value='Save' >Save</button>
         <button class='btn btn-danger' type='button' value='Delete' >Delete</button>
-        <button class='btn btn-success' type='button' value='Submit' >Submit</button>
+        <button class='btn btn-success' type='button' value='Request approval' >Request approval</button>
       </div><!--버튼그룹 종료-->
     </div><!--버튼그룹 Row 종료-->
 
